@@ -6,7 +6,7 @@
   } ],
   "info" : {
     "description" : "Federated PDS API which provides actionable end points standardized\nbetween the different nodes.\n",
-    "version" : "0.0",
+    "version" : "0.1.dev",
     "title" : "Planetary Data System API",
     "termsOfService" : "http://pds.nasa.gov",
     "contact" : {
@@ -188,6 +188,11 @@
             },
             "content" : {
               "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/collections"
+                }
+              },
+              "text/html" : {
                 "schema" : {
                   "$ref" : "#/components/schemas/collections"
                 }
@@ -422,7 +427,7 @@
       },
       "collection" : {
         "type" : "object",
-        "required" : [ "id", "title" ],
+        "required" : [ "id", "update_time" ],
         "properties" : {
           "id" : {
             "type" : "string",
@@ -434,21 +439,21 @@
           "description" : {
             "type" : "string"
           },
-          "instruments" : {
+          "procedures" : {
             "type" : "array",
-            "description" : "identifier lidvid of the instrument or procedure generating the data",
+            "description" : "identifier lidvid of the instrument or procedure generating the data (for concept see https://en.wikipedia.org/wiki/Observations_and_Measurements)",
             "items" : {
               "type" : "string"
             }
           },
-          "targets" : {
+          "feature_of_interest" : {
             "type" : "array",
-            "description" : "identifier lidvid of the target of the observation",
+            "description" : "identifier lidvid of the target of or feature of interest the observation (for concept see https://en.wikipedia.org/wiki/Observations_and_Measurements)",
             "items" : {
               "type" : "string"
             }
           },
-          "optional_properties" : {
+          "properties" : {
             "type" : "object",
             "additionalProperties" : {
               "type" : "array",
