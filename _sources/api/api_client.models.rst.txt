@@ -1,0 +1,93 @@
+api\_client.models package
+==========================
+
+Submodules
+----------
+
+api\_client.models.capability module
+------------------------------------
+
+.. automodule:: api_client.models.capability
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\_client.models.collection module
+------------------------------------
+
+.. automodule:: api_client.models.collection
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\_client.models.collections module
+-------------------------------------
+
+.. automodule:: api_client.models.collections
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\_client.models.error\_message module
+----------------------------------------
+
+.. automodule:: api_client.models.error_message
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\_client.models.metadata module
+----------------------------------
+
+.. automodule:: api_client.models.metadata
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\_client.models.product module
+---------------------------------
+
+.. automodule:: api_client.models.product
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\_client.models.products module
+----------------------------------
+
+.. automodule:: api_client.models.products
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\_client.models.reference module
+-----------------------------------
+
+.. automodule:: api_client.models.reference
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\_client.models.route module
+-------------------------------
+
+.. automodule:: api_client.models.route
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\_client.models.summary module
+---------------------------------
+
+.. automodule:: api_client.models.summary
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: api_client.models
+   :members:
+   :undoc-members:
+   :show-inheritance:

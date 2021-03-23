@@ -1,0 +1,69 @@
+api\_client.api package
+=======================
+
+Submodules
+----------
+
+api\_client.api.bundles\_api module
+-----------------------------------
+
+.. automodule:: api_client.api.bundles_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\_client.api.bundles\_collections\_api module
+------------------------------------------------
+
+.. automodule:: api_client.api.bundles_collections_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\_client.api.capabilities\_api module
+----------------------------------------
+
+.. automodule:: api_client.api.capabilities_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\_client.api.collections\_api module
+---------------------------------------
+
+.. automodule:: api_client.api.collections_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\_client.api.collections\_products\_api module
+-------------------------------------------------
+
+.. automodule:: api_client.api.collections_products_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\_client.api.products\_api module
+------------------------------------
+
+.. automodule:: api_client.api.products_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\_client.api.routes\_api module
+----------------------------------
+
+.. automodule:: api_client.api.routes_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: api_client.api
+   :members:
+   :undoc-members:
+   :show-inheritance:

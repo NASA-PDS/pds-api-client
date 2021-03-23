@@ -1,0 +1,920 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>api_client package &mdash; pds.api_client  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="api_client.api package" href="api_client.api.html" />
+    <link rel="prev" title="Quickstart for the PDS API python client" href="../quickstart.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> pds.api_client
+          
+
+          
+            
+            <img src="../_static/PDS_Planets.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart for the PDS API python client</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">api_client package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api_client.api.html">api_client.api package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api_client.models.html">api_client.models package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-api_client.api_client">api_client.api_client module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-api_client.configuration">api_client.configuration module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-api_client.exceptions">api_client.exceptions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-api_client.rest">api_client.rest module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-api_client">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pds.api_client</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>api_client package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/api/api_client.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="api-client-package">
+<h1>api_client package<a class="headerlink" href="#api-client-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api_client.api.html">api_client.api package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api_client.api.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_client.api.html#module-api_client.api.bundles_api">api_client.api.bundles_api module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_client.api.html#module-api_client.api.bundles_collections_api">api_client.api.bundles_collections_api module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_client.api.html#module-api_client.api.capabilities_api">api_client.api.capabilities_api module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_client.api.html#module-api_client.api.collections_api">api_client.api.collections_api module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_client.api.html#module-api_client.api.collections_products_api">api_client.api.collections_products_api module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_client.api.html#module-api_client.api.products_api">api_client.api.products_api module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_client.api.html#module-api_client.api.routes_api">api_client.api.routes_api module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_client.api.html#module-api_client.api">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api_client.models.html">api_client.models package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api_client.models.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_client.models.html#module-api_client.models.capability">api_client.models.capability module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_client.models.html#module-api_client.models.collection">api_client.models.collection module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_client.models.html#module-api_client.models.collections">api_client.models.collections module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_client.models.html#module-api_client.models.error_message">api_client.models.error_message module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_client.models.html#module-api_client.models.metadata">api_client.models.metadata module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_client.models.html#module-api_client.models.product">api_client.models.product module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_client.models.html#module-api_client.models.products">api_client.models.products module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_client.models.html#module-api_client.models.reference">api_client.models.reference module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_client.models.html#module-api_client.models.route">api_client.models.route module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_client.models.html#module-api_client.models.summary">api_client.models.summary module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_client.models.html#module-api_client.models">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-api_client.api_client">
+<span id="api-client-api-client-module"></span><h2>api_client.api_client module<a class="headerlink" href="#module-api_client.api_client" title="Permalink to this headline">¶</a></h2>
+<p>Planetary Data System API</p>
+<p>Federated PDS API which provides actionable end points standardized between the different nodes.   # noqa: E501</p>
+<p>The version of the OpenAPI document: 0.1.0
+Contact: <a class="reference external" href="mailto:pds-operator&#37;&#52;&#48;jpl&#46;nasa&#46;gov">pds-operator<span>&#64;</span>jpl<span>&#46;</span>nasa<span>&#46;</span>gov</a>
+Generated by: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a></p>
+<dl class="py class">
+<dt id="api_client.api_client.ApiClient">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">api_client.api_client.</span></code><code class="sig-name descname"><span class="pre">ApiClient</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">configuration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">header_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">header_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cookie</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pool_threads</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.api_client.ApiClient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Generic API client for OpenAPI client library builds.</p>
+<p>OpenAPI generic API client. This client handles the client-
+server communication, and is invariant across implementations. Specifics of
+the methods and models for each application are generated from the OpenAPI
+templates.</p>
+<p>NOTE: This class is auto generated by OpenAPI Generator.
+Ref: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a>
+Do not edit the class manually.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>configuration</strong> – .Configuration object for this client</p></li>
+<li><p><strong>header_name</strong> – a header to pass when making calls to the API.</p></li>
+<li><p><strong>header_value</strong> – a header value to pass when making calls to
+the API.</p></li>
+<li><p><strong>cookie</strong> – a cookie to include in the header when making calls
+to the API</p></li>
+<li><p><strong>pool_threads</strong> – The number of threads to use for async requests
+to the API. More threads means more concurrent API requests.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt id="api_client.api_client.ApiClient.NATIVE_TYPES_MAPPING">
+<code class="sig-name descname"><span class="pre">NATIVE_TYPES_MAPPING</span></code><em class="property"> <span class="pre">=</span> <span class="pre">{'bool':</span> <span class="pre">&lt;class</span> <span class="pre">'bool'&gt;,</span> <span class="pre">'date':</span> <span class="pre">&lt;class</span> <span class="pre">'datetime.date'&gt;,</span> <span class="pre">'datetime':</span> <span class="pre">&lt;class</span> <span class="pre">'datetime.datetime'&gt;,</span> <span class="pre">'float':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'int':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'long':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'object':</span> <span class="pre">&lt;class</span> <span class="pre">'object'&gt;,</span> <span class="pre">'str':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;}</span></em><a class="headerlink" href="#api_client.api_client.ApiClient.NATIVE_TYPES_MAPPING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="api_client.api_client.ApiClient.PRIMITIVE_TYPES">
+<code class="sig-name descname"><span class="pre">PRIMITIVE_TYPES</span></code><em class="property"> <span class="pre">=</span> <span class="pre">(&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'bool'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'bytes'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;)</span></em><a class="headerlink" href="#api_client.api_client.ApiClient.PRIMITIVE_TYPES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="api_client.api_client.ApiClient.call_api">
+<code class="sig-name descname"><span class="pre">call_api</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resource_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">header_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">files</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">response_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auth_settings</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">async_req</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_return_http_data_only</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">collection_formats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_host</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.api_client.ApiClient.call_api" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes the HTTP request (synchronous) and returns deserialized data.</p>
+<p>To make an async_req request, set the async_req parameter.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>resource_path</strong> – Path to method endpoint.</p></li>
+<li><p><strong>method</strong> – Method to call.</p></li>
+<li><p><strong>path_params</strong> – Path parameters in the url.</p></li>
+<li><p><strong>query_params</strong> – Query parameters in the url.</p></li>
+<li><p><strong>header_params</strong> – Header parameters to be
+placed in the request header.</p></li>
+<li><p><strong>body</strong> – Request body.</p></li>
+<li><p><strong>dict</strong> (<em>files</em>) – Request post form parameters,
+for <cite>application/x-www-form-urlencoded</cite>, <cite>multipart/form-data</cite>.</p></li>
+<li><p><strong>list</strong> (<em>auth_settings</em>) – Auth Settings names for the request.</p></li>
+<li><p><strong>response</strong> – Response data type.</p></li>
+<li><p><strong>dict</strong> – key -&gt; filename, value -&gt; filepath,
+for <cite>multipart/form-data</cite>.</p></li>
+<li><p><strong>bool</strong> (<em>async_req</em>) – execute request asynchronously</p></li>
+<li><p><strong>_return_http_data_only</strong> – response data without head status code
+and headers</p></li>
+<li><p><strong>collection_formats</strong> – dict of collection formats for path, query,
+header, and post parameters.</p></li>
+<li><p><strong>_preload_content</strong> – if False, the urllib3.HTTPResponse object will
+be returned without reading/decoding response
+data. Default is True.</p></li>
+<li><p><strong>_request_timeout</strong> – timeout setting for this request. If one
+number provided, it will be total request
+timeout. It can also be a pair (tuple) of
+(connection, read) timeouts.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>If async_req parameter is True,
+the request will be called asynchronously.
+The method will return the request thread.
+If parameter async_req is False or missing,
+then the method will return the response directly.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="api_client.api_client.ApiClient.close">
+<code class="sig-name descname"><span class="pre">close</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api_client.api_client.ApiClient.close" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="api_client.api_client.ApiClient.deserialize">
+<code class="sig-name descname"><span class="pre">deserialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">response</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">response_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.api_client.ApiClient.deserialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserializes response into an object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>response</strong> – RESTResponse object to be deserialized.</p></li>
+<li><p><strong>response_type</strong> – class literal for
+deserialized object, or string of class name.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>deserialized object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="api_client.api_client.ApiClient.files_parameters">
+<code class="sig-name descname"><span class="pre">files_parameters</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">files</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.api_client.ApiClient.files_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Builds form parameters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>files</strong> – File parameters.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Form parameters with files.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="api_client.api_client.ApiClient.parameters_to_tuples">
+<code class="sig-name descname"><span class="pre">parameters_to_tuples</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">collection_formats</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.api_client.ApiClient.parameters_to_tuples" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get parameters as list of tuples, formatting collections.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>params</strong> – Parameters as dict or list of two-tuples</p></li>
+<li><p><strong>collection_formats</strong> (<em>dict</em>) – Parameter collection formats</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Parameters as list of tuples, collections formatted</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="api_client.api_client.ApiClient.pool">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">pool</span></code><a class="headerlink" href="#api_client.api_client.ApiClient.pool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create thread pool on first request
+avoids instantiating unused threadpool for blocking clients.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="api_client.api_client.ApiClient.request">
+<code class="sig-name descname"><span class="pre">request</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.api_client.ApiClient.request" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes the HTTP request using RESTClient.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="api_client.api_client.ApiClient.sanitize_for_serialization">
+<code class="sig-name descname"><span class="pre">sanitize_for_serialization</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.api_client.ApiClient.sanitize_for_serialization" title="Permalink to this definition">¶</a></dt>
+<dd><p>Builds a JSON POST object.</p>
+<p>If obj is None, return None.
+If obj is str, int, long, float, bool, return directly.
+If obj is datetime.datetime, datetime.date</p>
+<blockquote>
+<div><p>convert to string in iso8601 format.</p>
+</div></blockquote>
+<p>If obj is list, sanitize each element in the list.
+If obj is dict, return the dict.
+If obj is OpenAPI model, return the properties dict.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>obj</strong> – The data to serialize.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The serialized form of data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="api_client.api_client.ApiClient.select_header_accept">
+<code class="sig-name descname"><span class="pre">select_header_accept</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">accepts</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.api_client.ApiClient.select_header_accept" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <cite>Accept</cite> based on an array of accepts provided.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>accepts</strong> – List of headers.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Accept (e.g. application/json).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="api_client.api_client.ApiClient.select_header_content_type">
+<code class="sig-name descname"><span class="pre">select_header_content_type</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">content_types</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.api_client.ApiClient.select_header_content_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <cite>Content-Type</cite> based on an array of content_types provided.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>content_types</strong> – List of content-types.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Content-Type (e.g. application/json).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="api_client.api_client.ApiClient.set_default_header">
+<code class="sig-name descname"><span class="pre">set_default_header</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">header_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">header_value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.api_client.ApiClient.set_default_header" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="api_client.api_client.ApiClient.update_params_for_auth">
+<code class="sig-name descname"><span class="pre">update_params_for_auth</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">headers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">querys</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auth_settings</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.api_client.ApiClient.update_params_for_auth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates header and query params based on authentication setting.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>headers</strong> – Header parameters dict to be updated.</p></li>
+<li><p><strong>querys</strong> – Query parameters tuple list to be updated.</p></li>
+<li><p><strong>auth_settings</strong> – Authentication setting identifiers list.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="api_client.api_client.ApiClient.user_agent">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">user_agent</span></code><a class="headerlink" href="#api_client.api_client.ApiClient.user_agent" title="Permalink to this definition">¶</a></dt>
+<dd><p>User agent for this API client</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-api_client.configuration">
+<span id="api-client-configuration-module"></span><h2>api_client.configuration module<a class="headerlink" href="#module-api_client.configuration" title="Permalink to this headline">¶</a></h2>
+<p>Planetary Data System API</p>
+<p>Federated PDS API which provides actionable end points standardized between the different nodes.   # noqa: E501</p>
+<p>The version of the OpenAPI document: 0.1.0
+Contact: <a class="reference external" href="mailto:pds-operator&#37;&#52;&#48;jpl&#46;nasa&#46;gov">pds-operator<span>&#64;</span>jpl<span>&#46;</span>nasa<span>&#46;</span>gov</a>
+Generated by: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a></p>
+<dl class="py class">
+<dt id="api_client.configuration.Configuration">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">api_client.configuration.</span></code><code class="sig-name descname"><span class="pre">Configuration</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">host</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'https://virtserver.swaggerhub.com/PDS_APIs/pds_federated_api/0.1.0'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_key_prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">username</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">discard_unknown_keys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.configuration.Configuration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>NOTE: This class is auto generated by OpenAPI Generator</p>
+<p>Ref: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a>
+Do not edit the class manually.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>host</strong> – Base url</p></li>
+<li><p><strong>api_key</strong> – Dict to store API key(s).
+Each entry in the dict specifies an API key.
+The dict key is the name of the security scheme in the OAS specification.
+The dict value is the API key secret.</p></li>
+<li><p><strong>api_key_prefix</strong> – Dict to store API prefix (e.g. Bearer)
+The dict key is the name of the security scheme in the OAS specification.
+The dict value is an API key prefix when generating the auth data.</p></li>
+<li><p><strong>username</strong> – Username for HTTP basic authentication</p></li>
+<li><p><strong>password</strong> – Password for HTTP basic authentication</p></li>
+<li><p><strong>discard_unknown_keys</strong> – <p>Boolean value indicating whether to discard
+unknown properties. A server may send a response that includes additional
+properties that are not known by the client in the following scenarios:
+1. The OpenAPI document is incomplete, i.e. it does not match the server</p>
+<blockquote>
+<div><p>implementation.</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>The client was generated using an older version of the OpenAPI document
+and the server has been upgraded since then.</p></li>
+</ol>
+<p>If a schema in the OpenAPI document defines the additionalProperties attribute,
+then all undeclared properties received by the server are injected into the
+additional properties map. In that case, there are undeclared properties, and
+nothing to discard.</p>
+</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt id="api_client.configuration.Configuration.assert_hostname">
+<code class="sig-name descname"><span class="pre">assert_hostname</span></code><a class="headerlink" href="#api_client.configuration.Configuration.assert_hostname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set this to True/False to enable/disable SSL hostname verification.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="api_client.configuration.Configuration.auth_settings">
+<code class="sig-name descname"><span class="pre">auth_settings</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api_client.configuration.Configuration.auth_settings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets Auth Settings dict for api client.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The Auth Settings information dict.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="api_client.configuration.Configuration.cert_file">
+<code class="sig-name descname"><span class="pre">cert_file</span></code><a class="headerlink" href="#api_client.configuration.Configuration.cert_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>client certificate file</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="api_client.configuration.Configuration.connection_pool_maxsize">
+<code class="sig-name descname"><span class="pre">connection_pool_maxsize</span></code><a class="headerlink" href="#api_client.configuration.Configuration.connection_pool_maxsize" title="Permalink to this definition">¶</a></dt>
+<dd><p>urllib3 connection pool’s maximum number of connections saved
+per pool. urllib3 uses 1 connection as default value, but this is
+not the best value when you are making a lot of possibly parallel
+requests to the same host, which is often the case here.
+cpu_count * 5 is used as default value to increase performance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="api_client.configuration.Configuration.debug">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">debug</span></code><a class="headerlink" href="#api_client.configuration.Configuration.debug" title="Permalink to this definition">¶</a></dt>
+<dd><p>Debug switch</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="api_client.configuration.Configuration.get_api_key_with_prefix">
+<code class="sig-name descname"><span class="pre">get_api_key_with_prefix</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">identifier</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.configuration.Configuration.get_api_key_with_prefix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets API key (with prefix if set).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>identifier</strong> – The identifier of apiKey.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The token for api key authentication.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="api_client.configuration.Configuration.get_basic_auth_token">
+<code class="sig-name descname"><span class="pre">get_basic_auth_token</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api_client.configuration.Configuration.get_basic_auth_token" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets HTTP basic authentication header (string).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The token for basic HTTP authentication.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="api_client.configuration.Configuration.get_default_copy">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">get_default_copy</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api_client.configuration.Configuration.get_default_copy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return new instance of configuration.</p>
+<p>This method returns newly created, based on default constructor,
+object of Configuration class or returns a copy of default
+configuration passed by the set_default method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The configuration object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="api_client.configuration.Configuration.get_host_from_settings">
+<code class="sig-name descname"><span class="pre">get_host_from_settings</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variables</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.configuration.Configuration.get_host_from_settings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets host URL based on the index and variables
+:param index: array index of the host settings
+:param variables: hash of variable and the corresponding value
+:return: URL based on host settings</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="api_client.configuration.Configuration.get_host_settings">
+<code class="sig-name descname"><span class="pre">get_host_settings</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api_client.configuration.Configuration.get_host_settings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets an array of host settings</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>An array of host settings</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="api_client.configuration.Configuration.host">
+<code class="sig-name descname"><span class="pre">host</span></code><a class="headerlink" href="#api_client.configuration.Configuration.host" title="Permalink to this definition">¶</a></dt>
+<dd><p>Default Base url</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="api_client.configuration.Configuration.key_file">
+<code class="sig-name descname"><span class="pre">key_file</span></code><a class="headerlink" href="#api_client.configuration.Configuration.key_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>client key file</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="api_client.configuration.Configuration.logger">
+<code class="sig-name descname"><span class="pre">logger</span></code><a class="headerlink" href="#api_client.configuration.Configuration.logger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Logging Settings</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="api_client.configuration.Configuration.logger_file">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">logger_file</span></code><a class="headerlink" href="#api_client.configuration.Configuration.logger_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Debug file location</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="api_client.configuration.Configuration.logger_file_handler">
+<code class="sig-name descname"><span class="pre">logger_file_handler</span></code><a class="headerlink" href="#api_client.configuration.Configuration.logger_file_handler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Log file handler</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="api_client.configuration.Configuration.logger_format">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">logger_format</span></code><a class="headerlink" href="#api_client.configuration.Configuration.logger_format" title="Permalink to this definition">¶</a></dt>
+<dd><p>Log format</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="api_client.configuration.Configuration.logger_stream_handler">
+<code class="sig-name descname"><span class="pre">logger_stream_handler</span></code><a class="headerlink" href="#api_client.configuration.Configuration.logger_stream_handler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Log stream handler</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="api_client.configuration.Configuration.password">
+<code class="sig-name descname"><span class="pre">password</span></code><a class="headerlink" href="#api_client.configuration.Configuration.password" title="Permalink to this definition">¶</a></dt>
+<dd><p>Password for HTTP basic authentication</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="api_client.configuration.Configuration.proxy">
+<code class="sig-name descname"><span class="pre">proxy</span></code><a class="headerlink" href="#api_client.configuration.Configuration.proxy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Proxy URL</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="api_client.configuration.Configuration.proxy_headers">
+<code class="sig-name descname"><span class="pre">proxy_headers</span></code><a class="headerlink" href="#api_client.configuration.Configuration.proxy_headers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Proxy headers</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="api_client.configuration.Configuration.refresh_api_key_hook">
+<code class="sig-name descname"><span class="pre">refresh_api_key_hook</span></code><a class="headerlink" href="#api_client.configuration.Configuration.refresh_api_key_hook" title="Permalink to this definition">¶</a></dt>
+<dd><p>function hook to refresh API key if expired</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="api_client.configuration.Configuration.retries">
+<code class="sig-name descname"><span class="pre">retries</span></code><a class="headerlink" href="#api_client.configuration.Configuration.retries" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adding retries to override urllib3 default value 3</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="api_client.configuration.Configuration.safe_chars_for_path_param">
+<code class="sig-name descname"><span class="pre">safe_chars_for_path_param</span></code><a class="headerlink" href="#api_client.configuration.Configuration.safe_chars_for_path_param" title="Permalink to this definition">¶</a></dt>
+<dd><p>Safe chars for path_param</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="api_client.configuration.Configuration.set_default">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">set_default</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">default</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.configuration.Configuration.set_default" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set default instance of configuration.</p>
+<p>It stores default configuration, which can be
+returned by get_default_copy method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>default</strong> – object of Configuration</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="api_client.configuration.Configuration.ssl_ca_cert">
+<code class="sig-name descname"><span class="pre">ssl_ca_cert</span></code><a class="headerlink" href="#api_client.configuration.Configuration.ssl_ca_cert" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set this to customize the certificate file to verify the peer.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="api_client.configuration.Configuration.temp_folder_path">
+<code class="sig-name descname"><span class="pre">temp_folder_path</span></code><a class="headerlink" href="#api_client.configuration.Configuration.temp_folder_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Temp file folder for downloading files</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="api_client.configuration.Configuration.to_debug_report">
+<code class="sig-name descname"><span class="pre">to_debug_report</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api_client.configuration.Configuration.to_debug_report" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the essential information for debugging.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The report for debugging.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="api_client.configuration.Configuration.username">
+<code class="sig-name descname"><span class="pre">username</span></code><a class="headerlink" href="#api_client.configuration.Configuration.username" title="Permalink to this definition">¶</a></dt>
+<dd><p>Username for HTTP basic authentication</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="api_client.configuration.Configuration.verify_ssl">
+<code class="sig-name descname"><span class="pre">verify_ssl</span></code><a class="headerlink" href="#api_client.configuration.Configuration.verify_ssl" title="Permalink to this definition">¶</a></dt>
+<dd><p>SSL/TLS verification
+Set this to false to skip verifying SSL certificate when calling API
+from https server.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-api_client.exceptions">
+<span id="api-client-exceptions-module"></span><h2>api_client.exceptions module<a class="headerlink" href="#module-api_client.exceptions" title="Permalink to this headline">¶</a></h2>
+<p>Planetary Data System API</p>
+<p>Federated PDS API which provides actionable end points standardized between the different nodes.   # noqa: E501</p>
+<p>The version of the OpenAPI document: 0.1.0
+Contact: <a class="reference external" href="mailto:pds-operator&#37;&#52;&#48;jpl&#46;nasa&#46;gov">pds-operator<span>&#64;</span>jpl<span>&#46;</span>nasa<span>&#46;</span>gov</a>
+Generated by: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a></p>
+<dl class="py exception">
+<dt id="api_client.exceptions.ApiException">
+<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">api_client.exceptions.</span></code><code class="sig-name descname"><span class="pre">ApiException</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reason</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">http_resp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.exceptions.ApiException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#api_client.exceptions.OpenApiException" title="api_client.exceptions.OpenApiException"><code class="xref py py-class docutils literal notranslate"><span class="pre">api_client.exceptions.OpenApiException</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="api_client.exceptions.ApiKeyError">
+<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">api_client.exceptions.</span></code><code class="sig-name descname"><span class="pre">ApiKeyError</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_to_item</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.exceptions.ApiKeyError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#api_client.exceptions.OpenApiException" title="api_client.exceptions.OpenApiException"><code class="xref py py-class docutils literal notranslate"><span class="pre">api_client.exceptions.OpenApiException</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">KeyError</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="api_client.exceptions.ApiTypeError">
+<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">api_client.exceptions.</span></code><code class="sig-name descname"><span class="pre">ApiTypeError</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_to_item</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valid_classes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.exceptions.ApiTypeError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#api_client.exceptions.OpenApiException" title="api_client.exceptions.OpenApiException"><code class="xref py py-class docutils literal notranslate"><span class="pre">api_client.exceptions.OpenApiException</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeError</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="api_client.exceptions.ApiValueError">
+<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">api_client.exceptions.</span></code><code class="sig-name descname"><span class="pre">ApiValueError</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_to_item</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.exceptions.ApiValueError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#api_client.exceptions.OpenApiException" title="api_client.exceptions.OpenApiException"><code class="xref py py-class docutils literal notranslate"><span class="pre">api_client.exceptions.OpenApiException</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">ValueError</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="api_client.exceptions.OpenApiException">
+<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">api_client.exceptions.</span></code><code class="sig-name descname"><span class="pre">OpenApiException</span></code><a class="headerlink" href="#api_client.exceptions.OpenApiException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>The base exception class for all OpenAPIExceptions</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="api_client.exceptions.render_path">
+<code class="sig-prename descclassname"><span class="pre">api_client.exceptions.</span></code><code class="sig-name descname"><span class="pre">render_path</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_to_item</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.exceptions.render_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a string representation of a path</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-api_client.rest">
+<span id="api-client-rest-module"></span><h2>api_client.rest module<a class="headerlink" href="#module-api_client.rest" title="Permalink to this headline">¶</a></h2>
+<p>Planetary Data System API</p>
+<p>Federated PDS API which provides actionable end points standardized between the different nodes.   # noqa: E501</p>
+<p>The version of the OpenAPI document: 0.1.0
+Contact: <a class="reference external" href="mailto:pds-operator&#37;&#52;&#48;jpl&#46;nasa&#46;gov">pds-operator<span>&#64;</span>jpl<span>&#46;</span>nasa<span>&#46;</span>gov</a>
+Generated by: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a></p>
+<dl class="py class">
+<dt id="api_client.rest.RESTClientObject">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">api_client.rest.</span></code><code class="sig-name descname"><span class="pre">RESTClientObject</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">configuration</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pools_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.rest.RESTClientObject" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="api_client.rest.RESTClientObject.DELETE">
+<code class="sig-name descname"><span class="pre">DELETE</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.rest.RESTClientObject.DELETE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="api_client.rest.RESTClientObject.GET">
+<code class="sig-name descname"><span class="pre">GET</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.rest.RESTClientObject.GET" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="api_client.rest.RESTClientObject.HEAD">
+<code class="sig-name descname"><span class="pre">HEAD</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.rest.RESTClientObject.HEAD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="api_client.rest.RESTClientObject.OPTIONS">
+<code class="sig-name descname"><span class="pre">OPTIONS</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.rest.RESTClientObject.OPTIONS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="api_client.rest.RESTClientObject.PATCH">
+<code class="sig-name descname"><span class="pre">PATCH</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.rest.RESTClientObject.PATCH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="api_client.rest.RESTClientObject.POST">
+<code class="sig-name descname"><span class="pre">POST</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.rest.RESTClientObject.POST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="api_client.rest.RESTClientObject.PUT">
+<code class="sig-name descname"><span class="pre">PUT</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.rest.RESTClientObject.PUT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="api_client.rest.RESTClientObject.request">
+<code class="sig-name descname"><span class="pre">request</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.rest.RESTClientObject.request" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform requests.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>method</strong> – http request method</p></li>
+<li><p><strong>url</strong> – http request url</p></li>
+<li><p><strong>query_params</strong> – query parameters in the url</p></li>
+<li><p><strong>headers</strong> – http request headers</p></li>
+<li><p><strong>body</strong> – request json body, for <cite>application/json</cite></p></li>
+<li><p><strong>post_params</strong> – request post parameters,
+<cite>application/x-www-form-urlencoded</cite>
+and <cite>multipart/form-data</cite></p></li>
+<li><p><strong>_preload_content</strong> – if False, the urllib3.HTTPResponse object will
+be returned without reading/decoding response
+data. Default is True.</p></li>
+<li><p><strong>_request_timeout</strong> – timeout setting for this request. If one
+number provided, it will be total request
+timeout. It can also be a pair (tuple) of
+(connection, read) timeouts.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="api_client.rest.RESTResponse">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">api_client.rest.</span></code><code class="sig-name descname"><span class="pre">RESTResponse</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.rest.RESTResponse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">io.IOBase</span></code></p>
+<dl class="py method">
+<dt id="api_client.rest.RESTResponse.getheader">
+<code class="sig-name descname"><span class="pre">getheader</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#api_client.rest.RESTResponse.getheader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a given response header.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="api_client.rest.RESTResponse.getheaders">
+<code class="sig-name descname"><span class="pre">getheaders</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#api_client.rest.RESTResponse.getheaders" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a dictionary of the response headers.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-api_client">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-api_client" title="Permalink to this headline">¶</a></h2>
+<p>Planetary Data System API</p>
+<p>Federated PDS API which provides actionable end points standardized between the different nodes.   # noqa: E501</p>
+<p>The version of the OpenAPI document: 0.1.0
+Contact: <a class="reference external" href="mailto:pds-operator&#37;&#52;&#48;jpl&#46;nasa&#46;gov">pds-operator<span>&#64;</span>jpl<span>&#46;</span>nasa<span>&#46;</span>gov</a>
+Generated by: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="api_client.api.html" class="btn btn-neutral float-right" title="api_client.api package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../quickstart.html" class="btn btn-neutral float-left" title="Quickstart for the PDS API python client" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, pds engineering node.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
