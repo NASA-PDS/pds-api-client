@@ -10,6 +10,6 @@ Welcome to Planetary Data System python API client
    :maxdepth: 1
    :caption: Contents:
 
-   quickstart
-   api/api_client
+   quickstart<quickstart>
+   reference<api/api_client>
 
