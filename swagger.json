@@ -6,7 +6,7 @@
   } ],
   "info" : {
     "description" : "Federated PDS API which provides actionable end points standardized\nbetween the different nodes.\n",
-    "version" : "0.2.dev",
+    "version" : "0.3.dev",
     "title" : "Planetary Data System API",
     "termsOfService" : "http://pds.nasa.gov",
     "contact" : {
@@ -41,11 +41,6 @@
                 }
               },
               "application/xml" : {
-                "schema" : {
-                  "type" : "object"
-                }
-              },
-              "application/pds4+xml" : {
                 "schema" : {
                   "type" : "object"
                 }
@@ -183,11 +178,6 @@
                 "schema" : {
                   "type" : "object"
                 }
-              },
-              "application/pds4+xml" : {
-                "schema" : {
-                  "type" : "object"
-                }
               }
             }
           },
@@ -273,11 +263,6 @@
                 }
               },
               "application/xml" : {
-                "schema" : {
-                  "type" : "object"
-                }
-              },
-              "application/pds4+xml" : {
                 "schema" : {
                   "type" : "object"
                 }
@@ -374,11 +359,6 @@
                 }
               },
               "application/xml" : {
-                "schema" : {
-                  "type" : "object"
-                }
-              },
-              "application/pds4+xml" : {
                 "schema" : {
                   "type" : "object"
                 }
@@ -615,11 +595,6 @@
                 "schema" : {
                   "type" : "object"
                 }
-              },
-              "application/pds4+xml" : {
-                "schema" : {
-                  "type" : "object"
-                }
               }
             }
           },
@@ -713,11 +688,6 @@
                 }
               },
               "application/xml" : {
-                "schema" : {
-                  "type" : "object"
-                }
-              },
-              "application/pds4+xml" : {
                 "schema" : {
                   "type" : "object"
                 }
@@ -861,11 +831,6 @@
                 "schema" : {
                   "type" : "object"
                 }
-              },
-              "application/pds4+xml" : {
-                "schema" : {
-                  "type" : "object"
-                }
               }
             }
           },
@@ -951,11 +916,6 @@
                 }
               },
               "application/xml" : {
-                "schema" : {
-                  "type" : "object"
-                }
-              },
-              "application/pds4+xml" : {
                 "schema" : {
                   "type" : "object"
                 }
