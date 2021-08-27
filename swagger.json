@@ -11,7 +11,7 @@
       "name" : "Apache 2.0",
       "url" : "http://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "version" : "0.3.dev"
+    "version" : "main"
   },
   "externalDocs" : {
     "description" : "Find out more information on the PDS API Specification",
@@ -61,6 +61,16 @@
           "name" : "q",
           "in" : "query",
           "description" : "search query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "keyword",
+          "in" : "query",
+          "description" : "keyword search query",
           "required" : false,
           "style" : "form",
           "explode" : true,
@@ -417,6 +427,16 @@
             "type" : "string"
           },
           "example" : "((pds/Primary_Result_Summary/pds/processing_level eq \"Raw\") or not (_file_size le 8942))"
+        }, {
+          "name" : "keyword",
+          "in" : "query",
+          "description" : "keyword search query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          }
         }, {
           "name" : "fields",
           "in" : "query",
@@ -787,6 +807,16 @@
           },
           "example" : "((pds/Primary_Result_Summary/pds/processing_level eq \"Raw\") or not (_file_size le 8942))"
         }, {
+          "name" : "keyword",
+          "in" : "query",
+          "description" : "keyword search query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
           "name" : "fields",
           "in" : "query",
           "description" : "returned fields, syntax field0,field1",
@@ -1135,6 +1165,22 @@
         "properties" : {
           "q" : {
             "type" : "string",
+            "xml" : {
+              "namespace" : "http://pds.nasa.gov/api",
+              "prefix" : "pds_api"
+            }
+          },
+          "hits" : {
+            "type" : "integer",
+            "description" : "total number of matching results. -1 indicates an excessive amount of resource required to compute it",
+            "xml" : {
+              "namespace" : "http://pds.nasa.gov/api",
+              "prefix" : "pds_api"
+            }
+          },
+          "took" : {
+            "type" : "integer",
+            "description" : "Number of milliseconds it \"took\" to do request",
             "xml" : {
               "namespace" : "http://pds.nasa.gov/api",
               "prefix" : "pds_api"
