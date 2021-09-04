@@ -123,6 +123,11 @@
                 "schema" : {
                   "$ref" : "#/components/schemas/products"
                 }
+              },
+              "application/pds4+json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/pds4Products"
+                }
               }
             }
           },
@@ -161,6 +166,11 @@
               "application/json" : {
                 "schema" : {
                   "$ref" : "#/components/schemas/product"
+                }
+              },
+              "application/pds4+json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/pds4Product"
                 }
               },
               "application/pds4+xml" : {
@@ -577,6 +587,11 @@
                 "schema" : {
                   "$ref" : "#/components/schemas/products"
                 }
+              },
+              "application/pds4+json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/pds4Products"
+                }
               }
             }
           },
@@ -619,6 +634,11 @@
               "application/json" : {
                 "schema" : {
                   "$ref" : "#/components/schemas/product"
+                }
+              },
+              "application/pds4+json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/pds4Product"
                 }
               },
               "application/pds4+xml" : {
@@ -1040,6 +1060,11 @@
                 "schema" : {
                   "$ref" : "#/components/schemas/products"
                 }
+              },
+              "application/pds4+json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/pds4Products"
+                }
               }
             }
           },
@@ -1082,6 +1107,11 @@
               "application/json" : {
                 "schema" : {
                   "$ref" : "#/components/schemas/product"
+                }
+              },
+              "application/pds4+json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/pds4Product"
                 }
               },
               "application/pds4+xml" : {
@@ -1721,6 +1751,99 @@
         "xml" : {
           "namespace" : "http://pds.nasa.gov/api",
           "prefix" : "pds_api"
+        }
+      },
+      "pds4Product" : {
+        "required" : [ "id" ],
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "string",
+            "description" : "LIDVID"
+          },
+          "metadata" : {
+            "$ref" : "#/components/schemas/pds4Metadata"
+          },
+          "pds4" : {
+            "type" : "object",
+            "description" : "PDS4 JSON"
+          }
+        },
+        "description" : "PDS4 Label"
+      },
+      "pds4Metadata" : {
+        "type" : "object",
+        "properties" : {
+          "node_name" : {
+            "type" : "string"
+          },
+          "label_file" : {
+            "$ref" : "#/components/schemas/pds4Metadata_label_file"
+          },
+          "data_files" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/pds4Metadata_data_files"
+            }
+          }
+        }
+      },
+      "pds4Products" : {
+        "required" : [ "summary" ],
+        "type" : "object",
+        "properties" : {
+          "summary" : {
+            "$ref" : "#/components/schemas/summary"
+          },
+          "data" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/pds4Product"
+            }
+          }
+        }
+      },
+      "pds4Metadata_label_file" : {
+        "type" : "object",
+        "properties" : {
+          "file_name" : {
+            "type" : "string"
+          },
+          "file_ref" : {
+            "type" : "string"
+          },
+          "creation_date" : {
+            "type" : "string"
+          },
+          "file_size" : {
+            "type" : "string"
+          },
+          "md5_checksum" : {
+            "type" : "string"
+          }
+        }
+      },
+      "pds4Metadata_data_files" : {
+        "type" : "object",
+        "properties" : {
+          "file_name" : {
+            "type" : "string"
+          },
+          "file_ref" : {
+            "type" : "string"
+          },
+          "creation_date" : {
+            "type" : "string"
+          },
+          "file_size" : {
+            "type" : "string"
+          },
+          "md5_checksum" : {
+            "type" : "string"
+          },
+          "mime_type" : {
+            "type" : "string"
+          }
         }
       }
     }
