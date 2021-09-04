@@ -119,6 +119,11 @@
           "200" : {
             "description" : "Successful request",
             "content" : {
+              "application/pds4+xml" : {
+                "schema" : {
+                  "type" : "object"
+                }
+              },
               "application/json" : {
                 "schema" : {
                   "$ref" : "#/components/schemas/products"
@@ -163,6 +168,11 @@
           "200" : {
             "description" : "Successful request",
             "content" : {
+              "application/pds4+xml" : {
+                "schema" : {
+                  "type" : "object"
+                }
+              },
               "application/json" : {
                 "schema" : {
                   "$ref" : "#/components/schemas/product"
@@ -171,11 +181,6 @@
               "application/pds4+json" : {
                 "schema" : {
                   "$ref" : "#/components/schemas/pds4Product"
-                }
-              },
-              "application/pds4+xml" : {
-                "schema" : {
-                  "type" : "object"
                 }
               }
             }
@@ -209,14 +214,14 @@
           "200" : {
             "description" : "Successful request",
             "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/product"
-                }
-              },
               "application/pds4+xml" : {
                 "schema" : {
                   "type" : "object"
+                }
+              },
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/product"
                 }
               }
             }
@@ -272,14 +277,14 @@
           "200" : {
             "description" : "Successful request",
             "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/products"
-                }
-              },
               "application/pds4+xml" : {
                 "schema" : {
                   "type" : "object"
+                }
+              },
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/products"
                 }
               }
             }
@@ -583,6 +588,11 @@
               }
             },
             "content" : {
+              "application/pds4+xml" : {
+                "schema" : {
+                  "type" : "object"
+                }
+              },
               "application/json" : {
                 "schema" : {
                   "$ref" : "#/components/schemas/products"
@@ -631,6 +641,11 @@
           "200" : {
             "description" : "Successful request",
             "content" : {
+              "application/pds4+xml" : {
+                "schema" : {
+                  "type" : "object"
+                }
+              },
               "application/json" : {
                 "schema" : {
                   "$ref" : "#/components/schemas/product"
@@ -639,11 +654,6 @@
               "application/pds4+json" : {
                 "schema" : {
                   "$ref" : "#/components/schemas/pds4Product"
-                }
-              },
-              "application/pds4+xml" : {
-                "schema" : {
-                  "type" : "object"
                 }
               }
             }
@@ -677,14 +687,14 @@
           "200" : {
             "description" : "Successful request",
             "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/product"
-                }
-              },
               "application/pds4+xml" : {
                 "schema" : {
                   "type" : "object"
+                }
+              },
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/product"
                 }
               }
             }
@@ -740,14 +750,14 @@
           "200" : {
             "description" : "Successful request",
             "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/products"
-                }
-              },
               "application/pds4+xml" : {
                 "schema" : {
                   "type" : "object"
+                }
+              },
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/products"
                 }
               }
             }
@@ -840,14 +850,14 @@
           "200" : {
             "description" : "Successful request",
             "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/products"
-                }
-              },
               "application/pds4+xml" : {
                 "schema" : {
                   "type" : "object"
+                }
+              },
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/products"
                 }
               }
             }
@@ -1056,6 +1066,11 @@
               }
             },
             "content" : {
+              "application/pds4+xml" : {
+                "schema" : {
+                  "type" : "object"
+                }
+              },
               "application/json" : {
                 "schema" : {
                   "$ref" : "#/components/schemas/products"
@@ -1104,6 +1119,11 @@
           "200" : {
             "description" : "Successful request",
             "content" : {
+              "application/pds4+xml" : {
+                "schema" : {
+                  "type" : "object"
+                }
+              },
               "application/json" : {
                 "schema" : {
                   "$ref" : "#/components/schemas/product"
@@ -1112,11 +1132,6 @@
               "application/pds4+json" : {
                 "schema" : {
                   "$ref" : "#/components/schemas/pds4Product"
-                }
-              },
-              "application/pds4+xml" : {
-                "schema" : {
-                  "type" : "object"
                 }
               }
             }
@@ -1150,14 +1165,14 @@
           "200" : {
             "description" : "Successful request",
             "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/product"
-                }
-              },
               "application/pds4+xml" : {
                 "schema" : {
                   "type" : "object"
+                }
+              },
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/product"
                 }
               }
             }
@@ -1213,14 +1228,14 @@
           "200" : {
             "description" : "Successful request",
             "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/products"
-                }
-              },
               "application/pds4+xml" : {
                 "schema" : {
                   "type" : "object"
+                }
+              },
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/products"
                 }
               }
             }
