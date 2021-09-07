@@ -850,14 +850,14 @@
           "200" : {
             "description" : "Successful request",
             "content" : {
-              "application/pds4+xml" : {
-                "schema" : {
-                  "type" : "object"
-                }
-              },
               "application/json" : {
                 "schema" : {
                   "$ref" : "#/components/schemas/products"
+                }
+              },
+              "application/pds4+xml" : {
+                "schema" : {
+                  "type" : "object"
                 }
               }
             }
