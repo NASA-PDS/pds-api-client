@@ -1,7 +1,7 @@
-api_client
-==========
+pds
+===
 
 .. toctree::
    :maxdepth: 4
 
-   api_client
+   pds

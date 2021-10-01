@@ -7,12 +7,13 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Welcome to Planetary Data System python API client &mdash; pds.api_client  documentation</title>
+  <title>PDS API Client (Python) &mdash; PDS API Client (Python)  documentation</title>
   
 
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
 
   
   
@@ -38,7 +39,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Quickstart for the PDS API python client" href="quickstart.html" /> 
+    <link rel="next" title="Quickstart for the PDS API Python Client" href="quickstart/index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -52,7 +53,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> pds.api_client
+            <a href="#" class="icon icon-home"> PDS API Client (Python)
           
 
           
@@ -86,10 +87,16 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+              <p class="caption"><span class="caption-text">Contents</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="quickstart.html">quickstart</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api/api_client.html">reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart/index.html">Quickstart for the PDS API Python Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/pds.api_client.html">Package Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer/index.html">Developer Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support/contact.html">Contact Us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support/contribute.html">Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support/contribute.html#request-a-new-tool-service">Request a New Tool / Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support/contribute.html#report-a-bug">Report a Bug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support/help.html">Help</a></li>
 </ul>
 
             
@@ -105,7 +112,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">pds.api_client</a>
+          <a href="#">PDS API Client (Python)</a>
         
       </nav>
 
@@ -138,7 +145,7 @@
     
       <li><a href="#" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Welcome to Planetary Data System python API client</li>
+      <li>PDS API Client (Python)</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -157,13 +164,94 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="welcome-to-planetary-data-system-python-api-client">
-<h1>Welcome to Planetary Data System python API client<a class="headerlink" href="#welcome-to-planetary-data-system-python-api-client" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="pds-api-client-python">
+<h1>PDS API Client (Python)<a class="headerlink" href="#pds-api-client-python" title="Permalink to this headline">¶</a></h1>
+<p>This is an application programmer’s interface (API) in Python to the Planetary
+Data System (<a class="reference external" href="https://pds.nasa.gov/">PDS</a>) <a class="reference external" href="https://restfulapi.net/">ReST</a> API.</p>
+</div>
+<div class="section" id="sitemap">
+<h1>Sitemap<a class="headerlink" href="#sitemap" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Contents:</span></p>
+<p class="caption"><span class="caption-text">Contents</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="quickstart.html">quickstart</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api/api_client.html">reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart/index.html">Quickstart for the PDS API Python Client</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="quickstart/index.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickstart/index.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickstart/index.html#create-an-api-connection">Create an api connection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickstart/index.html#request-one-end-point">Request one end point</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickstart/index.html#reference-documentation">Reference Documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api/pds.api_client.html">Package Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/pds.api_client.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api/pds.api_client.api.html">pds.api_client.api package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.api.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.api.html#module-pds.api_client.api.bundles_api">pds.api_client.api.bundles_api module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.api.html#module-pds.api_client.api.bundles_collections_api">pds.api_client.api.bundles_collections_api module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.api.html#module-pds.api_client.api.bundles_products_api">pds.api_client.api.bundles_products_api module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.api.html#module-pds.api_client.api.collections_api">pds.api_client.api.collections_api module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.api.html#module-pds.api_client.api.collections_containing_bundles_api">pds.api_client.api.collections_containing_bundles_api module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.api.html#module-pds.api_client.api.collections_products_api">pds.api_client.api.collections_products_api module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.api.html#module-pds.api_client.api.product_containing_collections_api">pds.api_client.api.product_containing_collections_api module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.api.html#module-pds.api_client.api.products_api">pds.api_client.api.products_api module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.api.html#module-pds.api_client.api.products_containing_bundles_api">pds.api_client.api.products_containing_bundles_api module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.api.html#module-pds.api_client.api">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/pds.api_client.apis.html">pds.api_client.apis package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.apis.html#module-pds.api_client.apis">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/pds.api_client.model.html">pds.api_client.model package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.model.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.model.html#module-pds.api_client.model.error_message">pds.api_client.model.error_message module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.model.html#module-pds.api_client.model.metadata">pds.api_client.model.metadata module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.model.html#module-pds.api_client.model.pds4_metadata">pds.api_client.model.pds4_metadata module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.model.html#module-pds.api_client.model.pds4_metadata_data_files">pds.api_client.model.pds4_metadata_data_files module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.model.html#module-pds.api_client.model.pds4_metadata_label_file">pds.api_client.model.pds4_metadata_label_file module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.model.html#module-pds.api_client.model.pds4_product">pds.api_client.model.pds4_product module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.model.html#module-pds.api_client.model.pds4_products">pds.api_client.model.pds4_products module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.model.html#module-pds.api_client.model.product">pds.api_client.model.product module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.model.html#module-pds.api_client.model.products">pds.api_client.model.products module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.model.html#module-pds.api_client.model.property_array_values">pds.api_client.model.property_array_values module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.model.html#module-pds.api_client.model.reference">pds.api_client.model.reference module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.model.html#module-pds.api_client.model.summary">pds.api_client.model.summary module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.model.html#module-pds.api_client.model">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/pds.api_client.models.html">pds.api_client.models package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/pds.api_client.models.html#module-pds.api_client.models">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api/pds.api_client.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/pds.api_client.html#module-pds.api_client.api_client">pds.api_client.api_client module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/pds.api_client.html#module-pds.api_client.configuration">pds.api_client.configuration module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/pds.api_client.html#module-pds.api_client.exceptions">pds.api_client.exceptions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/pds.api_client.html#module-pds.api_client.model_utils">pds.api_client.model_utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/pds.api_client.html#module-pds.api_client.rest">pds.api_client.rest module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/pds.api_client.html#module-pds.api_client">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="developer/index.html">Developer Notes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="developer/index.html#requisites">Requisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="developer/index.html#procedure">Procedure</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="developer/index.html#get-repository-updates">Get Repository Updates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="developer/index.html#generate-the-library">Generate the Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="developer/index.html#installation">Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="developer/index.html#testing">Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="developer/index.html#pypi-publication">PyPI Publication</a></li>
+<li class="toctree-l3"><a class="reference internal" href="developer/index.html#documentation-generation">Documentation Generation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="support/contact.html">Contact Us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support/contribute.html">Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support/contribute.html#request-a-new-tool-service">Request a New Tool / Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support/contribute.html#report-a-bug">Report a Bug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support/help.html">Help</a></li>
 </ul>
 </div>
 </div>
@@ -174,14 +262,14 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="quickstart.html" class="btn btn-neutral float-right" title="Quickstart for the PDS API python client" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="quickstart/index.html" class="btn btn-neutral float-right" title="Quickstart for the PDS API Python Client" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2021, pds engineering node.
+        &#169; Copyright 2021 California Institute of Technology.
 
     </p>
   </div>
