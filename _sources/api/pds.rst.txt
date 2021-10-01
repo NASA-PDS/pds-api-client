@@ -1,0 +1,18 @@
+pds package
+===========
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   pds.api_client
+
+Module contents
+---------------
+
+.. automodule:: pds
+   :members:
+   :undoc-members:
+   :show-inheritance:

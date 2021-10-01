@@ -1,0 +1,10 @@
+api\_client.apis package
+========================
+
+Module contents
+---------------
+
+.. automodule:: api_client.apis
+   :members:
+   :undoc-members:
+   :show-inheritance:

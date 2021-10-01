@@ -1,0 +1,1743 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>pds.api_client package &mdash; PDS API Client (Python)  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="pds.api_client.api package" href="pds.api_client.api.html" />
+    <link rel="prev" title="Quickstart for the PDS API Python Client" href="../quickstart/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PDS API Client (Python)
+          
+
+          
+            
+            <img src="../_static/PDS_Planets.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart/index.html">Quickstart for the PDS API Python Client</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Package Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.api.html">pds.api_client.api package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.html">pds.api_client.apis package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.model.html">pds.api_client.model package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.html">pds.api_client.models package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-pds.api_client.api_client">pds.api_client.api_client module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-pds.api_client.configuration">pds.api_client.configuration module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-pds.api_client.exceptions">pds.api_client.exceptions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-pds.api_client.model_utils">pds.api_client.model_utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-pds.api_client.rest">pds.api_client.rest module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-pds.api_client">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/index.html">Developer Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contact.html">Contact Us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html">Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html#request-a-new-tool-service">Request a New Tool / Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html#report-a-bug">Report a Bug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/help.html">Help</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PDS API Client (Python)</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>pds.api_client package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/api/pds.api_client.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pds-api-client-package">
+<h1>pds.api_client package<a class="headerlink" href="#pds-api-client-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pds.api_client.api.html">pds.api_client.api package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.api.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.api.html#module-pds.api_client.api.bundles_api">pds.api_client.api.bundles_api module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.api.html#module-pds.api_client.api.bundles_collections_api">pds.api_client.api.bundles_collections_api module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.api.html#module-pds.api_client.api.bundles_products_api">pds.api_client.api.bundles_products_api module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.api.html#module-pds.api_client.api.collections_api">pds.api_client.api.collections_api module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.api.html#module-pds.api_client.api.collections_containing_bundles_api">pds.api_client.api.collections_containing_bundles_api module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.api.html#module-pds.api_client.api.collections_products_api">pds.api_client.api.collections_products_api module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.api.html#module-pds.api_client.api.product_containing_collections_api">pds.api_client.api.product_containing_collections_api module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.api.html#module-pds.api_client.api.products_api">pds.api_client.api.products_api module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.api.html#module-pds.api_client.api.products_containing_bundles_api">pds.api_client.api.products_containing_bundles_api module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.api.html#module-pds.api_client.api">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pds.api_client.apis.html">pds.api_client.apis package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.html#module-pds.api_client.apis">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pds.api_client.model.html">pds.api_client.model package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.model.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.model.html#module-pds.api_client.model.error_message">pds.api_client.model.error_message module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.model.html#module-pds.api_client.model.metadata">pds.api_client.model.metadata module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.model.html#module-pds.api_client.model.pds4_metadata">pds.api_client.model.pds4_metadata module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.model.html#module-pds.api_client.model.pds4_metadata_data_files">pds.api_client.model.pds4_metadata_data_files module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.model.html#module-pds.api_client.model.pds4_metadata_label_file">pds.api_client.model.pds4_metadata_label_file module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.model.html#module-pds.api_client.model.pds4_product">pds.api_client.model.pds4_product module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.model.html#module-pds.api_client.model.pds4_products">pds.api_client.model.pds4_products module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.model.html#module-pds.api_client.model.product">pds.api_client.model.product module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.model.html#module-pds.api_client.model.products">pds.api_client.model.products module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.model.html#module-pds.api_client.model.property_array_values">pds.api_client.model.property_array_values module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.model.html#module-pds.api_client.model.reference">pds.api_client.model.reference module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.model.html#module-pds.api_client.model.summary">pds.api_client.model.summary module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.model.html#module-pds.api_client.model">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pds.api_client.models.html">pds.api_client.models package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.models.html#module-pds.api_client.models">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-pds.api_client.api_client">
+<span id="pds-api-client-api-client-module"></span><h2>pds.api_client.api_client module<a class="headerlink" href="#module-pds.api_client.api_client" title="Permalink to this headline">¶</a></h2>
+<p>Planetary Data System API</p>
+<p>Federated PDS API which provides actionable end points standardized between the different nodes.   # noqa: E501</p>
+<p>The version of the OpenAPI document: main
+Contact: <a class="reference external" href="mailto:pds-operator&#37;&#52;&#48;jpl&#46;nasa&#46;gov">pds-operator<span>&#64;</span>jpl<span>&#46;</span>nasa<span>&#46;</span>gov</a>
+Generated by: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a></p>
+<dl class="py class">
+<dt id="pds.api_client.api_client.ApiClient">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pds.api_client.api_client.</span></code><code class="sig-name descname"><span class="pre">ApiClient</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">configuration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">header_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">header_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cookie</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pool_threads</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/api_client.html#ApiClient"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.api_client.ApiClient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Generic API client for OpenAPI client library builds.</p>
+<p>OpenAPI generic API client. This client handles the client-
+server communication, and is invariant across implementations. Specifics of
+the methods and models for each application are generated from the OpenAPI
+templates.</p>
+<p>NOTE: This class is auto generated by OpenAPI Generator.
+Ref: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a>
+Do not edit the class manually.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>configuration</strong> – .Configuration object for this client</p></li>
+<li><p><strong>header_name</strong> – a header to pass when making calls to the API.</p></li>
+<li><p><strong>header_value</strong> – a header value to pass when making calls to
+the API.</p></li>
+<li><p><strong>cookie</strong> – a cookie to include in the header when making calls
+to the API</p></li>
+<li><p><strong>pool_threads</strong> – The number of threads to use for async requests
+to the API. More threads means more concurrent API requests.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="pds.api_client.api_client.ApiClient.call_api">
+<code class="sig-name descname"><span class="pre">call_api</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resource_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_params</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">header_params</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_params</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">files</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">io.IOBase</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">response_type</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auth_settings</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">async_req</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_return_http_data_only</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">collection_formats</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span> </span><span class="pre">float</span><span class="p"><span class="pre">,</span> </span><span class="pre">Tuple</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_host</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_check_type</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/api_client.html#ApiClient.call_api"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.api_client.ApiClient.call_api" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes the HTTP request (synchronous) and returns deserialized data.</p>
+<p>To make an async_req request, set the async_req parameter.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>resource_path</strong> – Path to method endpoint.</p></li>
+<li><p><strong>method</strong> – Method to call.</p></li>
+<li><p><strong>path_params</strong> – Path parameters in the url.</p></li>
+<li><p><strong>query_params</strong> – Query parameters in the url.</p></li>
+<li><p><strong>header_params</strong> – Header parameters to be
+placed in the request header.</p></li>
+<li><p><strong>body</strong> – Request body.</p></li>
+<li><p><strong>dict</strong> (<em>post_params</em>) – Request post form parameters,
+for <cite>application/x-www-form-urlencoded</cite>, <cite>multipart/form-data</cite>.</p></li>
+<li><p><strong>list</strong> (<em>auth_settings</em>) – Auth Settings names for the request.</p></li>
+<li><p><strong>response_type</strong> – For the response, a tuple containing:
+valid classes
+a list containing valid classes (for list schemas)
+a dict containing a tuple of valid classes as the value
+Example values:
+(str,)
+(Pet,)
+(float, none_type)
+([int, none_type],)
+({str: (bool, str, int, float, date, datetime, str, none_type)},)</p></li>
+<li><p><strong>files</strong> (<em>dict</em>) – key -&gt; field name, value -&gt; a list of open file
+objects for <cite>multipart/form-data</cite>.</p></li>
+<li><p><strong>bool</strong> (<em>async_req</em>) – execute request asynchronously</p></li>
+<li><p><strong>_return_http_data_only</strong> (<em>bool</em><em>, </em><em>optional</em>) – response data without head status code
+and headers</p></li>
+<li><p><strong>collection_formats</strong> (<em>dict</em><em>, </em><em>optional</em>) – dict of collection formats for path, query,
+header, and post parameters.</p></li>
+<li><p><strong>_preload_content</strong> (<em>bool</em><em>, </em><em>optional</em>) – if False, the urllib3.HTTPResponse object will
+be returned without reading/decoding response
+data. Default is True.</p></li>
+<li><p><strong>_request_timeout</strong> – timeout setting for this request. If one
+number provided, it will be total request
+timeout. It can also be a pair (tuple) of
+(connection, read) timeouts.</p></li>
+<li><p><strong>_check_type</strong> (<em>bool</em><em>, </em><em>optional</em>) – boolean describing if the data back from the server
+should have its type checked.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>If async_req parameter is True,
+the request will be called asynchronously.
+The method will return the request thread.
+If parameter async_req is False or missing,
+then the method will return the response directly.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.api_client.ApiClient.close">
+<code class="sig-name descname"><span class="pre">close</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/api_client.html#ApiClient.close"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.api_client.ApiClient.close" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.api_client.ApiClient.deserialize">
+<code class="sig-name descname"><span class="pre">deserialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">response</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">response_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_check_type</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/api_client.html#ApiClient.deserialize"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.api_client.ApiClient.deserialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserializes response into an object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>response</strong> – RESTResponse object to be deserialized.</p></li>
+<li><p><strong>response_type</strong> – For the response, a tuple containing:
+valid classes
+a list containing valid classes (for list schemas)
+a dict containing a tuple of valid classes as the value
+Example values:
+(str,)
+(Pet,)
+(float, none_type)
+([int, none_type],)
+({str: (bool, str, int, float, date, datetime, str, none_type)},)</p></li>
+<li><p><strong>_check_type</strong> (<em>bool</em>) – boolean, whether to check the types of the data
+received from the server</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>deserialized object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.api_client.ApiClient.files_parameters">
+<code class="sig-name descname"><span class="pre">files_parameters</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">files</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">io.IOBase</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/api_client.html#ApiClient.files_parameters"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.api_client.ApiClient.files_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Builds form parameters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>files</strong> – None or a dict with key=param_name and
+value is a list of open file objects</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List of tuples of form parameters with file data</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.api_client.ApiClient.get_file_data_and_close_file">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_file_data_and_close_file</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_instance</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">io.IOBase</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">bytes</span><a class="reference internal" href="../_modules/pds/api_client/api_client.html#ApiClient.get_file_data_and_close_file"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.api_client.ApiClient.get_file_data_and_close_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.api_client.ApiClient.parameters_to_multipart">
+<code class="sig-name descname"><span class="pre">parameters_to_multipart</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">collection_types</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/api_client.html#ApiClient.parameters_to_multipart"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.api_client.ApiClient.parameters_to_multipart" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get parameters as list of tuples, formatting as json if value is collection_types</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>params</strong> – Parameters as list of two-tuples</p></li>
+<li><p><strong>collection_types</strong> (<em>dict</em>) – Parameter collection types</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Parameters as list of tuple or urllib3.fields.RequestField</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.api_client.ApiClient.parameters_to_tuples">
+<code class="sig-name descname"><span class="pre">parameters_to_tuples</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">collection_formats</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/api_client.html#ApiClient.parameters_to_tuples"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.api_client.ApiClient.parameters_to_tuples" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get parameters as list of tuples, formatting collections.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>params</strong> – Parameters as dict or list of two-tuples</p></li>
+<li><p><strong>collection_formats</strong> (<em>dict</em>) – Parameter collection formats</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Parameters as list of tuples, collections formatted</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.api_client.ApiClient.pool">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">pool</span></code><a class="headerlink" href="#pds.api_client.api_client.ApiClient.pool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create thread pool on first request
+avoids instantiating unused threadpool for blocking clients.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.api_client.ApiClient.request">
+<code class="sig-name descname"><span class="pre">request</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/api_client.html#ApiClient.request"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.api_client.ApiClient.request" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes the HTTP request using RESTClient.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.api_client.ApiClient.sanitize_for_serialization">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">sanitize_for_serialization</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/api_client.html#ApiClient.sanitize_for_serialization"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.api_client.ApiClient.sanitize_for_serialization" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prepares data for transmission before it is sent with the rest client
+If obj is None, return None.
+If obj is str, int, long, float, bool, return directly.
+If obj is datetime.datetime, datetime.date</p>
+<blockquote>
+<div><p>convert to string in iso8601 format.</p>
+</div></blockquote>
+<p>If obj is list, sanitize each element in the list.
+If obj is dict, return the dict.
+If obj is OpenAPI model, return the properties dict.
+If obj is io.IOBase, return the bytes
+:param obj: The data to serialize.
+:return: The serialized form of data.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.api_client.ApiClient.select_header_accept">
+<code class="sig-name descname"><span class="pre">select_header_accept</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">accepts</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/api_client.html#ApiClient.select_header_accept"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.api_client.ApiClient.select_header_accept" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <cite>Accept</cite> based on an array of accepts provided.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>accepts</strong> – List of headers.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Accept (e.g. application/json).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.api_client.ApiClient.select_header_content_type">
+<code class="sig-name descname"><span class="pre">select_header_content_type</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">content_types</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/api_client.html#ApiClient.select_header_content_type"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.api_client.ApiClient.select_header_content_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <cite>Content-Type</cite> based on an array of content_types provided.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>content_types</strong> – List of content-types.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Content-Type (e.g. application/json).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.api_client.ApiClient.set_default_header">
+<code class="sig-name descname"><span class="pre">set_default_header</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">header_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">header_value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/api_client.html#ApiClient.set_default_header"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.api_client.ApiClient.set_default_header" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.api_client.ApiClient.update_params_for_auth">
+<code class="sig-name descname"><span class="pre">update_params_for_auth</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">headers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">querys</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auth_settings</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resource_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/api_client.html#ApiClient.update_params_for_auth"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.api_client.ApiClient.update_params_for_auth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates header and query params based on authentication setting.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>headers</strong> – Header parameters dict to be updated.</p></li>
+<li><p><strong>querys</strong> – Query parameters tuple list to be updated.</p></li>
+<li><p><strong>auth_settings</strong> – Authentication setting identifiers list.</p></li>
+<li><p><strong>resource_path</strong> – A string representation of the HTTP request resource path.</p></li>
+<li><p><strong>method</strong> – A string representation of the HTTP request method.</p></li>
+<li><p><strong>body</strong> – A object representing the body of the HTTP request.
+The object type is the return value of _encoder.default().</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.api_client.ApiClient.user_agent">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">user_agent</span></code><a class="headerlink" href="#pds.api_client.api_client.ApiClient.user_agent" title="Permalink to this definition">¶</a></dt>
+<dd><p>User agent for this API client</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pds.api_client.api_client.Endpoint">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pds.api_client.api_client.</span></code><code class="sig-name descname"><span class="pre">Endpoint</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">settings</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params_map</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">root_map</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers_map</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_client</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/api_client.html#Endpoint"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.api_client.Endpoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="pds.api_client.api_client.Endpoint.call_with_http_info">
+<code class="sig-name descname"><span class="pre">call_with_http_info</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/api_client.html#Endpoint.call_with_http_info"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.api_client.Endpoint.call_with_http_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pds.api_client.configuration">
+<span id="pds-api-client-configuration-module"></span><h2>pds.api_client.configuration module<a class="headerlink" href="#module-pds.api_client.configuration" title="Permalink to this headline">¶</a></h2>
+<p>Planetary Data System API</p>
+<p>Federated PDS API which provides actionable end points standardized between the different nodes.   # noqa: E501</p>
+<p>The version of the OpenAPI document: main
+Contact: <a class="reference external" href="mailto:pds-operator&#37;&#52;&#48;jpl&#46;nasa&#46;gov">pds-operator<span>&#64;</span>jpl<span>&#46;</span>nasa<span>&#46;</span>gov</a>
+Generated by: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a></p>
+<dl class="py class">
+<dt id="pds.api_client.configuration.Configuration">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pds.api_client.configuration.</span></code><code class="sig-name descname"><span class="pre">Configuration</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">host</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_key_prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_token</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">username</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">discard_unknown_keys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">disabled_client_side_validations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">server_index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">server_variables</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">server_operation_index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">server_operation_variables</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ssl_ca_cert</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/configuration.html#Configuration"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.configuration.Configuration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>NOTE: This class is auto generated by OpenAPI Generator</p>
+<p>Ref: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a>
+Do not edit the class manually.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>host</strong> – Base url</p></li>
+<li><p><strong>api_key</strong> – Dict to store API key(s).
+Each entry in the dict specifies an API key.
+The dict key is the name of the security scheme in the OAS specification.
+The dict value is the API key secret.</p></li>
+<li><p><strong>api_key_prefix</strong> – Dict to store API prefix (e.g. Bearer)
+The dict key is the name of the security scheme in the OAS specification.
+The dict value is an API key prefix when generating the auth data.</p></li>
+<li><p><strong>username</strong> – Username for HTTP basic authentication</p></li>
+<li><p><strong>password</strong> – Password for HTTP basic authentication</p></li>
+<li><p><strong>discard_unknown_keys</strong> – <p>Boolean value indicating whether to discard
+unknown properties. A server may send a response that includes additional
+properties that are not known by the client in the following scenarios:
+1. The OpenAPI document is incomplete, i.e. it does not match the server</p>
+<blockquote>
+<div><p>implementation.</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>The client was generated using an older version of the OpenAPI document
+and the server has been upgraded since then.</p></li>
+</ol>
+<p>If a schema in the OpenAPI document defines the additionalProperties attribute,
+then all undeclared properties received by the server are injected into the
+additional properties map. In that case, there are undeclared properties, and
+nothing to discard.</p>
+</p></li>
+<li><p><strong>(</strong><strong>string</strong><strong>)</strong> (<em>disabled_client_side_validations</em>) – Comma-separated list of
+JSON schema validation keywords to disable JSON schema structural validation
+rules. The following keywords may be specified: multipleOf, maximum,
+exclusiveMaximum, minimum, exclusiveMinimum, maxLength, minLength, pattern,
+maxItems, minItems.
+By default, the validation is performed for data generated locally by the client
+and data received from the server, independent of any validation performed by
+the server side. If the input data does not satisfy the JSON schema validation
+rules specified in the OpenAPI document, an exception is raised.
+If disabled_client_side_validations is set, structural validation is
+disabled. This can be useful to troubleshoot data validation problem, such as
+when the OpenAPI document validation rules do not match the actual API data
+received by the server.</p></li>
+<li><p><strong>server_index</strong> – Index to servers configuration.</p></li>
+<li><p><strong>server_variables</strong> – Mapping with string values to replace variables in
+templated server configuration. The validation of enums is performed for
+variables with defined enum values before.</p></li>
+<li><p><strong>server_operation_index</strong> – Mapping from operation ID to an index to server
+configuration.</p></li>
+<li><p><strong>server_operation_variables</strong> – Mapping from operation ID to a mapping with
+string values to replace variables in templated server configuration.
+The validation of enums is performed for variables with defined enum values before.</p></li>
+<li><p><strong>ssl_ca_cert</strong> – str - the path to a file of concatenated CA certificates 
+in PEM format</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt id="pds.api_client.configuration.Configuration.assert_hostname">
+<code class="sig-name descname"><span class="pre">assert_hostname</span></code><a class="headerlink" href="#pds.api_client.configuration.Configuration.assert_hostname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set this to True/False to enable/disable SSL hostname verification.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.configuration.Configuration.auth_settings">
+<code class="sig-name descname"><span class="pre">auth_settings</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/configuration.html#Configuration.auth_settings"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.configuration.Configuration.auth_settings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets Auth Settings dict for api client.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The Auth Settings information dict.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pds.api_client.configuration.Configuration.cert_file">
+<code class="sig-name descname"><span class="pre">cert_file</span></code><a class="headerlink" href="#pds.api_client.configuration.Configuration.cert_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>client certificate file</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pds.api_client.configuration.Configuration.connection_pool_maxsize">
+<code class="sig-name descname"><span class="pre">connection_pool_maxsize</span></code><a class="headerlink" href="#pds.api_client.configuration.Configuration.connection_pool_maxsize" title="Permalink to this definition">¶</a></dt>
+<dd><p>urllib3 connection pool’s maximum number of connections saved
+per pool. urllib3 uses 1 connection as default value, but this is
+not the best value when you are making a lot of possibly parallel
+requests to the same host, which is often the case here.
+cpu_count * 5 is used as default value to increase performance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.configuration.Configuration.debug">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">debug</span></code><a class="headerlink" href="#pds.api_client.configuration.Configuration.debug" title="Permalink to this definition">¶</a></dt>
+<dd><p>Debug switch</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.configuration.Configuration.get_api_key_with_prefix">
+<code class="sig-name descname"><span class="pre">get_api_key_with_prefix</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">identifier</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/configuration.html#Configuration.get_api_key_with_prefix"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.configuration.Configuration.get_api_key_with_prefix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets API key (with prefix if set).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>identifier</strong> – The identifier of apiKey.</p></li>
+<li><p><strong>alias</strong> – The alternative identifier of apiKey.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The token for api key authentication.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.configuration.Configuration.get_basic_auth_token">
+<code class="sig-name descname"><span class="pre">get_basic_auth_token</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/configuration.html#Configuration.get_basic_auth_token"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.configuration.Configuration.get_basic_auth_token" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets HTTP basic authentication header (string).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The token for basic HTTP authentication.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.configuration.Configuration.get_default_copy">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">get_default_copy</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/configuration.html#Configuration.get_default_copy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.configuration.Configuration.get_default_copy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return new instance of configuration.</p>
+<p>This method returns newly created, based on default constructor,
+object of Configuration class or returns a copy of default
+configuration passed by the set_default method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The configuration object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.configuration.Configuration.get_host_from_settings">
+<code class="sig-name descname"><span class="pre">get_host_from_settings</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variables</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">servers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/configuration.html#Configuration.get_host_from_settings"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.configuration.Configuration.get_host_from_settings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets host URL based on the index and variables
+:param index: array index of the host settings
+:param variables: hash of variable and the corresponding value
+:param servers: an array of host settings or None
+:return: URL based on host settings</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.configuration.Configuration.get_host_settings">
+<code class="sig-name descname"><span class="pre">get_host_settings</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/configuration.html#Configuration.get_host_settings"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.configuration.Configuration.get_host_settings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets an array of host settings</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>An array of host settings</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.configuration.Configuration.host">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">host</span></code><a class="headerlink" href="#pds.api_client.configuration.Configuration.host" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return generated host.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pds.api_client.configuration.Configuration.key_file">
+<code class="sig-name descname"><span class="pre">key_file</span></code><a class="headerlink" href="#pds.api_client.configuration.Configuration.key_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>client key file</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pds.api_client.configuration.Configuration.logger">
+<code class="sig-name descname"><span class="pre">logger</span></code><a class="headerlink" href="#pds.api_client.configuration.Configuration.logger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Logging Settings</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.configuration.Configuration.logger_file">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">logger_file</span></code><a class="headerlink" href="#pds.api_client.configuration.Configuration.logger_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Debug file location</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pds.api_client.configuration.Configuration.logger_file_handler">
+<code class="sig-name descname"><span class="pre">logger_file_handler</span></code><a class="headerlink" href="#pds.api_client.configuration.Configuration.logger_file_handler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Log file handler</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.configuration.Configuration.logger_format">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">logger_format</span></code><a class="headerlink" href="#pds.api_client.configuration.Configuration.logger_format" title="Permalink to this definition">¶</a></dt>
+<dd><p>Log format</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pds.api_client.configuration.Configuration.logger_stream_handler">
+<code class="sig-name descname"><span class="pre">logger_stream_handler</span></code><a class="headerlink" href="#pds.api_client.configuration.Configuration.logger_stream_handler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Log stream handler</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pds.api_client.configuration.Configuration.password">
+<code class="sig-name descname"><span class="pre">password</span></code><a class="headerlink" href="#pds.api_client.configuration.Configuration.password" title="Permalink to this definition">¶</a></dt>
+<dd><p>Password for HTTP basic authentication</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pds.api_client.configuration.Configuration.proxy">
+<code class="sig-name descname"><span class="pre">proxy</span></code><a class="headerlink" href="#pds.api_client.configuration.Configuration.proxy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Proxy URL</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pds.api_client.configuration.Configuration.proxy_headers">
+<code class="sig-name descname"><span class="pre">proxy_headers</span></code><a class="headerlink" href="#pds.api_client.configuration.Configuration.proxy_headers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Proxy headers</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pds.api_client.configuration.Configuration.refresh_api_key_hook">
+<code class="sig-name descname"><span class="pre">refresh_api_key_hook</span></code><a class="headerlink" href="#pds.api_client.configuration.Configuration.refresh_api_key_hook" title="Permalink to this definition">¶</a></dt>
+<dd><p>function hook to refresh API key if expired</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pds.api_client.configuration.Configuration.retries">
+<code class="sig-name descname"><span class="pre">retries</span></code><a class="headerlink" href="#pds.api_client.configuration.Configuration.retries" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adding retries to override urllib3 default value 3</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pds.api_client.configuration.Configuration.safe_chars_for_path_param">
+<code class="sig-name descname"><span class="pre">safe_chars_for_path_param</span></code><a class="headerlink" href="#pds.api_client.configuration.Configuration.safe_chars_for_path_param" title="Permalink to this definition">¶</a></dt>
+<dd><p>Safe chars for path_param</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pds.api_client.configuration.Configuration.server_operation_index">
+<code class="sig-name descname"><span class="pre">server_operation_index</span></code><a class="headerlink" href="#pds.api_client.configuration.Configuration.server_operation_index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Default server index</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pds.api_client.configuration.Configuration.server_operation_variables">
+<code class="sig-name descname"><span class="pre">server_operation_variables</span></code><a class="headerlink" href="#pds.api_client.configuration.Configuration.server_operation_variables" title="Permalink to this definition">¶</a></dt>
+<dd><p>Default server variables</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.configuration.Configuration.set_default">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">set_default</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">default</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/configuration.html#Configuration.set_default"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.configuration.Configuration.set_default" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set default instance of configuration.</p>
+<p>It stores default configuration, which can be
+returned by get_default_copy method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>default</strong> – object of Configuration</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pds.api_client.configuration.Configuration.ssl_ca_cert">
+<code class="sig-name descname"><span class="pre">ssl_ca_cert</span></code><a class="headerlink" href="#pds.api_client.configuration.Configuration.ssl_ca_cert" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set this to customize the certificate file to verify the peer.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pds.api_client.configuration.Configuration.temp_folder_path">
+<code class="sig-name descname"><span class="pre">temp_folder_path</span></code><a class="headerlink" href="#pds.api_client.configuration.Configuration.temp_folder_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Temp file folder for downloading files</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.configuration.Configuration.to_debug_report">
+<code class="sig-name descname"><span class="pre">to_debug_report</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/configuration.html#Configuration.to_debug_report"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.configuration.Configuration.to_debug_report" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the essential information for debugging.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The report for debugging.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pds.api_client.configuration.Configuration.username">
+<code class="sig-name descname"><span class="pre">username</span></code><a class="headerlink" href="#pds.api_client.configuration.Configuration.username" title="Permalink to this definition">¶</a></dt>
+<dd><p>Username for HTTP basic authentication</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pds.api_client.configuration.Configuration.verify_ssl">
+<code class="sig-name descname"><span class="pre">verify_ssl</span></code><a class="headerlink" href="#pds.api_client.configuration.Configuration.verify_ssl" title="Permalink to this definition">¶</a></dt>
+<dd><p>SSL/TLS verification
+Set this to false to skip verifying SSL certificate when calling API
+from https server.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pds.api_client.exceptions">
+<span id="pds-api-client-exceptions-module"></span><h2>pds.api_client.exceptions module<a class="headerlink" href="#module-pds.api_client.exceptions" title="Permalink to this headline">¶</a></h2>
+<p>Planetary Data System API</p>
+<p>Federated PDS API which provides actionable end points standardized between the different nodes.   # noqa: E501</p>
+<p>The version of the OpenAPI document: main
+Contact: <a class="reference external" href="mailto:pds-operator&#37;&#52;&#48;jpl&#46;nasa&#46;gov">pds-operator<span>&#64;</span>jpl<span>&#46;</span>nasa<span>&#46;</span>gov</a>
+Generated by: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a></p>
+<dl class="py exception">
+<dt id="pds.api_client.exceptions.ApiAttributeError">
+<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">pds.api_client.exceptions.</span></code><code class="sig-name descname"><span class="pre">ApiAttributeError</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_to_item</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/exceptions.html#ApiAttributeError"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.exceptions.ApiAttributeError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pds.api_client.exceptions.OpenApiException" title="pds.api_client.exceptions.OpenApiException"><code class="xref py py-class docutils literal notranslate"><span class="pre">pds.api_client.exceptions.OpenApiException</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">AttributeError</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="pds.api_client.exceptions.ApiException">
+<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">pds.api_client.exceptions.</span></code><code class="sig-name descname"><span class="pre">ApiException</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reason</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">http_resp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/exceptions.html#ApiException"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.exceptions.ApiException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pds.api_client.exceptions.OpenApiException" title="pds.api_client.exceptions.OpenApiException"><code class="xref py py-class docutils literal notranslate"><span class="pre">pds.api_client.exceptions.OpenApiException</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="pds.api_client.exceptions.ApiKeyError">
+<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">pds.api_client.exceptions.</span></code><code class="sig-name descname"><span class="pre">ApiKeyError</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_to_item</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/exceptions.html#ApiKeyError"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.exceptions.ApiKeyError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pds.api_client.exceptions.OpenApiException" title="pds.api_client.exceptions.OpenApiException"><code class="xref py py-class docutils literal notranslate"><span class="pre">pds.api_client.exceptions.OpenApiException</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">KeyError</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="pds.api_client.exceptions.ApiTypeError">
+<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">pds.api_client.exceptions.</span></code><code class="sig-name descname"><span class="pre">ApiTypeError</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_to_item</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valid_classes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/exceptions.html#ApiTypeError"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.exceptions.ApiTypeError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pds.api_client.exceptions.OpenApiException" title="pds.api_client.exceptions.OpenApiException"><code class="xref py py-class docutils literal notranslate"><span class="pre">pds.api_client.exceptions.OpenApiException</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeError</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="pds.api_client.exceptions.ApiValueError">
+<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">pds.api_client.exceptions.</span></code><code class="sig-name descname"><span class="pre">ApiValueError</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_to_item</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/exceptions.html#ApiValueError"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.exceptions.ApiValueError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pds.api_client.exceptions.OpenApiException" title="pds.api_client.exceptions.OpenApiException"><code class="xref py py-class docutils literal notranslate"><span class="pre">pds.api_client.exceptions.OpenApiException</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">ValueError</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="pds.api_client.exceptions.ForbiddenException">
+<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">pds.api_client.exceptions.</span></code><code class="sig-name descname"><span class="pre">ForbiddenException</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reason</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">http_resp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/exceptions.html#ForbiddenException"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.exceptions.ForbiddenException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pds.api_client.exceptions.ApiException" title="pds.api_client.exceptions.ApiException"><code class="xref py py-class docutils literal notranslate"><span class="pre">pds.api_client.exceptions.ApiException</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="pds.api_client.exceptions.NotFoundException">
+<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">pds.api_client.exceptions.</span></code><code class="sig-name descname"><span class="pre">NotFoundException</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reason</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">http_resp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/exceptions.html#NotFoundException"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.exceptions.NotFoundException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pds.api_client.exceptions.ApiException" title="pds.api_client.exceptions.ApiException"><code class="xref py py-class docutils literal notranslate"><span class="pre">pds.api_client.exceptions.ApiException</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="pds.api_client.exceptions.OpenApiException">
+<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">pds.api_client.exceptions.</span></code><code class="sig-name descname"><span class="pre">OpenApiException</span></code><a class="reference internal" href="../_modules/pds/api_client/exceptions.html#OpenApiException"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.exceptions.OpenApiException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>The base exception class for all OpenAPIExceptions</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="pds.api_client.exceptions.ServiceException">
+<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">pds.api_client.exceptions.</span></code><code class="sig-name descname"><span class="pre">ServiceException</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reason</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">http_resp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/exceptions.html#ServiceException"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.exceptions.ServiceException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pds.api_client.exceptions.ApiException" title="pds.api_client.exceptions.ApiException"><code class="xref py py-class docutils literal notranslate"><span class="pre">pds.api_client.exceptions.ApiException</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="pds.api_client.exceptions.UnauthorizedException">
+<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">pds.api_client.exceptions.</span></code><code class="sig-name descname"><span class="pre">UnauthorizedException</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reason</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">http_resp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/exceptions.html#UnauthorizedException"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.exceptions.UnauthorizedException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pds.api_client.exceptions.ApiException" title="pds.api_client.exceptions.ApiException"><code class="xref py py-class docutils literal notranslate"><span class="pre">pds.api_client.exceptions.ApiException</span></code></a></p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.exceptions.render_path">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.exceptions.</span></code><code class="sig-name descname"><span class="pre">render_path</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_to_item</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/exceptions.html#render_path"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.exceptions.render_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a string representation of a path</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-pds.api_client.model_utils">
+<span id="pds-api-client-model-utils-module"></span><h2>pds.api_client.model_utils module<a class="headerlink" href="#module-pds.api_client.model_utils" title="Permalink to this headline">¶</a></h2>
+<p>Planetary Data System API</p>
+<p>Federated PDS API which provides actionable end points standardized between the different nodes.   # noqa: E501</p>
+<p>The version of the OpenAPI document: main
+Contact: <a class="reference external" href="mailto:pds-operator&#37;&#52;&#48;jpl&#46;nasa&#46;gov">pds-operator<span>&#64;</span>jpl<span>&#46;</span>nasa<span>&#46;</span>gov</a>
+Generated by: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a></p>
+<dl class="py class">
+<dt id="pds.api_client.model_utils.ModelComposed">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">ModelComposed</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#ModelComposed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.ModelComposed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pds.api_client.model_utils.OpenApiModel" title="pds.api_client.model_utils.OpenApiModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">pds.api_client.model_utils.OpenApiModel</span></code></a></p>
+<p>the parent class of models whose type == object in their
+swagger/openapi and have oneOf/allOf/anyOf</p>
+<p>When one sets a property we use var_name_to_model_instances to store the value in
+the correct class instances + run any type checking + validation code.
+When one gets a property we use var_name_to_model_instances to get the value
+from the correct class instances.
+This allows multiple composed schemas to contain the same property with additive
+constraints on the value.</p>
+<p>_composed_schemas (dict) stores the anyOf/allOf/oneOf classes
+key (str): allOf/oneOf/anyOf
+value (list): the classes in the XOf definition.</p>
+<blockquote>
+<div><p>Note: none_type can be included when the openapi document version &gt;= 3.1.0</p>
+</div></blockquote>
+<p>_composed_instances (list): stores a list of instances of the composed schemas
+defined in _composed_schemas. When properties are accessed in the self instance,
+they are returned from the self._data_store or the data stores in the instances
+in self._composed_schemas
+_var_name_to_model_instances (dict): maps between a variable name on self and
+the composed instances (self included) which contain that data
+key (str): property name
+value (list): list of class instances, self or instances in _composed_instances
+which contain the value that the key is referring to.</p>
+<dl class="py method">
+<dt id="pds.api_client.model_utils.ModelComposed.get">
+<code class="sig-name descname"><span class="pre">get</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#ModelComposed.get"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.ModelComposed.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns the value of an attribute or some default value if the attribute was not set</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.model_utils.ModelComposed.to_dict">
+<code class="sig-name descname"><span class="pre">to_dict</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#ModelComposed.to_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.ModelComposed.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the model properties as a dict</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.model_utils.ModelComposed.to_str">
+<code class="sig-name descname"><span class="pre">to_str</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#ModelComposed.to_str"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.ModelComposed.to_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the string representation of the model</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pds.api_client.model_utils.ModelNormal">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">ModelNormal</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#ModelNormal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.ModelNormal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pds.api_client.model_utils.OpenApiModel" title="pds.api_client.model_utils.OpenApiModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">pds.api_client.model_utils.OpenApiModel</span></code></a></p>
+<p>the parent class of models whose type == object in their
+swagger/openapi</p>
+<dl class="py method">
+<dt id="pds.api_client.model_utils.ModelNormal.get">
+<code class="sig-name descname"><span class="pre">get</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#ModelNormal.get"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.ModelNormal.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns the value of an attribute or some default value if the attribute was not set</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.model_utils.ModelNormal.to_dict">
+<code class="sig-name descname"><span class="pre">to_dict</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#ModelNormal.to_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.ModelNormal.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the model properties as a dict</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.model_utils.ModelNormal.to_str">
+<code class="sig-name descname"><span class="pre">to_str</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#ModelNormal.to_str"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.ModelNormal.to_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the string representation of the model</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pds.api_client.model_utils.ModelSimple">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">ModelSimple</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#ModelSimple"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.ModelSimple" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pds.api_client.model_utils.OpenApiModel" title="pds.api_client.model_utils.OpenApiModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">pds.api_client.model_utils.OpenApiModel</span></code></a></p>
+<p>the parent class of models whose type != object in their
+swagger/openapi</p>
+<dl class="py method">
+<dt id="pds.api_client.model_utils.ModelSimple.get">
+<code class="sig-name descname"><span class="pre">get</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#ModelSimple.get"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.ModelSimple.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns the value of an attribute or some default value if the attribute was not set</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.model_utils.ModelSimple.to_str">
+<code class="sig-name descname"><span class="pre">to_str</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#ModelSimple.to_str"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.ModelSimple.to_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the string representation of the model</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pds.api_client.model_utils.OpenApiModel">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">OpenApiModel</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#OpenApiModel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.OpenApiModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The base class for all OpenAPIModels</p>
+<dl class="py method">
+<dt id="pds.api_client.model_utils.OpenApiModel.set_attribute">
+<code class="sig-name descname"><span class="pre">set_attribute</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#OpenApiModel.set_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.OpenApiModel.set_attribute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.allows_single_value_input">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">allows_single_value_input</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#allows_single_value_input"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.allows_single_value_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function returns True if the input composed schema model or any
+descendant model allows a value only input
+This is true for cases where oneOf contains items like:
+oneOf:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>float</p></li>
+<li><p>NumberWithValidation</p></li>
+<li><p>StringEnum</p></li>
+<li><p>ArrayModel</p></li>
+<li><p>null</p></li>
+</ul>
+</div></blockquote>
+<p>TODO: lru_cache this</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.attempt_convert_item">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">attempt_convert_item</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valid_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_to_item</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">configuration</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec_property_naming</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">must_convert</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#attempt_convert_item"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.attempt_convert_item" title="Permalink to this definition">¶</a></dt>
+<dd><dl>
+<dt>Args:</dt><dd><p>input_value (any): the data to convert
+valid_classes (any): the classes that are valid
+path_to_item (list): the path to the item to convert
+configuration (Configuration): the instance to use to convert files
+spec_property_naming (bool): True if the variable names in the input</p>
+<blockquote>
+<div><p>data are serialized names as specified in the OpenAPI document.
+False if the variables names in the input data are python
+variable names in PEP-8 snake case.</p>
+</div></blockquote>
+<p>key_type (bool): if True we need to convert a key type (not supported)
+must_convert (bool): if True we must convert
+check_type (bool): if True we check the type or the returned data in</p>
+<blockquote>
+<div><p>ModelComposed/ModelNormal/ModelSimple instances</p>
+</div></blockquote>
+</dd>
+<dt>Returns:</dt><dd><p>instance (any) the fixed item</p>
+</dd>
+<dt>Raises:</dt><dd><p>ApiTypeError
+ApiValueError
+ApiKeyError</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt id="pds.api_client.model_utils.cached_property">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">cached_property</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fn</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#cached_property"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.cached_property" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="pds.api_client.model_utils.cached_property.result_key">
+<code class="sig-name descname"><span class="pre">result_key</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'_results'</span></em><a class="headerlink" href="#pds.api_client.model_utils.cached_property.result_key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.change_keys_js_to_python">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">change_keys_js_to_python</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_class</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#change_keys_js_to_python"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.change_keys_js_to_python" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts from javascript_key keys in the input_dict to python_keys in
+the output dict using the mapping in model_class.
+If the input_dict contains a key which does not declared in the model_class,
+the key is added to the output dict as is. The assumption is the model_class
+may have undeclared properties (additionalProperties attribute in the OAS
+document).</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.check_allowed_values">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">check_allowed_values</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">allowed_values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_variable_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_values</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#check_allowed_values"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.check_allowed_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raises an exception if the input_values are not allowed</p>
+<dl>
+<dt>Args:</dt><dd><p>allowed_values (dict): the allowed_values dict
+input_variable_path (tuple): the path to the input variable
+input_values (list/str/int/float/date/datetime): the values that we</p>
+<blockquote>
+<div><p>are checking to see if they are in allowed_values</p>
+</div></blockquote>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.check_validations">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">check_validations</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">validations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_variable_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">configuration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#check_validations"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.check_validations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raises an exception if the input_values are invalid</p>
+<dl>
+<dt>Args:</dt><dd><p>validations (dict): the validation dictionary.
+input_variable_path (tuple): the path to the input variable.
+input_values (list/str/int/float/date/datetime): the values that we</p>
+<blockquote>
+<div><p>are checking.</p>
+</div></blockquote>
+<p>configuration (Configuration): the configuration class.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.composed_model_input_classes">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">composed_model_input_classes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#composed_model_input_classes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.composed_model_input_classes" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function returns a list of the possible models that can be accepted as
+inputs.
+TODO: lru_cache this</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.convert_js_args_to_python_args">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">convert_js_args_to_python_args</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fn</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#convert_js_args_to_python_args"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.convert_js_args_to_python_args" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.deserialize_file">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">deserialize_file</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">response_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">configuration</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">content_disposition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#deserialize_file"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.deserialize_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserializes body to file</p>
+<p>Saves response body into a file in a temporary folder,
+using the filename from the <cite>Content-Disposition</cite> header if provided.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>param response_data (str):  the file data to write
+configuration (Configuration): the instance to use to convert files</p>
+</dd>
+<dt>Keyword Args:</dt><dd><dl class="simple">
+<dt>content_disposition (str):  the value of the Content-Disposition</dt><dd><p>header</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>(file_type): the deserialized file which is open</dt><dd><p>The user is responsible for closing and reading the file</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.deserialize_model">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">deserialize_model</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_class</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_to_item</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">configuration</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec_property_naming</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#deserialize_model"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.deserialize_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserializes model_data to model instance.</p>
+<dl>
+<dt>Args:</dt><dd><p>model_data (int/str/float/bool/none_type/list/dict): data to instantiate the model
+model_class (OpenApiModel): the model class
+path_to_item (list): path to the model in the received data
+check_type (bool): whether to check the data tupe for the values in</p>
+<blockquote>
+<div><p>the model</p>
+</div></blockquote>
+<p>configuration (Configuration): the instance to use to convert files
+spec_property_naming (bool): True if the variable names in the input</p>
+<blockquote>
+<div><p>data are serialized names as specified in the OpenAPI document.
+False if the variables names in the input data are python
+variable names in PEP-8 snake case.</p>
+</div></blockquote>
+</dd>
+<dt>Returns:</dt><dd><p>model instance</p>
+</dd>
+<dt>Raise:</dt><dd><p>ApiTypeError
+ApiValueError
+ApiKeyError</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.deserialize_primitive">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">deserialize_primitive</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">klass</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_to_item</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#deserialize_primitive"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.deserialize_primitive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserializes string to primitive type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> – str/int/float</p></li>
+<li><p><strong>klass</strong> – str/class the class to convert to</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>int, float, str, bool, date, datetime</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.get_allof_instances">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">get_allof_instances</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constant_args</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#get_allof_instances"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.get_allof_instances" title="Permalink to this definition">¶</a></dt>
+<dd><dl>
+<dt>Args:</dt><dd><p>self: the class we are handling
+model_args (dict): var_name to var_value</p>
+<blockquote>
+<div><p>used to make instances</p>
+</div></blockquote>
+<dl class="simple">
+<dt>constant_args (dict):</dt><dd><p>metadata arguments:
+_check_type
+_path_to_item
+_spec_property_naming
+_configuration
+_visited_composed_classes</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns</dt><dd><p>composed_instances (list)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.get_anyof_instances">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">get_anyof_instances</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constant_args</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#get_anyof_instances"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.get_anyof_instances" title="Permalink to this definition">¶</a></dt>
+<dd><dl>
+<dt>Args:</dt><dd><p>self: the class we are handling
+model_args (dict): var_name to var_value</p>
+<blockquote>
+<div><p>The input data, e.g. the payload that must match at least one
+anyOf child schema in the OpenAPI document.</p>
+</div></blockquote>
+<dl class="simple">
+<dt>constant_args (dict): var_name to var_value</dt><dd><p>args that every model requires, including configuration, server
+and path to item.</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns</dt><dd><p>anyof_instances (list)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.get_discarded_args">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">get_discarded_args</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">composed_instances</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_args</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#get_discarded_args"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.get_discarded_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gathers the args that were discarded by configuration.discard_unknown_keys</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.get_discriminated_classes">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">get_discriminated_classes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#get_discriminated_classes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.get_discriminated_classes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns all the classes that a discriminator converts to
+TODO: lru_cache this</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.get_discriminator_class">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">get_discriminator_class</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_class</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">discr_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">discr_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cls_visited</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#get_discriminator_class"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.get_discriminator_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the child class specified by the discriminator.</p>
+<dl>
+<dt>Args:</dt><dd><p>model_class (OpenApiModel): the model class.
+discr_name (string): the name of the discriminator property.
+discr_value (any): the discriminator value.
+cls_visited (list): list of model classes that have been visited.</p>
+<blockquote>
+<div><p>Used to determine the discriminator class without
+visiting circular references indefinitely.</p>
+</div></blockquote>
+</dd>
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>used_model_class (class/None): the chosen child class that will be used</dt><dd><p>to deserialize the data, for example dog.Dog.
+If a class is not found, None is returned.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.get_oneof_instance">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">get_oneof_instance</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_kwargs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constant_kwargs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_arg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#get_oneof_instance"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.get_oneof_instance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find the oneOf schema that matches the input data (e.g. payload).
+If exactly one schema matches the input data, an instance of that schema
+is returned.
+If zero or more than one schema match the input data, an exception is raised.
+In OAS 3.x, the payload MUST, by validation, match exactly one of the
+schemas described by oneOf.</p>
+<dl>
+<dt>Args:</dt><dd><p>cls: the class we are handling
+model_kwargs (dict): var_name to var_value</p>
+<blockquote>
+<div><p>The input data, e.g. the payload that must match a oneOf schema
+in the OpenAPI document.</p>
+</div></blockquote>
+<dl class="simple">
+<dt>constant_kwargs (dict): var_name to var_value</dt><dd><p>args that every model requires, including configuration, server
+and path to item.</p>
+</dd>
+</dl>
+</dd>
+<dt>Kwargs:</dt><dd><dl class="simple">
+<dt>model_arg: (int, float, bool, str, date, datetime, ModelSimple, None):</dt><dd><p>the value to assign to a primitive class or ModelSimple class
+Notes:
+- this is only passed in when oneOf includes types which are not object
+- None is used to suppress handling of model_arg, nullable models are handled in __new__</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns</dt><dd><p>oneof_instance (instance)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.get_possible_classes">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">get_possible_classes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">from_server_context</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#get_possible_classes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.get_possible_classes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.get_required_type_classes">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">get_required_type_classes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">required_types_mixed</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec_property_naming</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#get_required_type_classes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.get_required_type_classes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts the tuple required_types into a tuple and a dict described
+below</p>
+<dl>
+<dt>Args:</dt><dd><dl class="simple">
+<dt>required_types_mixed (tuple/list): will contain either classes or</dt><dd><p>instance of list or dict</p>
+</dd>
+<dt>spec_property_naming (bool): if True these values came from the</dt><dd><p>server, and we use the data types in our endpoints.
+If False, we are client side and we need to include
+oneOf and discriminator classes inside the data types in our endpoints</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><dl>
+<dt>(valid_classes, dict_valid_class_to_child_types_mixed):</dt><dd><dl>
+<dt>valid_classes (tuple): the valid classes that the current item</dt><dd><p>should be</p>
+</dd>
+<dt>dict_valid_class_to_child_types_mixed (dict):</dt><dd><p>valid_class (class): this is the key
+child_types_mixed (list/dict/tuple): describes the valid child</p>
+<blockquote>
+<div><p>types</p>
+</div></blockquote>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.get_simple_class">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">get_simple_class</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#get_simple_class"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.get_simple_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns an input_value’s simple class that we will use for type checking
+Python2:
+float and int will return int, where int is the python3 int backport
+str and unicode will return str, where str is the python3 str backport
+Note: float and int ARE both instances of int backport
+Note: str_py2 and unicode_py2 are NOT both instances of str backport</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>input_value (class/class_instance): the item for which we will return</dt><dd><p>the simple class</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.get_type_error">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">get_type_error</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">var_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_to_item</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valid_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#get_type_error"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.get_type_error" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.get_valid_classes_phrase">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">get_valid_classes_phrase</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_classes</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#get_valid_classes_phrase"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.get_valid_classes_phrase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a string phrase describing what types are allowed</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.is_json_validation_enabled">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">is_json_validation_enabled</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">schema_keyword</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">configuration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#is_json_validation_enabled"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.is_json_validation_enabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns true if JSON schema validation is enabled for the specified
+validation keyword. This can be used to skip JSON schema structural validation
+as requested in the configuration.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>schema_keyword (string): the name of a JSON schema validation keyword.
+configuration (Configuration): the configuration class.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.is_type_nullable">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">is_type_nullable</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_type</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#is_type_nullable"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.is_type_nullable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns true if None is an allowed value for the specified input_type.</p>
+<p>A type is nullable if at least one of the following conditions is true:
+1. The OAS ‘nullable’ attribute has been specified,
+1. The type is the ‘null’ type,
+1. The type is a anyOf/oneOf composed schema, and a child schema is</p>
+<blockquote>
+<div><p>the ‘null’ type.</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>input_type (type): the class of the input_value that we are</dt><dd><p>checking</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.is_valid_type">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">is_valid_type</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_class_simple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valid_classes</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#is_valid_type"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.is_valid_type" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>input_class_simple (class): the class of the input_value that we are</dt><dd><p>checking</p>
+</dd>
+<dt>valid_classes (tuple): the valid classes that the current item</dt><dd><p>should be</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.model_to_dict">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">model_to_dict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_instance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serialize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#model_to_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.model_to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the model properties as a dict</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>model_instance (one of your model instances): the model instance that</dt><dd><p>will be converted to a dict.</p>
+</dd>
+</dl>
+</dd>
+<dt>Keyword Args:</dt><dd><dl class="simple">
+<dt>serialize (bool): if True, the keys in the dict will be values from</dt><dd><p>attribute_map</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.order_response_types">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">order_response_types</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">required_types</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#order_response_types"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.order_response_types" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the required types sorted in coercion order</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>required_types (list/tuple): collection of classes or instance of</dt><dd><p>list or dict with class information inside it.</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>(list): coercion order sorted collection of classes or instance</dt><dd><p>of list or dict with class information inside it.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.remove_uncoercible">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">remove_uncoercible</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">required_types_classes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_item</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec_property_naming</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">must_convert</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#remove_uncoercible"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.remove_uncoercible" title="Permalink to this definition">¶</a></dt>
+<dd><p>Only keeps the type conversions that are possible</p>
+<dl>
+<dt>Args:</dt><dd><dl class="simple">
+<dt>required_types_classes (tuple): tuple of classes that are required</dt><dd><p>these should be ordered by COERCION_INDEX_BY_TYPE</p>
+</dd>
+<dt>spec_property_naming (bool): True if the variable names in the input</dt><dd><p>data are serialized names as specified in the OpenAPI document.
+False if the variables names in the input data are python
+variable names in PEP-8 snake case.</p>
+</dd>
+</dl>
+<p>current_item (any): the current item (input data) to be converted</p>
+</dd>
+<dt>Keyword Args:</dt><dd><dl class="simple">
+<dt>must_convert (bool): if True the item to convert is of the wrong</dt><dd><p>type and we want a big list of coercibles
+if False, we want a limited list of coercibles</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><p>(list): the remaining coercible required types, classes only</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.type_error_message">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">type_error_message</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">var_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valid_classes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#type_error_message"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.type_error_message" title="Permalink to this definition">¶</a></dt>
+<dd><dl>
+<dt>Keyword Args:</dt><dd><p>var_value (any): the variable which has the type_error
+var_name (str): the name of the variable which has the typ error
+valid_classes (tuple): the accepted classes for current_item’s</p>
+<blockquote>
+<div><p>value</p>
+</div></blockquote>
+<dl class="simple">
+<dt>key_type (bool): False if our value is a value in a dict</dt><dd><p>True if it is a key in a dict
+False if our item is an item in a list</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.validate_and_convert_types">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">validate_and_convert_types</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">required_types_mixed</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_to_item</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec_property_naming</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_check_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">configuration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#validate_and_convert_types"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.validate_and_convert_types" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raises a TypeError is there is a problem, otherwise returns value</p>
+<dl>
+<dt>Args:</dt><dd><p>input_value (any): the data to validate/convert
+required_types_mixed (list/dict/tuple): A list of</p>
+<blockquote>
+<div><p>valid classes, or a list tuples of valid classes, or a dict where
+the value is a tuple of value classes</p>
+</div></blockquote>
+<dl class="simple">
+<dt>path_to_item: (list) the path to the data being validated</dt><dd><p>this stores a list of keys or indices to get to the data being
+validated</p>
+</dd>
+<dt>spec_property_naming (bool): True if the variable names in the input</dt><dd><p>data are serialized names as specified in the OpenAPI document.
+False if the variables names in the input data are python
+variable names in PEP-8 snake case.</p>
+</dd>
+<dt>_check_type: (boolean) if true, type will be checked and conversion</dt><dd><p>will be attempted.</p>
+</dd>
+<dt>configuration: (Configuration): the configuration class to use</dt><dd><p>when converting file_type items.
+If passed, conversion will be attempted when possible
+If not passed, no conversions will be attempted and
+exceptions will be raised</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><p>the correctly typed value</p>
+</dd>
+<dt>Raises:</dt><dd><p>ApiTypeError</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="pds.api_client.model_utils.validate_get_composed_info">
+<code class="sig-prename descclassname"><span class="pre">pds.api_client.model_utils.</span></code><code class="sig-name descname"><span class="pre">validate_get_composed_info</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">constant_args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/model_utils.html#validate_get_composed_info"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.model_utils.validate_get_composed_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>For composed schemas, generate schema instances for
+all schemas in the oneOf/anyOf/allOf definition. If additional
+properties are allowed, also assign those properties on
+all matched schemas that contain additionalProperties.
+Openapi schemas are python classes.</p>
+<p>Exceptions are raised if:
+- 0 or &gt; 1 oneOf schema matches the model_args input data
+- no anyOf schema matches the model_args input data
+- any of the allOf schemas do not match the model_args input data</p>
+<dl>
+<dt>Args:</dt><dd><p>constant_args (dict): these are the args that every model requires
+model_args (dict): these are the required and optional spec args that</p>
+<blockquote>
+<div><p>were passed in to make this model</p>
+</div></blockquote>
+<dl class="simple">
+<dt>self (class): the class that we are instantiating</dt><dd><p>This class contains self._composed_schemas</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>composed_info (list): length three</dt><dd><dl class="simple">
+<dt>composed_instances (list): the composed instances which are not</dt><dd><p>self</p>
+</dd>
+<dt>var_name_to_model_instances (dict): a dict going from var_name</dt><dd><p>to the model_instance which holds that var_name
+the model_instance may be self or an instance of one of the
+classes in self.composed_instances()</p>
+</dd>
+<dt>additional_properties_model_instances (list): a list of the</dt><dd><p>model instances which have the property
+additional_properties_type. This list can include self</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-pds.api_client.rest">
+<span id="pds-api-client-rest-module"></span><h2>pds.api_client.rest module<a class="headerlink" href="#module-pds.api_client.rest" title="Permalink to this headline">¶</a></h2>
+<p>Planetary Data System API</p>
+<p>Federated PDS API which provides actionable end points standardized between the different nodes.   # noqa: E501</p>
+<p>The version of the OpenAPI document: main
+Contact: <a class="reference external" href="mailto:pds-operator&#37;&#52;&#48;jpl&#46;nasa&#46;gov">pds-operator<span>&#64;</span>jpl<span>&#46;</span>nasa<span>&#46;</span>gov</a>
+Generated by: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a></p>
+<dl class="py class">
+<dt id="pds.api_client.rest.RESTClientObject">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pds.api_client.rest.</span></code><code class="sig-name descname"><span class="pre">RESTClientObject</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">configuration</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pools_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/rest.html#RESTClientObject"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.rest.RESTClientObject" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="pds.api_client.rest.RESTClientObject.DELETE">
+<code class="sig-name descname"><span class="pre">DELETE</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/rest.html#RESTClientObject.DELETE"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.rest.RESTClientObject.DELETE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.rest.RESTClientObject.GET">
+<code class="sig-name descname"><span class="pre">GET</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/rest.html#RESTClientObject.GET"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.rest.RESTClientObject.GET" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.rest.RESTClientObject.HEAD">
+<code class="sig-name descname"><span class="pre">HEAD</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/rest.html#RESTClientObject.HEAD"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.rest.RESTClientObject.HEAD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.rest.RESTClientObject.OPTIONS">
+<code class="sig-name descname"><span class="pre">OPTIONS</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/rest.html#RESTClientObject.OPTIONS"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.rest.RESTClientObject.OPTIONS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.rest.RESTClientObject.PATCH">
+<code class="sig-name descname"><span class="pre">PATCH</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/rest.html#RESTClientObject.PATCH"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.rest.RESTClientObject.PATCH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.rest.RESTClientObject.POST">
+<code class="sig-name descname"><span class="pre">POST</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/rest.html#RESTClientObject.POST"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.rest.RESTClientObject.POST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.rest.RESTClientObject.PUT">
+<code class="sig-name descname"><span class="pre">PUT</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/rest.html#RESTClientObject.PUT"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.rest.RESTClientObject.PUT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.rest.RESTClientObject.request">
+<code class="sig-name descname"><span class="pre">request</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/rest.html#RESTClientObject.request"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.rest.RESTClientObject.request" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform requests.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>method</strong> – http request method</p></li>
+<li><p><strong>url</strong> – http request url</p></li>
+<li><p><strong>query_params</strong> – query parameters in the url</p></li>
+<li><p><strong>headers</strong> – http request headers</p></li>
+<li><p><strong>body</strong> – request json body, for <cite>application/json</cite></p></li>
+<li><p><strong>post_params</strong> – request post parameters,
+<cite>application/x-www-form-urlencoded</cite>
+and <cite>multipart/form-data</cite></p></li>
+<li><p><strong>_preload_content</strong> – if False, the urllib3.HTTPResponse object will
+be returned without reading/decoding response
+data. Default is True.</p></li>
+<li><p><strong>_request_timeout</strong> – timeout setting for this request. If one
+number provided, it will be total request
+timeout. It can also be a pair (tuple) of
+(connection, read) timeouts.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pds.api_client.rest.RESTResponse">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pds.api_client.rest.</span></code><code class="sig-name descname"><span class="pre">RESTResponse</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resp</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/rest.html#RESTResponse"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.rest.RESTResponse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">io.IOBase</span></code></p>
+<dl class="py method">
+<dt id="pds.api_client.rest.RESTResponse.getheader">
+<code class="sig-name descname"><span class="pre">getheader</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/rest.html#RESTResponse.getheader"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.rest.RESTResponse.getheader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a given response header.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pds.api_client.rest.RESTResponse.getheaders">
+<code class="sig-name descname"><span class="pre">getheaders</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/rest.html#RESTResponse.getheaders"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.rest.RESTResponse.getheaders" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a dictionary of the response headers.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pds.api_client">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pds.api_client" title="Permalink to this headline">¶</a></h2>
+<p>Planetary Data System API</p>
+<p>Federated PDS API which provides actionable end points standardized between the different nodes.   # noqa: E501</p>
+<p>The version of the OpenAPI document: main
+Contact: <a class="reference external" href="mailto:pds-operator&#37;&#52;&#48;jpl&#46;nasa&#46;gov">pds-operator<span>&#64;</span>jpl<span>&#46;</span>nasa<span>&#46;</span>gov</a>
+Generated by: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="pds.api_client.api.html" class="btn btn-neutral float-right" title="pds.api_client.api package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../quickstart/index.html" class="btn btn-neutral float-left" title="Quickstart for the PDS API Python Client" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021 California Institute of Technology.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

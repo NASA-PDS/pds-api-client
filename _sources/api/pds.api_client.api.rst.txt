@@ -1,0 +1,85 @@
+pds.api\_client.api package
+===========================
+
+Submodules
+----------
+
+pds.api\_client.api.bundles\_api module
+---------------------------------------
+
+.. automodule:: pds.api_client.api.bundles_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.api.bundles\_collections\_api module
+----------------------------------------------------
+
+.. automodule:: pds.api_client.api.bundles_collections_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.api.bundles\_products\_api module
+-------------------------------------------------
+
+.. automodule:: pds.api_client.api.bundles_products_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.api.collections\_api module
+-------------------------------------------
+
+.. automodule:: pds.api_client.api.collections_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.api.collections\_containing\_bundles\_api module
+----------------------------------------------------------------
+
+.. automodule:: pds.api_client.api.collections_containing_bundles_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.api.collections\_products\_api module
+-----------------------------------------------------
+
+.. automodule:: pds.api_client.api.collections_products_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.api.product\_containing\_collections\_api module
+----------------------------------------------------------------
+
+.. automodule:: pds.api_client.api.product_containing_collections_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.api.products\_api module
+----------------------------------------
+
+.. automodule:: pds.api_client.api.products_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.api.products\_containing\_bundles\_api module
+-------------------------------------------------------------
+
+.. automodule:: pds.api_client.api.products_containing_bundles_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: pds.api_client.api
+   :members:
+   :undoc-members:
+   :show-inheritance:

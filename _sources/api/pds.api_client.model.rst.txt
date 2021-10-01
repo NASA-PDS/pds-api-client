@@ -1,0 +1,109 @@
+pds.api\_client.model package
+=============================
+
+Submodules
+----------
+
+pds.api\_client.model.error\_message module
+-------------------------------------------
+
+.. automodule:: pds.api_client.model.error_message
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.model.metadata module
+-------------------------------------
+
+.. automodule:: pds.api_client.model.metadata
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.model.pds4\_metadata module
+-------------------------------------------
+
+.. automodule:: pds.api_client.model.pds4_metadata
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.model.pds4\_metadata\_data\_files module
+--------------------------------------------------------
+
+.. automodule:: pds.api_client.model.pds4_metadata_data_files
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.model.pds4\_metadata\_label\_file module
+--------------------------------------------------------
+
+.. automodule:: pds.api_client.model.pds4_metadata_label_file
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.model.pds4\_product module
+------------------------------------------
+
+.. automodule:: pds.api_client.model.pds4_product
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.model.pds4\_products module
+-------------------------------------------
+
+.. automodule:: pds.api_client.model.pds4_products
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.model.product module
+------------------------------------
+
+.. automodule:: pds.api_client.model.product
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.model.products module
+-------------------------------------
+
+.. automodule:: pds.api_client.model.products
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.model.property\_array\_values module
+----------------------------------------------------
+
+.. automodule:: pds.api_client.model.property_array_values
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.model.reference module
+--------------------------------------
+
+.. automodule:: pds.api_client.model.reference
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.model.summary module
+------------------------------------
+
+.. automodule:: pds.api_client.model.summary
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: pds.api_client.model
+   :members:
+   :undoc-members:
+   :show-inheritance:
