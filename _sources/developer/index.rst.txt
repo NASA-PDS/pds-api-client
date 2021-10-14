@@ -100,7 +100,7 @@ Again, using the Python virtual environment::
     pip install sphinx sphinx-rtd-theme
     sphinx-apidoc -o docs/source/api pds
     sphinx-build docs/source docs/build
-    cp -r docs/build/html /tmp/
+    cp -r docs/build/ /tmp/
 
 This will produce copious warnings which you should just ignore for now. Then
 publish on GitHub as follows::
