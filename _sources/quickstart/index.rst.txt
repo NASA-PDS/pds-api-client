@@ -9,6 +9,16 @@ Prerequisites
 
 Python 3 (tested with 3.7).
 
+Issues with SSL certificate verification seen with python 3.9.
+
+If it occurs to you, try:
+
+    pip install --upgrade certifi
+
+However, we have not been able to solve that with conda python 3.9.
+
+
+
 
 Installation
 ------------
@@ -46,27 +56,27 @@ Request one end point
 
 There are different API end points:
 
-- `CollectionsApi <./api/api_client.api.html#module-api_client.api.bundles_api>`_
+- `CollectionsApi <../api/pds.api_client.api.html#module-pds.api_client.api.collections_api>`_
 
-- `BundleApi <.//api/api_client.api.html#module-api_client.api.collections_api>`_
+- `BundleApi <../api/pds.api_client.api.html#module-pds.api_client.api.bundles_apii>`_
 
-- `ProductApi <./api/api_client.api.html#module-api_client.api.products_api>`_ (for all products)
+- `ProductApi <../api/pds.api_client.api.html#module-pds.api_client.api.products_api>`_ (for all products)
 
 
 For collections for example:
 
 .. code-block:: python
 
-   from pds.api_client import CollectionsApi
-   from pprint import pprint
+    from pds.api_client.api.collections_api import CollectionsApi
+    from pprint import pprint
 
-   collections = CollectionsApi(api_client)
+    collections = CollectionsApi(api_client)
 
-   try:
-       api_response = collections.get_collection(q="", start=0, limit=20)
-       pprint(api_response)
-   except ApiException as e:
-       print("Exception when calling CollectionsApi->get_collection: %s\n" % e)
+    try:
+        api_response = collections.get_collection(start=0, limit=20)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling CollectionsApi->get_collection: %s\n" % e)
 
 
 Reference Documentation

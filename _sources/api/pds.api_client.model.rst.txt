@@ -60,18 +60,18 @@ pds.api\_client.model.pds4\_products module
    :undoc-members:
    :show-inheritance:
 
-pds.api\_client.model.product module
-------------------------------------
+pds.api\_client.model.pds\_product module
+-----------------------------------------
 
-.. automodule:: pds.api_client.model.product
+.. automodule:: pds.api_client.model.pds_product
    :members:
    :undoc-members:
    :show-inheritance:
 
-pds.api\_client.model.products module
--------------------------------------
+pds.api\_client.model.pds\_products module
+------------------------------------------
 
-.. automodule:: pds.api_client.model.products
+.. automodule:: pds.api_client.model.pds_products
    :members:
    :undoc-members:
    :show-inheritance:
@@ -96,6 +96,30 @@ pds.api\_client.model.summary module
 ------------------------------------
 
 .. automodule:: pds.api_client.model.summary
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.model.wyriwyg\_product module
+---------------------------------------------
+
+.. automodule:: pds.api_client.model.wyriwyg_product
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.model.wyriwyg\_product\_key\_value\_pairs module
+----------------------------------------------------------------
+
+.. automodule:: pds.api_client.model.wyriwyg_product_key_value_pairs
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.model.wyriwyg\_products module
+----------------------------------------------
+
+.. automodule:: pds.api_client.model.wyriwyg_products
    :members:
    :undoc-members:
    :show-inheritance:
