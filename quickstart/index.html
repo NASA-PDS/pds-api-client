@@ -50,11 +50,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../api/pds.api_client.html">Package Reference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../developer/index.html">Developer Notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../support/contact.html">Contact Us</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html">Contribute</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html#request-a-new-tool-service">Request a New Tool / Service</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html#report-a-bug">Report a Bug</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../support/help.html">Help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/support.html">Support</a></li>
 </ul>
 
         </div>
@@ -96,8 +92,33 @@
 </section>
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline"></a></h2>
-<p>To install this package, run:</p>
+<p>To install the latest stable version of this package, run:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">pds</span><span class="o">.</span><span class="n">api</span><span class="o">-</span><span class="n">client</span>
+</pre></div>
+</div>
+<p>The package releases match with the <a class="reference external" href="https://nasa-pds.github.io/pds-api/specifications.html">Search API specification</a>, as follows:</p>
+<table class="colwidths-given docutils align-default" id="id1">
+<caption><span class="caption-text">client implementation vs api specification versions</span><a class="headerlink" href="#id1" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>pds.api-client</p></th>
+<th class="head"><p>pds search api specification</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1.1.X</p></td>
+<td><p>1.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>0.8.Y</p></td>
+<td><p>0.4</p></td>
+</tr>
+</tbody>
+</table>
+<p>To install a specific version of this package, run, for example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">pds</span><span class="o">.</span><span class="n">api</span><span class="o">-</span><span class="n">client</span><span class="o">==</span><span class="mf">1.1.0</span>
 </pre></div>
 </div>
 <p>You can also include it as a dependency in another package, for example, in

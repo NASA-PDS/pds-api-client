@@ -23,9 +23,26 @@ However, we have not been able to solve that with conda python 3.9.
 Installation
 ------------
 
-To install this package, run::
+To install the latest stable version of this package, run::
 
     pip install pds.api-client
+
+The package releases match with the `Search API specification <https://nasa-pds.github.io/pds-api/specifications.html>`_, as follows:
+
+.. list-table:: client implementation vs api specification versions
+   :widths: 25 25
+   :header-rows: 1
+
+   * - pds.api-client
+     - pds search api specification
+   * - 1.1.X
+     - 1.0
+   * - 0.8.Y
+     - 0.4
+
+To install a specific version of this package, run, for example::
+
+    pip install pds.api-client==1.1.0
 
 
 You can also include it as a dependency in another package, for example, in

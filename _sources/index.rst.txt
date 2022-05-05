@@ -18,7 +18,7 @@ Sitemap
     quickstart/index
     Package Reference <api/pds.api_client>
     developer/index
-    support/*
+    support/support
 
 
 .. _PDS: https://pds.nasa.gov/
