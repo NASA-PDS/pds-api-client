@@ -2,10 +2,9 @@ import unittest
 from pds.api_client.rest import ApiException
 from pds.api_client import Configuration
 from pds.api_client import ApiClient
-from pds.api_client.api.collections_api import CollectionsApi
-from pds.api_client.model.pds_product import PdsProduct
+from pds.api_client.apis.paths.collections import Collections
+from pds.api_client.apis.paths.collections_identifier_all import CollectionsIdentifierAll
 from pds.api_client.model.pds_products import PdsProducts
-from pds.api_client.model.pds4_product import Pds4Product
 from pds.api_client.model.pds4_products import Pds4Products
 
 
@@ -16,11 +15,16 @@ class CollectionsApiTestCase(unittest.TestCase):
         configuration = Configuration()
         configuration.host = 'http://localhost:8080'
         api_client = ApiClient(configuration)
-        self.collections = CollectionsApi(api_client)
+        self.collections = Collections(api_client)
+        self.collection_identifier_all = CollectionsIdentifierAll(api_client)
 
     def test_all_collections(self):
 
-        api_response: PdsProducts = self.collections.get_collection(start=0, limit=20)
+        api_response: PdsProducts = self.collections.get(
+            query_params={'start': 0, 'limit': 20},
+            accept_content_types=('application/json',)
+        ).body
+
         assert len(api_response.data) == 2
         assert api_response.summary.hits == 2
 
@@ -35,10 +39,14 @@ class CollectionsApiTestCase(unittest.TestCase):
         assert collection.title == 'InSight RAD Derived Data Collection'
 
     def test_all_collections_one_property(self):
-        api_response = self.collections.get_collection(
-            start=0, limit=20,
-            fields=['ops:Label_File_Info.ops:file_ref']
-        )
+        api_response = self.collections.get(
+            query_params={
+                "start": 0, "limit": 20,
+                "fields": ['ops:Label_File_Info.ops:file_ref']
+            },
+            accept_content_types=('application/json',)
+        ).body
+
         assert "data" in api_response
 
         collections_expected_labels = iter([
@@ -48,10 +56,10 @@ class CollectionsApiTestCase(unittest.TestCase):
 
         for collection in api_response['data']:
             urls = collection['properties']['ops:Label_File_Info.ops:file_ref']
-            assert next(collections_expected_labels) in urls.value[0]
+            assert next(collections_expected_labels) in urls[0]
 
     def test_collection_by_lidvid_all(self):
-        collections = self.collections.collections_by_lidvid_all('urn:nasa:pds:insight_rad:data_derived::7.0')
+        collections = self.collection_identifier_all.get('urn:nasa:pds:insight_rad:data_derived::7.0').body
         assert 'data' in collections
         assert len(collections.data) > 0
         assert 'id' in collections.data[0]

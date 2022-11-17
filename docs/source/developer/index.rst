@@ -43,8 +43,9 @@ You then need to preprocess this specification to remove directives which break 
 
     % python src/pds/api_client/preprocess_openapi.py
 
-Then, install OpenAPI Generator (e.g. on macos with brew), and run::
+Then, install OpenAPI Generator (e.g. on macos with brew, see https://github.com/OpenAPITools/openapi-generator#1---installation), and run::
 
+    rm -fr pds test
     openapi-generator generate -g python -i preprocessed-swagger.json --package-name pds.api_client --additional-properties=packageVersion=X.Y.Z.
     cp .gitignore-orig .gitignore
 
