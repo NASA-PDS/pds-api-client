@@ -1,8 +1,7 @@
 import unittest
 from pds.api_client import Configuration
 from pds.api_client import ApiClient
-from pds.api_client.api.bundles_collections_api import BundlesCollectionsApi
-from pds.api_client.exceptions import NotFoundException
+from pds.api_client.apis.paths.bundles_identifier_collections_all import BundlesIdentifierCollectionsAll
 
 
 class MyTestCase(unittest.TestCase):
@@ -11,14 +10,15 @@ class MyTestCase(unittest.TestCase):
         configuration = Configuration()
         configuration.host = 'http://localhost:8080'
         api_client = ApiClient(configuration)
-        self.bundlesCollections = BundlesCollectionsApi(api_client)
+        self.bundlesCollections = BundlesIdentifierCollectionsAll(api_client)
 
     def test_collections_of_a_bundle_default(self):
 
-        results = self.bundlesCollections.collections_of_a_bundle(
-            'urn:nasa:pds:insight_rad::2.1',
-            fields=['ops:Data_File_Info.ops:file_ref']
-        )
+        results = self.bundlesCollections.get(
+            path_params={'identifier': 'urn:nasa:pds:insight_rad::2.1'},
+            query_params={'fields': ['ops:Data_File_Info.ops:file_ref']},
+            accept_content_types=('application/json',)
+        ).body
         for collection in results.data:
             urls = collection.properties['ops:Data_File_Info.ops:file_ref']
             for url in urls.value:
@@ -36,16 +36,21 @@ class MyTestCase(unittest.TestCase):
 
             start = 0
 
-            while True:
-                try:
-                    page = self.bundlesCollections.collections_of_a_bundle_all(bundle_lidvid, start=start, limit=_apiquerylimit, fields=_fields)
-                    for c in page.data:
-                        yield c
-                    start += len(page.data)
-                except NotFoundException:
-                    break
+            found_something = True
+            while found_something:
+                page = self.bundlesCollections.get(
+                    path_params={'identifier': bundle_lidvid},
+                    query_params={'start': start, 'limit':_apiquerylimit, 'fields': _fields},
+                    accept_content_types=('application/json',)
+                ).body
 
-        n=0
+                found_something = False
+                for c in page.data:
+                    found_something = True
+                    yield c
+                start += len(page.data)
+
+        n = 0
         for collection in get_collections("urn:nasa:pds:insight_rad::2.1"):
             print(collection['id'])
             n += 1

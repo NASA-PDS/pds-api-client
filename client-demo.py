@@ -8,8 +8,8 @@ from pprint import pprint
 # create an instance of the API class
 configuration = Configuration()
 #configuration.host = 'https://pds.nasa.gov/api/search/1.1'
-configuration.host = 'https://pds.nasa.gov/api/search-en-gamma/1.1'
-#configuration.host = 'http://localhost:8080'
+#configuration.host = 'https://pds.nasa.gov/api/search-en-gamma/1.1'
+configuration.host = 'http://localhost:8080'
 api_client = ApiClient(configuration)
 
 
@@ -23,7 +23,8 @@ try:
             "fields": ['ops:Label_File_Info.ops:file_ref']
         },
         accept_content_types=('application/json',)
-    )
-    pprint(api_response.response)
+    ).body
+    pprint(api_response.summary)
+
 except ApiException as e:
     print("Exception when calling CollectionsApi->get_collection: %s\n" % e)
