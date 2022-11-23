@@ -49,7 +49,7 @@ Replace ``X.Y.Z`` with the version of the package you're creating. The second
 step is necessary because the OpenAPI generator blithely clobbers our
 precious ``.gitignore`` file.
 
-.. note:: Since a bug fix is needed for nested packages, we should now use the master branch of openapi-generator. git clone the repository and `mvn clean install` with java 1.8.
+.. note:: Since a bug fix is needed for nested packages, we should now use the master branch of openapi-generator after commit 22fcdcc0b2c6ce824ad06767837c1a3975d63c0c. git clone the repository and `mvn clean install` with java 1.8.
 Then launch the generation of code, for example::
 
     java -jar modules/openapi-generator-cli/target/openapi-generator-cli.jar generate -i /Users/loubrieu/PycharmProjects/pds-api-client/swagger.yaml -g python -o /Users/loubrieu/PycharmProjects/pds-api-client/ --package-name pds.api_client --additional-properties=packageVersion=1.2.0
