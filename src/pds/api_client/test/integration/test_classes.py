@@ -19,7 +19,7 @@ class MyTestCase(unittest.TestCase):
             accept_content_types=('application/json',)
         ).body
 
-        self.assertEqual(True, False)  # add assertion here
+        self.assertEqual(len(results), 2)  # add assertion here
 
 
 if __name__ == '__main__':

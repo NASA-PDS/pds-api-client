@@ -2,7 +2,7 @@ import unittest
 from pds.api_client import Configuration
 from pds.api_client import ApiClient
 from pds.api_client.apis.paths.bundles_identifier_collections_all import BundlesIdentifierCollectionsAll
-
+from pds.api_client.apis.paths.classes_class_identifier_members import ClassesClassIdentifierMembers
 
 class MyTestCase(unittest.TestCase):
     def setUp(self):
@@ -10,18 +10,21 @@ class MyTestCase(unittest.TestCase):
         configuration = Configuration()
         configuration.host = 'http://localhost:8080'
         api_client = ApiClient(configuration)
-        self.bundlesCollections = BundlesIdentifierCollectionsAll(api_client)
+        self.bundlesCollections = ClassesClassIdentifierMembers(api_client)
 
     def test_collections_of_a_bundle_default(self):
 
         results = self.bundlesCollections.get(
-            path_params={'identifier': 'urn:nasa:pds:insight_rad::2.1'},
+            path_params={
+                'class': 'bundles',
+                'identifier': 'urn:nasa:pds:insight_rad::2.1'
+            },
             query_params={'fields': ['ops:Data_File_Info.ops:file_ref']},
             accept_content_types=('application/json',)
         ).body
         for collection in results.data:
-            urls = collection.properties['ops:Data_File_Info.ops:file_ref']
-            for url in urls.value:
+            urls = collection['properties']['ops:Data_File_Info.ops:file_ref']
+            for url in urls:
                 print(url)
 
     def test_all_collections_of_a_bundle_as_deep_archive_does(self):
@@ -39,7 +42,10 @@ class MyTestCase(unittest.TestCase):
             found_something = True
             while found_something:
                 page = self.bundlesCollections.get(
-                    path_params={'identifier': bundle_lidvid},
+                    path_params={
+                        'class': 'bundles',
+                        'identifier': bundle_lidvid
+                    },
                     query_params={'start': start, 'limit':_apiquerylimit, 'fields': _fields},
                     accept_content_types=('application/json',)
                 ).body
