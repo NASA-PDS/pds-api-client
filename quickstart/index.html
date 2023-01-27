@@ -14,7 +14,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -50,7 +52,6 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../api/pds.api_client.html">Package Reference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../developer/index.html">Developer Notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../support/support.html">Support</a></li>
 </ul>
 
         </div>
@@ -66,8 +67,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Quickstart for the PDS API Python Client</li>
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Quickstart for the PDS API Python Client</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/quickstart/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -78,10 +79,10 @@
            <div itemprop="articleBody">
              
   <section id="quickstart-for-the-pds-api-python-client">
-<h1>Quickstart for the PDS API Python Client<a class="headerlink" href="#quickstart-for-the-pds-api-python-client" title="Permalink to this headline"></a></h1>
+<h1>Quickstart for the PDS API Python Client<a class="headerlink" href="#quickstart-for-the-pds-api-python-client" title="Permalink to this heading"></a></h1>
 <p>This document can get you up to speed with the Python client to the PDS API.</p>
 <section id="prerequisites">
-<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline"></a></h2>
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading"></a></h2>
 <p>Python 3 (tested with 3.7).</p>
 <p>Issues with SSL certificate verification seen with python 3.9.</p>
 <p>If it occurs to you, try:</p>
@@ -91,7 +92,7 @@
 <p>However, we have not been able to solve that with conda python 3.9.</p>
 </section>
 <section id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline"></a></h2>
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h2>
 <p>To install the latest stable version of this package, run:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">pds</span><span class="o">.</span><span class="n">api</span><span class="o">-</span><span class="n">client</span>
 </pre></div>
@@ -109,64 +110,72 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>1.1.X</p></td>
+<tr class="row-even"><td><p>1.2.X</p></td>
+<td><p>1.1</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.1.X</p></td>
 <td><p>1.0</p></td>
 </tr>
-<tr class="row-odd"><td><p>0.8.Y</p></td>
+<tr class="row-even"><td><p>0.8.Y</p></td>
 <td><p>0.4</p></td>
 </tr>
 </tbody>
 </table>
 <p>To install a specific version of this package, run, for example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">pds</span><span class="o">.</span><span class="n">api</span><span class="o">-</span><span class="n">client</span><span class="o">==</span><span class="mf">1.1.0</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">pds</span><span class="o">.</span><span class="n">api</span><span class="o">-</span><span class="n">client</span><span class="o">==</span><span class="mf">1.2.0</span>
 </pre></div>
 </div>
 <p>You can also include it as a dependency in another package, for example, in
 your <code class="docutils literal notranslate"><span class="pre">install_requires</span></code>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>If you use this package a a dependency, you <strong>cannot</strong> use
+<p>If you use this package as a dependency, you <strong>cannot</strong> use
 <code class="docutils literal notranslate"><span class="pre">pds</span></code> as a top-level namespace package in your own software. Just use
 <code class="docutils literal notranslate"><span class="pre">pds2</span></code> or anything else. This is a <a class="reference external" href="https://github.com/NASA-PDS/pds-api-client/issues/7">documented bug</a>.</p>
 </div>
 </section>
 <section id="create-an-api-connection">
-<h2>Create an API Connection<a class="headerlink" href="#create-an-api-connection" title="Permalink to this headline"></a></h2>
+<h2>Create an API Connection<a class="headerlink" href="#create-an-api-connection" title="Permalink to this heading"></a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
 <span class="kn">from</span> <span class="nn">pds.api_client.rest</span> <span class="kn">import</span> <span class="n">ApiException</span>
 <span class="kn">from</span> <span class="nn">pds.api_client</span> <span class="kn">import</span> <span class="n">Configuration</span>
 <span class="kn">from</span> <span class="nn">pds.api_client</span> <span class="kn">import</span> <span class="n">ApiClient</span>
 
+
+<span class="c1"># create an instance of the API class</span>
 <span class="n">configuration</span> <span class="o">=</span> <span class="n">Configuration</span><span class="p">()</span>
-<span class="n">configuration</span><span class="o">.</span><span class="n">host</span> <span class="o">=</span> <span class="s1">&#39;http://pds-gamma.jpl.nasa.gov/api/&#39;</span> <span class="c1"># use demo api server</span>
+<span class="n">configuration</span><span class="o">.</span><span class="n">host</span> <span class="o">=</span> <span class="s1">&#39;https://pds.nasa.gov/api/search/1&#39;</span>
 <span class="n">api_client</span> <span class="o">=</span> <span class="n">ApiClient</span><span class="p">(</span><span class="n">configuration</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
 <section id="request-one-end-point">
-<h2>Request One End Point<a class="headerlink" href="#request-one-end-point" title="Permalink to this headline"></a></h2>
-<p>There are different API end points:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="../api/pds.api_client.api.html#module-pds.api_client.api.collections_api">CollectionsApi</a></p></li>
-<li><p><a class="reference external" href="../api/pds.api_client.api.html#module-pds.api_client.api.bundles_apii">BundleApi</a></p></li>
-<li><p><a class="reference external" href="../api/pds.api_client.api.html#module-pds.api_client.api.products_api">ProductApi</a> (for all products)</p></li>
-</ul>
-<p>For collections for example:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pds.api_client.api.collections_api</span> <span class="kn">import</span> <span class="n">CollectionsApi</span>
+<h2>Request One End Point<a class="headerlink" href="#request-one-end-point" title="Permalink to this heading"></a></h2>
+<p>There are multiple API end points which accessible through modules defined in <a class="reference internal" href="../api/pds.api_client.apis.paths.html"><span class="doc">pds.api_client.apis.paths package</span></a></p>
+<p>For Collections for example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pds.api_client.apis.paths.collections</span> <span class="kn">import</span> <span class="n">Collections</span>
 <span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
 
-<span class="n">collections</span> <span class="o">=</span> <span class="n">CollectionsApi</span><span class="p">(</span><span class="n">api_client</span><span class="p">)</span>
+<span class="n">collections</span> <span class="o">=</span> <span class="n">Collections</span><span class="p">(</span><span class="n">api_client</span><span class="p">)</span>
 
 <span class="k">try</span><span class="p">:</span>
-    <span class="n">api_response</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">get_collection</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
-    <span class="n">pprint</span><span class="p">(</span><span class="n">api_response</span><span class="p">)</span>
+    <span class="n">api_response</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+        <span class="n">query_params</span><span class="o">=</span><span class="p">{</span>
+            <span class="s1">&#39;start&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="s1">&#39;limit&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+            <span class="s2">&quot;fields&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;ops:Label_File_Info.ops:file_ref&#39;</span><span class="p">]</span>
+        <span class="p">},</span>
+        <span class="n">accept_content_types</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;application/json&#39;</span><span class="p">,)</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">body</span>
+    <span class="n">pprint</span><span class="p">(</span><span class="n">api_response</span><span class="o">.</span><span class="n">summary</span><span class="p">)</span>
+
 <span class="k">except</span> <span class="n">ApiException</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Exception when calling CollectionsApi-&gt;get_collection: </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">e</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
 <section id="reference-documentation">
-<h2>Reference Documentation<a class="headerlink" href="#reference-documentation" title="Permalink to this headline"></a></h2>
+<h2>Reference Documentation<a class="headerlink" href="#reference-documentation" title="Permalink to this heading"></a></h2>
 <p>See <a class="reference external" href="../api/pds.api_client.html">client_api</a></p>
 </section>
 </section>

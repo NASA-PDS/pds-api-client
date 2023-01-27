@@ -28,22 +28,6 @@ pds.api\_client.model.pds4\_metadata module
    :undoc-members:
    :show-inheritance:
 
-pds.api\_client.model.pds4\_metadata\_data\_files module
---------------------------------------------------------
-
-.. automodule:: pds.api_client.model.pds4_metadata_data_files
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-pds.api\_client.model.pds4\_metadata\_label\_file module
---------------------------------------------------------
-
-.. automodule:: pds.api_client.model.pds4_metadata_label_file
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 pds.api\_client.model.pds4\_product module
 ------------------------------------------
 
@@ -104,14 +88,6 @@ pds.api\_client.model.wyriwyg\_product module
 ---------------------------------------------
 
 .. automodule:: pds.api_client.model.wyriwyg_product
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-pds.api\_client.model.wyriwyg\_product\_key\_value\_pairs module
-----------------------------------------------------------------
-
-.. automodule:: pds.api_client.model.wyriwyg_product_key_value_pairs
    :members:
    :undoc-members:
    :show-inheritance:

@@ -1,6 +1,34 @@
 pds.api\_client.apis package
 ============================
 
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   pds.api_client.apis.paths
+   pds.api_client.apis.tags
+
+Submodules
+----------
+
+pds.api\_client.apis.path\_to\_api module
+-----------------------------------------
+
+.. automodule:: pds.api_client.apis.path_to_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.tag\_to\_api module
+----------------------------------------
+
+.. automodule:: pds.api_client.apis.tag_to_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Module contents
 ---------------
 

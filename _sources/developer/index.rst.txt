@@ -36,15 +36,12 @@ Then::
 
 Generate the Library
 ~~~~~~~~~~~~~~~~~~~~
-First make sure the swagger.json file is up to date. It contains the OpenAPI specification of the API for which we want to generate the client code.
-The reference OpenAPI specifications for PDS can be found on `PDS API`_. Use a swagger tool (e.g. https://app.swaggerhub.com/) to convert the yaml into an unresolved JSON.
+First make sure the swagger.yaml file is up to date. It contains the OpenAPI specification of the API for which we want to generate the client code.
+The reference OpenAPI specifications for PDS can be found on `PDS API`_.
 
-You then need to preprocess this specification to remove directives which break the code generation. Run from the base directory::
+Then, install OpenAPI Generator (e.g. on macos with brew, see https://github.com/OpenAPITools/openapi-generator#1---installation), and run::
 
-    % python src/pds/api_client/preprocess_openapi.py
-
-Then, install OpenAPI Generator (e.g. on macos with brew), and run::
-
+    rm -fr pds test
     openapi-generator generate -g python -i preprocessed-swagger.json --package-name pds.api_client --additional-properties=packageVersion=X.Y.Z.
     cp .gitignore-orig .gitignore
 
@@ -52,8 +49,11 @@ Replace ``X.Y.Z`` with the version of the package you're creating. The second
 step is necessary because the OpenAPI generator blithely clobbers our
 precious ``.gitignore`` file.
 
-.. note:: Use ``openapi-generator`` version 5.2.1 or newer in order to work
-   around a bug in the generator.
+.. note:: Since a bug fix is needed for nested packages, we should now use the master branch of openapi-generator after commit 22fcdcc0b2c6ce824ad06767837c1a3975d63c0c. git clone the repository and `mvn clean install` with java 1.8.
+Then launch the generation of code, for example::
+
+    java -jar modules/openapi-generator-cli/target/openapi-generator-cli.jar generate -i /Users/loubrieu/PycharmProjects/pds-api-client/swagger.yaml -g python -o /Users/loubrieu/PycharmProjects/pds-api-client/ --package-name pds.api_client --additional-properties=packageVersion=1.2.0
+
 
 
 Installation

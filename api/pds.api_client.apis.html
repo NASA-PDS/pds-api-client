@@ -14,12 +14,14 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="pds.api_client.model package" href="pds.api_client.model.html" />
-    <link rel="prev" title="pds.api_client.api package" href="pds.api_client.api.html" /> 
+    <link rel="next" title="pds.api_client.apis.paths package" href="pds.api_client.apis.paths.html" />
+    <link rel="prev" title="pds.api_client package" href="pds.api_client.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -43,26 +45,29 @@
 <li class="toctree-l1"><a class="reference internal" href="../quickstart/index.html">Quickstart for the PDS API Python Client</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="pds.api_client.html">Package Reference</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="pds.api_client.html#subpackages">Subpackages</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="pds.api_client.api.html">pds.api_client.api package</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">pds.api_client.apis package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-pds.api_client.apis.path_to_api">pds.api_client.apis.path_to_api module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-pds.api_client.apis.tag_to_api">pds.api_client.apis.tag_to_api module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#module-pds.api_client.apis">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="pds.api_client.model.html">pds.api_client.model package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.html">pds.api_client.models package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.paths.html">pds.api_client.paths package</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="pds.api_client.html#submodules">Submodules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pds.api_client.html#module-pds.api_client.api_client">pds.api_client.api_client module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pds.api_client.html#module-pds.api_client.configuration">pds.api_client.configuration module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pds.api_client.html#module-pds.api_client.exceptions">pds.api_client.exceptions module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pds.api_client.html#module-pds.api_client.model_utils">pds.api_client.model_utils module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pds.api_client.html#module-pds.api_client.rest">pds.api_client.rest module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.html#module-pds.api_client.schemas">pds.api_client.schemas module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pds.api_client.html#module-pds.api_client">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../developer/index.html">Developer Notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../support/support.html">Support</a></li>
 </ul>
 
         </div>
@@ -78,9 +83,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="pds.api_client.html">pds.api_client package</a> &raquo;</li>
-      <li>pds.api_client.apis package</li>
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="pds.api_client.html">pds.api_client package</a></li>
+      <li class="breadcrumb-item active">pds.api_client.apis package</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/api/pds.api_client.apis.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -91,9 +96,268 @@
            <div itemprop="articleBody">
              
   <section id="pds-api-client-apis-package">
-<h1>pds.api_client.apis package<a class="headerlink" href="#pds-api-client-apis-package" title="Permalink to this headline"></a></h1>
+<h1>pds.api_client.apis package<a class="headerlink" href="#pds-api-client-apis-package" title="Permalink to this heading"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pds.api_client.apis.paths.html">pds.api_client.apis.paths package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.bundles">pds.api_client.apis.paths.bundles module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.bundles.Bundles"><code class="docutils literal notranslate"><span class="pre">Bundles</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.bundles_identifier">pds.api_client.apis.paths.bundles_identifier module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.bundles_identifier.BundlesIdentifier"><code class="docutils literal notranslate"><span class="pre">BundlesIdentifier</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.bundles_identifier_all">pds.api_client.apis.paths.bundles_identifier_all module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.bundles_identifier_all.BundlesIdentifierAll"><code class="docutils literal notranslate"><span class="pre">BundlesIdentifierAll</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.bundles_identifier_collections">pds.api_client.apis.paths.bundles_identifier_collections module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.bundles_identifier_collections.BundlesIdentifierCollections"><code class="docutils literal notranslate"><span class="pre">BundlesIdentifierCollections</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.bundles_identifier_collections_all">pds.api_client.apis.paths.bundles_identifier_collections_all module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.bundles_identifier_collections_all.BundlesIdentifierCollectionsAll"><code class="docutils literal notranslate"><span class="pre">BundlesIdentifierCollectionsAll</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.bundles_identifier_collections_latest">pds.api_client.apis.paths.bundles_identifier_collections_latest module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.bundles_identifier_collections_latest.BundlesIdentifierCollectionsLatest"><code class="docutils literal notranslate"><span class="pre">BundlesIdentifierCollectionsLatest</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.bundles_identifier_latest">pds.api_client.apis.paths.bundles_identifier_latest module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.bundles_identifier_latest.BundlesIdentifierLatest"><code class="docutils literal notranslate"><span class="pre">BundlesIdentifierLatest</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.bundles_identifier_products">pds.api_client.apis.paths.bundles_identifier_products module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.bundles_identifier_products.BundlesIdentifierProducts"><code class="docutils literal notranslate"><span class="pre">BundlesIdentifierProducts</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.classes">pds.api_client.apis.paths.classes module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.classes.Classes"><code class="docutils literal notranslate"><span class="pre">Classes</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.classes_class">pds.api_client.apis.paths.classes_class module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.classes_class.ClassesClass"><code class="docutils literal notranslate"><span class="pre">ClassesClass</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.classes_class_identifier_member_of">pds.api_client.apis.paths.classes_class_identifier_member_of module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.classes_class_identifier_member_of.ClassesClassIdentifierMemberOf"><code class="docutils literal notranslate"><span class="pre">ClassesClassIdentifierMemberOf</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.classes_class_identifier_member_of_member_of">pds.api_client.apis.paths.classes_class_identifier_member_of_member_of module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.classes_class_identifier_member_of_member_of.ClassesClassIdentifierMemberOfMemberOf"><code class="docutils literal notranslate"><span class="pre">ClassesClassIdentifierMemberOfMemberOf</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.classes_class_identifier_member_of_member_of_versions">pds.api_client.apis.paths.classes_class_identifier_member_of_member_of_versions module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.classes_class_identifier_member_of_member_of_versions.ClassesClassIdentifierMemberOfMemberOfVersions"><code class="docutils literal notranslate"><span class="pre">ClassesClassIdentifierMemberOfMemberOfVersions</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.classes_class_identifier_member_of_versions">pds.api_client.apis.paths.classes_class_identifier_member_of_versions module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.classes_class_identifier_member_of_versions.ClassesClassIdentifierMemberOfVersions"><code class="docutils literal notranslate"><span class="pre">ClassesClassIdentifierMemberOfVersions</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.classes_class_identifier_members">pds.api_client.apis.paths.classes_class_identifier_members module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.classes_class_identifier_members.ClassesClassIdentifierMembers"><code class="docutils literal notranslate"><span class="pre">ClassesClassIdentifierMembers</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.classes_class_identifier_members_members">pds.api_client.apis.paths.classes_class_identifier_members_members module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.classes_class_identifier_members_members.ClassesClassIdentifierMembersMembers"><code class="docutils literal notranslate"><span class="pre">ClassesClassIdentifierMembersMembers</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.classes_class_identifier_members_members_versions">pds.api_client.apis.paths.classes_class_identifier_members_members_versions module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.classes_class_identifier_members_members_versions.ClassesClassIdentifierMembersMembersVersions"><code class="docutils literal notranslate"><span class="pre">ClassesClassIdentifierMembersMembersVersions</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.classes_class_identifier_members_versions">pds.api_client.apis.paths.classes_class_identifier_members_versions module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.classes_class_identifier_members_versions.ClassesClassIdentifierMembersVersions"><code class="docutils literal notranslate"><span class="pre">ClassesClassIdentifierMembersVersions</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.collections">pds.api_client.apis.paths.collections module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.collections.Collections"><code class="docutils literal notranslate"><span class="pre">Collections</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.collections_identifier">pds.api_client.apis.paths.collections_identifier module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.collections_identifier.CollectionsIdentifier"><code class="docutils literal notranslate"><span class="pre">CollectionsIdentifier</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.collections_identifier_all">pds.api_client.apis.paths.collections_identifier_all module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.collections_identifier_all.CollectionsIdentifierAll"><code class="docutils literal notranslate"><span class="pre">CollectionsIdentifierAll</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.collections_identifier_bundles">pds.api_client.apis.paths.collections_identifier_bundles module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.collections_identifier_bundles.CollectionsIdentifierBundles"><code class="docutils literal notranslate"><span class="pre">CollectionsIdentifierBundles</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.collections_identifier_latest">pds.api_client.apis.paths.collections_identifier_latest module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.collections_identifier_latest.CollectionsIdentifierLatest"><code class="docutils literal notranslate"><span class="pre">CollectionsIdentifierLatest</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.collections_identifier_products">pds.api_client.apis.paths.collections_identifier_products module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.collections_identifier_products.CollectionsIdentifierProducts"><code class="docutils literal notranslate"><span class="pre">CollectionsIdentifierProducts</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.collections_identifier_products_all">pds.api_client.apis.paths.collections_identifier_products_all module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.collections_identifier_products_all.CollectionsIdentifierProductsAll"><code class="docutils literal notranslate"><span class="pre">CollectionsIdentifierProductsAll</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.collections_identifier_products_latest">pds.api_client.apis.paths.collections_identifier_products_latest module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.collections_identifier_products_latest.CollectionsIdentifierProductsLatest"><code class="docutils literal notranslate"><span class="pre">CollectionsIdentifierProductsLatest</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.products">pds.api_client.apis.paths.products module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.products.Products"><code class="docutils literal notranslate"><span class="pre">Products</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.products_identifier">pds.api_client.apis.paths.products_identifier module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.products_identifier.ProductsIdentifier"><code class="docutils literal notranslate"><span class="pre">ProductsIdentifier</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.products_identifier_all">pds.api_client.apis.paths.products_identifier_all module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.products_identifier_all.ProductsIdentifierAll"><code class="docutils literal notranslate"><span class="pre">ProductsIdentifierAll</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.products_identifier_bundles">pds.api_client.apis.paths.products_identifier_bundles module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.products_identifier_bundles.ProductsIdentifierBundles"><code class="docutils literal notranslate"><span class="pre">ProductsIdentifierBundles</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.products_identifier_bundles_all">pds.api_client.apis.paths.products_identifier_bundles_all module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.products_identifier_bundles_all.ProductsIdentifierBundlesAll"><code class="docutils literal notranslate"><span class="pre">ProductsIdentifierBundlesAll</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.products_identifier_bundles_latest">pds.api_client.apis.paths.products_identifier_bundles_latest module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.products_identifier_bundles_latest.ProductsIdentifierBundlesLatest"><code class="docutils literal notranslate"><span class="pre">ProductsIdentifierBundlesLatest</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.products_identifier_collections">pds.api_client.apis.paths.products_identifier_collections module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.products_identifier_collections.ProductsIdentifierCollections"><code class="docutils literal notranslate"><span class="pre">ProductsIdentifierCollections</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.products_identifier_collections_all">pds.api_client.apis.paths.products_identifier_collections_all module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.products_identifier_collections_all.ProductsIdentifierCollectionsAll"><code class="docutils literal notranslate"><span class="pre">ProductsIdentifierCollectionsAll</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.products_identifier_collections_latest">pds.api_client.apis.paths.products_identifier_collections_latest module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.products_identifier_collections_latest.ProductsIdentifierCollectionsLatest"><code class="docutils literal notranslate"><span class="pre">ProductsIdentifierCollectionsLatest</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.products_identifier_latest">pds.api_client.apis.paths.products_identifier_latest module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.products_identifier_latest.ProductsIdentifierLatest"><code class="docutils literal notranslate"><span class="pre">ProductsIdentifierLatest</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.products_identifier_member_of">pds.api_client.apis.paths.products_identifier_member_of module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.products_identifier_member_of.ProductsIdentifierMemberOf"><code class="docutils literal notranslate"><span class="pre">ProductsIdentifierMemberOf</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.products_identifier_member_of_member_of">pds.api_client.apis.paths.products_identifier_member_of_member_of module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.products_identifier_member_of_member_of.ProductsIdentifierMemberOfMemberOf"><code class="docutils literal notranslate"><span class="pre">ProductsIdentifierMemberOfMemberOf</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.products_identifier_member_of_member_of_versions">pds.api_client.apis.paths.products_identifier_member_of_member_of_versions module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.products_identifier_member_of_member_of_versions.ProductsIdentifierMemberOfMemberOfVersions"><code class="docutils literal notranslate"><span class="pre">ProductsIdentifierMemberOfMemberOfVersions</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.products_identifier_member_of_versions">pds.api_client.apis.paths.products_identifier_member_of_versions module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.products_identifier_member_of_versions.ProductsIdentifierMemberOfVersions"><code class="docutils literal notranslate"><span class="pre">ProductsIdentifierMemberOfVersions</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.products_identifier_members">pds.api_client.apis.paths.products_identifier_members module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.products_identifier_members.ProductsIdentifierMembers"><code class="docutils literal notranslate"><span class="pre">ProductsIdentifierMembers</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.products_identifier_members_members">pds.api_client.apis.paths.products_identifier_members_members module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.products_identifier_members_members.ProductsIdentifierMembersMembers"><code class="docutils literal notranslate"><span class="pre">ProductsIdentifierMembersMembers</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.products_identifier_members_members_versions">pds.api_client.apis.paths.products_identifier_members_members_versions module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.products_identifier_members_members_versions.ProductsIdentifierMembersMembersVersions"><code class="docutils literal notranslate"><span class="pre">ProductsIdentifierMembersMembersVersions</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths.products_identifier_members_versions">pds.api_client.apis.paths.products_identifier_members_versions module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.paths.html#pds.api_client.apis.paths.products_identifier_members_versions.ProductsIdentifierMembersVersions"><code class="docutils literal notranslate"><span class="pre">ProductsIdentifierMembersVersions</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.paths.html#module-pds.api_client.apis.paths">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pds.api_client.apis.tags.html">pds.api_client.apis.tags package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.tags.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.tags.html#module-pds.api_client.apis.tags.classes_api">pds.api_client.apis.tags.classes_api module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.tags.html#pds.api_client.apis.tags.classes_api.ClassesApi"><code class="docutils literal notranslate"><span class="pre">ClassesApi</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.tags.html#module-pds.api_client.apis.tags.deprecated_api">pds.api_client.apis.tags.deprecated_api module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.tags.html#pds.api_client.apis.tags.deprecated_api.DeprecatedApi"><code class="docutils literal notranslate"><span class="pre">DeprecatedApi</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.tags.html#module-pds.api_client.apis.tags.products_api">pds.api_client.apis.tags.products_api module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.tags.html#pds.api_client.apis.tags.products_api.ProductsApi"><code class="docutils literal notranslate"><span class="pre">ProductsApi</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.tags.html#module-pds.api_client.apis.tags.references_api">pds.api_client.apis.tags.references_api module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.tags.html#pds.api_client.apis.tags.references_api.ReferencesApi"><code class="docutils literal notranslate"><span class="pre">ReferencesApi</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.apis.tags.html#module-pds.api_client.apis.tags">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.tags.html#pds.api_client.apis.tags.TagValues"><code class="docutils literal notranslate"><span class="pre">TagValues</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.apis.tags.html#pds.api_client.apis.tags.TagValues.CLASSES"><code class="docutils literal notranslate"><span class="pre">TagValues.CLASSES</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.apis.tags.html#pds.api_client.apis.tags.TagValues.DEPRECATED"><code class="docutils literal notranslate"><span class="pre">TagValues.DEPRECATED</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.apis.tags.html#pds.api_client.apis.tags.TagValues.PRODUCTS"><code class="docutils literal notranslate"><span class="pre">TagValues.PRODUCTS</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.apis.tags.html#pds.api_client.apis.tags.TagValues.REFERENCES"><code class="docutils literal notranslate"><span class="pre">TagValues.REFERENCES</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-pds.api_client.apis.path_to_api">
+<span id="pds-api-client-apis-path-to-api-module"></span><h2>pds.api_client.apis.path_to_api module<a class="headerlink" href="#module-pds.api_client.apis.path_to_api" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pds.api_client.apis.path_to_api.PathToApi">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pds.api_client.apis.path_to_api.</span></span><span class="sig-name descname"><span class="pre">PathToApi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_typename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_fields</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pds.api_client.apis.path_to_api.PathToApi" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
+</dd></dl>
+
+</section>
+<section id="module-pds.api_client.apis.tag_to_api">
+<span id="pds-api-client-apis-tag-to-api-module"></span><h2>pds.api_client.apis.tag_to_api module<a class="headerlink" href="#module-pds.api_client.apis.tag_to_api" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pds.api_client.apis.tag_to_api.TagToApi">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pds.api_client.apis.tag_to_api.</span></span><span class="sig-name descname"><span class="pre">TagToApi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_typename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_fields</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pds.api_client.apis.tag_to_api.TagToApi" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pds.api_client.apis.tag_to_api.TagToApi.classes">
+<span class="sig-name descname"><span class="pre">classes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="pds.api_client.apis.tags.html#pds.api_client.apis.tags.classes_api.ClassesApi" title="pds.api_client.apis.tags.classes_api.ClassesApi"><span class="pre">ClassesApi</span></a></em><a class="headerlink" href="#pds.api_client.apis.tag_to_api.TagToApi.classes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pds.api_client.apis.tag_to_api.TagToApi.deprecated">
+<span class="sig-name descname"><span class="pre">deprecated</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="pds.api_client.apis.tags.html#pds.api_client.apis.tags.deprecated_api.DeprecatedApi" title="pds.api_client.apis.tags.deprecated_api.DeprecatedApi"><span class="pre">DeprecatedApi</span></a></em><a class="headerlink" href="#pds.api_client.apis.tag_to_api.TagToApi.deprecated" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pds.api_client.apis.tag_to_api.TagToApi.products">
+<span class="sig-name descname"><span class="pre">products</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="pds.api_client.apis.tags.html#pds.api_client.apis.tags.products_api.ProductsApi" title="pds.api_client.apis.tags.products_api.ProductsApi"><span class="pre">ProductsApi</span></a></em><a class="headerlink" href="#pds.api_client.apis.tag_to_api.TagToApi.products" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pds.api_client.apis.tag_to_api.TagToApi.references">
+<span class="sig-name descname"><span class="pre">references</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="pds.api_client.apis.tags.html#pds.api_client.apis.tags.references_api.ReferencesApi" title="pds.api_client.apis.tags.references_api.ReferencesApi"><span class="pre">ReferencesApi</span></a></em><a class="headerlink" href="#pds.api_client.apis.tag_to_api.TagToApi.references" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
 <section id="module-pds.api_client.apis">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pds.api_client.apis" title="Permalink to this headline"></a></h2>
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pds.api_client.apis" title="Permalink to this heading"></a></h2>
 </section>
 </section>
 
@@ -101,8 +365,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="pds.api_client.api.html" class="btn btn-neutral float-left" title="pds.api_client.api package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="pds.api_client.model.html" class="btn btn-neutral float-right" title="pds.api_client.model package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="pds.api_client.html" class="btn btn-neutral float-left" title="pds.api_client package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pds.api_client.apis.paths.html" class="btn btn-neutral float-right" title="pds.api_client.apis.paths package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

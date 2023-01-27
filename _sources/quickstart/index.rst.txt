@@ -35,6 +35,8 @@ The package releases match with the `Search API specification <https://nasa-pds.
 
    * - pds.api-client
      - pds search api specification
+   * - 1.2.X
+     - 1.1
    * - 1.1.X
      - 1.0
    * - 0.8.Y
@@ -42,18 +44,18 @@ The package releases match with the `Search API specification <https://nasa-pds.
 
 To install a specific version of this package, run, for example::
 
-    pip install pds.api-client==1.1.0
+    pip install pds.api-client==1.2.0
 
 
 You can also include it as a dependency in another package, for example, in
 your ``install_requires``.
 
-.. warning:: If you use this package a a dependency, you **cannot** use
+.. warning:: If you use this package as a dependency, you **cannot** use
    ``pds`` as a top-level namespace package in your own software. Just use
    ``pds2`` or anything else. This is a `documented bug`_.
 
 
-Create an api connection
+Create an API Connection
 ------------------------
 
 .. code-block:: python
@@ -63,37 +65,41 @@ Create an api connection
    from pds.api_client import Configuration
    from pds.api_client import ApiClient
 
+
+   # create an instance of the API class
    configuration = Configuration()
-   configuration.host = 'http://pds-gamma.jpl.nasa.gov/api/' # use demo api server
+   configuration.host = 'https://pds.nasa.gov/api/search/1'
    api_client = ApiClient(configuration)
 
 
-Request one end point
+Request One End Point
 ---------------------
 
-There are different API end points:
+There are multiple API end points which accessible through modules defined in :doc:`/api/pds.api_client.apis.paths`
 
-- `CollectionsApi <../api/pds.api_client.api.html#module-pds.api_client.api.collections_api>`_
-
-- `BundleApi <../api/pds.api_client.api.html#module-pds.api_client.api.bundles_apii>`_
-
-- `ProductApi <../api/pds.api_client.api.html#module-pds.api_client.api.products_api>`_ (for all products)
-
-
-For collections for example:
+For Collections for example:
 
 .. code-block:: python
 
-    from pds.api_client.api.collections_api import CollectionsApi
+    from pds.api_client.apis.paths.collections import Collections
     from pprint import pprint
 
-    collections = CollectionsApi(api_client)
+    collections = Collections(api_client)
 
     try:
-        api_response = collections.get_collection(start=0, limit=20)
-        pprint(api_response)
+        api_response = collections.get(
+            query_params={
+                'start': 0,
+                'limit': 10,
+                "fields": ['ops:Label_File_Info.ops:file_ref']
+            },
+            accept_content_types=('application/json',)
+        ).body
+        pprint(api_response.summary)
+
     except ApiException as e:
         print("Exception when calling CollectionsApi->get_collection: %s\n" % e)
+
 
 
 Reference Documentation
