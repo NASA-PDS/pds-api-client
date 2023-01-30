@@ -1,0 +1,365 @@
+pds.api\_client.apis.paths package
+==================================
+
+Submodules
+----------
+
+pds.api\_client.apis.paths.bundles module
+-----------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.bundles
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.bundles\_identifier module
+-----------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.bundles_identifier
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.bundles\_identifier\_all module
+----------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.bundles_identifier_all
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.bundles\_identifier\_collections module
+------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.bundles_identifier_collections
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.bundles\_identifier\_collections\_all module
+-----------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.bundles_identifier_collections_all
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.bundles\_identifier\_collections\_latest module
+--------------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.bundles_identifier_collections_latest
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.bundles\_identifier\_latest module
+-------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.bundles_identifier_latest
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.bundles\_identifier\_products module
+---------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.bundles_identifier_products
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.classes module
+-----------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.classes
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.classes\_class module
+------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.classes_class
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.classes\_class\_identifier\_member\_of module
+------------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.classes_class_identifier_member_of
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.classes\_class\_identifier\_member\_of\_member\_of module
+------------------------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.classes_class_identifier_member_of_member_of
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.classes\_class\_identifier\_member\_of\_member\_of\_versions module
+----------------------------------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.classes_class_identifier_member_of_member_of_versions
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.classes\_class\_identifier\_member\_of\_versions module
+----------------------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.classes_class_identifier_member_of_versions
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.classes\_class\_identifier\_members module
+---------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.classes_class_identifier_members
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.classes\_class\_identifier\_members\_members module
+------------------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.classes_class_identifier_members_members
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.classes\_class\_identifier\_members\_members\_versions module
+----------------------------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.classes_class_identifier_members_members_versions
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.classes\_class\_identifier\_members\_versions module
+-------------------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.classes_class_identifier_members_versions
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.collections module
+---------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.collections
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.collections\_identifier module
+---------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.collections_identifier
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.collections\_identifier\_all module
+--------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.collections_identifier_all
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.collections\_identifier\_bundles module
+------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.collections_identifier_bundles
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.collections\_identifier\_latest module
+-----------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.collections_identifier_latest
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.collections\_identifier\_products module
+-------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.collections_identifier_products
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.collections\_identifier\_products\_all module
+------------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.collections_identifier_products_all
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.collections\_identifier\_products\_latest module
+---------------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.collections_identifier_products_latest
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.products module
+------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.products
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.products\_identifier module
+------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.products_identifier
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.products\_identifier\_all module
+-----------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.products_identifier_all
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.products\_identifier\_bundles module
+---------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.products_identifier_bundles
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.products\_identifier\_bundles\_all module
+--------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.products_identifier_bundles_all
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.products\_identifier\_bundles\_latest module
+-----------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.products_identifier_bundles_latest
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.products\_identifier\_collections module
+-------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.products_identifier_collections
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.products\_identifier\_collections\_all module
+------------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.products_identifier_collections_all
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.products\_identifier\_collections\_latest module
+---------------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.products_identifier_collections_latest
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.products\_identifier\_latest module
+--------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.products_identifier_latest
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.products\_identifier\_member\_of module
+------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.products_identifier_member_of
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.products\_identifier\_member\_of\_member\_of module
+------------------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.products_identifier_member_of_member_of
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.products\_identifier\_member\_of\_member\_of\_versions module
+----------------------------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.products_identifier_member_of_member_of_versions
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.products\_identifier\_member\_of\_versions module
+----------------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.products_identifier_member_of_versions
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.products\_identifier\_members module
+---------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.products_identifier_members
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.products\_identifier\_members\_members module
+------------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.products_identifier_members_members
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.products\_identifier\_members\_members\_versions module
+----------------------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.products_identifier_members_members_versions
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.paths.products\_identifier\_members\_versions module
+-------------------------------------------------------------------------
+
+.. automodule:: pds.api_client.apis.paths.products_identifier_members_versions
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: pds.api_client.apis.paths
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pds.api_client.apis.tags package &mdash; PDS API Client (Python)  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="pds.api_client.model package" href="pds.api_client.model.html" />
+    <link rel="prev" title="pds.api_client.apis.paths package" href="pds.api_client.apis.paths.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> PDS API Client (Python)
+            <img src="../_static/PDS_Planets.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart/index.html">Quickstart for the PDS API Python Client</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="pds.api_client.html">Package Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="pds.api_client.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="pds.api_client.apis.html">pds.api_client.apis package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="pds.api_client.apis.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.apis.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.apis.html#module-pds.api_client.apis.path_to_api">pds.api_client.apis.path_to_api module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.apis.html#module-pds.api_client.apis.tag_to_api">pds.api_client.apis.tag_to_api module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.apis.html#module-pds.api_client.apis">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.model.html">pds.api_client.model package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.html">pds.api_client.models package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.paths.html">pds.api_client.paths package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.html#module-pds.api_client.api_client">pds.api_client.api_client module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.html#module-pds.api_client.configuration">pds.api_client.configuration module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.html#module-pds.api_client.exceptions">pds.api_client.exceptions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.html#module-pds.api_client.rest">pds.api_client.rest module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.html#module-pds.api_client.schemas">pds.api_client.schemas module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.html#module-pds.api_client">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/index.html">Developer Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PDS API Client (Python)</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="pds.api_client.html">pds.api_client package</a></li>
+          <li class="breadcrumb-item"><a href="pds.api_client.apis.html">pds.api_client.apis package</a></li>
+      <li class="breadcrumb-item active">pds.api_client.apis.tags package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/pds.api_client.apis.tags.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pds-api-client-apis-tags-package">
+<h1>pds.api_client.apis.tags package<a class="headerlink" href="#pds-api-client-apis-tags-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-pds.api_client.apis.tags.classes_api">
+<span id="pds-api-client-apis-tags-classes-api-module"></span><h2>pds.api_client.apis.tags.classes_api module<a class="headerlink" href="#module-pds.api_client.apis.tags.classes_api" title="Permalink to this heading"></a></h2>
+<p>Registry API</p>
+<p>Registry API enabling advanced search on PDS data and metadata. The API provides end-points to search for bundles, collections and any PDS products with advanced search queries. It also enables to browse the archive hierarchically downward (e.g. collection/s products) or upward (e.g. bundles containing a product). The detailed syntax for querying the end-point is given in the reference documentation.   # noqa: E501</p>
+<p>The version of the OpenAPI document: 1.1
+Contact: <a class="reference external" href="mailto:pds-operator&#37;&#52;&#48;jpl&#46;nasa&#46;gov">pds-operator<span>&#64;</span>jpl<span>&#46;</span>nasa<span>&#46;</span>gov</a>
+Generated by: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="pds.api_client.apis.tags.classes_api.ClassesApi">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pds.api_client.apis.tags.classes_api.</span></span><span class="sig-name descname"><span class="pre">ClassesApi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="pds.api_client.html#pds.api_client.api_client.ApiClient" title="pds.api_client.api_client.ApiClient"><span class="pre">ApiClient</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/apis/tags/classes_api.html#ClassesApi"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.apis.tags.classes_api.ClassesApi" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="pds.api_client.paths.classes_class.html#pds.api_client.paths.classes_class.get.ClassList" title="pds.api_client.paths.classes_class.get.ClassList"><code class="xref py py-class docutils literal notranslate"><span class="pre">ClassList</span></code></a>, <a class="reference internal" href="pds.api_client.paths.classes.html#pds.api_client.paths.classes.get.Classes" title="pds.api_client.paths.classes.get.Classes"><code class="xref py py-class docutils literal notranslate"><span class="pre">Classes</span></code></a></p>
+<p>NOTE: This class is auto generated by OpenAPI Generator
+Ref: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a></p>
+<p>Do not edit the class manually.</p>
+</dd></dl>
+
+</section>
+<section id="module-pds.api_client.apis.tags.deprecated_api">
+<span id="pds-api-client-apis-tags-deprecated-api-module"></span><h2>pds.api_client.apis.tags.deprecated_api module<a class="headerlink" href="#module-pds.api_client.apis.tags.deprecated_api" title="Permalink to this heading"></a></h2>
+<p>Registry API</p>
+<p>Registry API enabling advanced search on PDS data and metadata. The API provides end-points to search for bundles, collections and any PDS products with advanced search queries. It also enables to browse the archive hierarchically downward (e.g. collection/s products) or upward (e.g. bundles containing a product). The detailed syntax for querying the end-point is given in the reference documentation.   # noqa: E501</p>
+<p>The version of the OpenAPI document: 1.1
+Contact: <a class="reference external" href="mailto:pds-operator&#37;&#52;&#48;jpl&#46;nasa&#46;gov">pds-operator<span>&#64;</span>jpl<span>&#46;</span>nasa<span>&#46;</span>gov</a>
+Generated by: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="pds.api_client.apis.tags.deprecated_api.DeprecatedApi">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pds.api_client.apis.tags.deprecated_api.</span></span><span class="sig-name descname"><span class="pre">DeprecatedApi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="pds.api_client.html#pds.api_client.api_client.ApiClient" title="pds.api_client.api_client.ApiClient"><span class="pre">ApiClient</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/apis/tags/deprecated_api.html#DeprecatedApi"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.apis.tags.deprecated_api.DeprecatedApi" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="pds.api_client.paths.bundles.html#pds.api_client.paths.bundles.get.BundleList" title="pds.api_client.paths.bundles.get.BundleList"><code class="xref py py-class docutils literal notranslate"><span class="pre">BundleList</span></code></a>, <a class="reference internal" href="pds.api_client.paths.bundles_identifier.html#pds.api_client.paths.bundles_identifier.get.BundlesLidvid" title="pds.api_client.paths.bundles_identifier.get.BundlesLidvid"><code class="xref py py-class docutils literal notranslate"><span class="pre">BundlesLidvid</span></code></a>, <a class="reference internal" href="pds.api_client.paths.bundles_identifier_all.html#pds.api_client.paths.bundles_identifier_all.get.BundlesLidvidAll" title="pds.api_client.paths.bundles_identifier_all.get.BundlesLidvidAll"><code class="xref py py-class docutils literal notranslate"><span class="pre">BundlesLidvidAll</span></code></a>, <a class="reference internal" href="pds.api_client.paths.bundles_identifier_collections.html#pds.api_client.paths.bundles_identifier_collections.get.BundlesLidvidCollections" title="pds.api_client.paths.bundles_identifier_collections.get.BundlesLidvidCollections"><code class="xref py py-class docutils literal notranslate"><span class="pre">BundlesLidvidCollections</span></code></a>, <a class="reference internal" href="pds.api_client.paths.bundles_identifier_collections_all.html#pds.api_client.paths.bundles_identifier_collections_all.get.BundlesLidvidCollectionsAll" title="pds.api_client.paths.bundles_identifier_collections_all.get.BundlesLidvidCollectionsAll"><code class="xref py py-class docutils literal notranslate"><span class="pre">BundlesLidvidCollectionsAll</span></code></a>, <a class="reference internal" href="pds.api_client.paths.bundles_identifier_collections_latest.html#pds.api_client.paths.bundles_identifier_collections_latest.get.BundlesLidvidCollectionsLatest" title="pds.api_client.paths.bundles_identifier_collections_latest.get.BundlesLidvidCollectionsLatest"><code class="xref py py-class docutils literal notranslate"><span class="pre">BundlesLidvidCollectionsLatest</span></code></a>, <a class="reference internal" href="pds.api_client.paths.bundles_identifier_latest.html#pds.api_client.paths.bundles_identifier_latest.get.BundlesLidvidLatest" title="pds.api_client.paths.bundles_identifier_latest.get.BundlesLidvidLatest"><code class="xref py py-class docutils literal notranslate"><span class="pre">BundlesLidvidLatest</span></code></a>, <a class="reference internal" href="pds.api_client.paths.bundles_identifier_products.html#pds.api_client.paths.bundles_identifier_products.get.BundlesLidvidProducts" title="pds.api_client.paths.bundles_identifier_products.get.BundlesLidvidProducts"><code class="xref py py-class docutils literal notranslate"><span class="pre">BundlesLidvidProducts</span></code></a>, <a class="reference internal" href="pds.api_client.paths.collections.html#pds.api_client.paths.collections.get.CollectionList" title="pds.api_client.paths.collections.get.CollectionList"><code class="xref py py-class docutils literal notranslate"><span class="pre">CollectionList</span></code></a>, <a class="reference internal" href="pds.api_client.paths.collections_identifier.html#pds.api_client.paths.collections_identifier.get.CollectionsLidvid" title="pds.api_client.paths.collections_identifier.get.CollectionsLidvid"><code class="xref py py-class docutils literal notranslate"><span class="pre">CollectionsLidvid</span></code></a>, <a class="reference internal" href="pds.api_client.paths.collections_identifier_all.html#pds.api_client.paths.collections_identifier_all.get.CollectionsLidvidAll" title="pds.api_client.paths.collections_identifier_all.get.CollectionsLidvidAll"><code class="xref py py-class docutils literal notranslate"><span class="pre">CollectionsLidvidAll</span></code></a>, <a class="reference internal" href="pds.api_client.paths.collections_identifier_bundles.html#pds.api_client.paths.collections_identifier_bundles.get.CollectionsLidvidBundles" title="pds.api_client.paths.collections_identifier_bundles.get.CollectionsLidvidBundles"><code class="xref py py-class docutils literal notranslate"><span class="pre">CollectionsLidvidBundles</span></code></a>, <a class="reference internal" href="pds.api_client.paths.collections_identifier_latest.html#pds.api_client.paths.collections_identifier_latest.get.CollectionsLidvidLatest" title="pds.api_client.paths.collections_identifier_latest.get.CollectionsLidvidLatest"><code class="xref py py-class docutils literal notranslate"><span class="pre">CollectionsLidvidLatest</span></code></a>, <a class="reference internal" href="pds.api_client.paths.collections_identifier_products.html#pds.api_client.paths.collections_identifier_products.get.CollectionsLidvidProducts" title="pds.api_client.paths.collections_identifier_products.get.CollectionsLidvidProducts"><code class="xref py py-class docutils literal notranslate"><span class="pre">CollectionsLidvidProducts</span></code></a>, <a class="reference internal" href="pds.api_client.paths.collections_identifier_products_all.html#pds.api_client.paths.collections_identifier_products_all.get.CollectionsLidvidProductsAll" title="pds.api_client.paths.collections_identifier_products_all.get.CollectionsLidvidProductsAll"><code class="xref py py-class docutils literal notranslate"><span class="pre">CollectionsLidvidProductsAll</span></code></a>, <a class="reference internal" href="pds.api_client.paths.collections_identifier_products_latest.html#pds.api_client.paths.collections_identifier_products_latest.get.CollectionsLidvidProductsLatest" title="pds.api_client.paths.collections_identifier_products_latest.get.CollectionsLidvidProductsLatest"><code class="xref py py-class docutils literal notranslate"><span class="pre">CollectionsLidvidProductsLatest</span></code></a>, <a class="reference internal" href="pds.api_client.paths.products_identifier_bundles_all.html#pds.api_client.paths.products_identifier_bundles_all.get.ProductsLidividBundlesAll" title="pds.api_client.paths.products_identifier_bundles_all.get.ProductsLidividBundlesAll"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProductsLidividBundlesAll</span></code></a>, <a class="reference internal" href="pds.api_client.paths.products_identifier_bundles.html#pds.api_client.paths.products_identifier_bundles.get.ProductsLidvidBundles" title="pds.api_client.paths.products_identifier_bundles.get.ProductsLidvidBundles"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProductsLidvidBundles</span></code></a>, <a class="reference internal" href="pds.api_client.paths.products_identifier_bundles_latest.html#pds.api_client.paths.products_identifier_bundles_latest.get.ProductsLidvidBundlesLatest" title="pds.api_client.paths.products_identifier_bundles_latest.get.ProductsLidvidBundlesLatest"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProductsLidvidBundlesLatest</span></code></a>, <a class="reference internal" href="pds.api_client.paths.products_identifier_collections.html#pds.api_client.paths.products_identifier_collections.get.ProductsLidvidCollections" title="pds.api_client.paths.products_identifier_collections.get.ProductsLidvidCollections"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProductsLidvidCollections</span></code></a>, <a class="reference internal" href="pds.api_client.paths.products_identifier_collections_all.html#pds.api_client.paths.products_identifier_collections_all.get.ProductsLidvidCollectionsAll" title="pds.api_client.paths.products_identifier_collections_all.get.ProductsLidvidCollectionsAll"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProductsLidvidCollectionsAll</span></code></a>, <a class="reference internal" href="pds.api_client.paths.products_identifier_collections_latest.html#pds.api_client.paths.products_identifier_collections_latest.get.ProductsLidvidCollectionsLatest" title="pds.api_client.paths.products_identifier_collections_latest.get.ProductsLidvidCollectionsLatest"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProductsLidvidCollectionsLatest</span></code></a></p>
+<p>NOTE: This class is auto generated by OpenAPI Generator
+Ref: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a></p>
+<p>Do not edit the class manually.</p>
+</dd></dl>
+
+</section>
+<section id="module-pds.api_client.apis.tags.products_api">
+<span id="pds-api-client-apis-tags-products-api-module"></span><h2>pds.api_client.apis.tags.products_api module<a class="headerlink" href="#module-pds.api_client.apis.tags.products_api" title="Permalink to this heading"></a></h2>
+<p>Registry API</p>
+<p>Registry API enabling advanced search on PDS data and metadata. The API provides end-points to search for bundles, collections and any PDS products with advanced search queries. It also enables to browse the archive hierarchically downward (e.g. collection/s products) or upward (e.g. bundles containing a product). The detailed syntax for querying the end-point is given in the reference documentation.   # noqa: E501</p>
+<p>The version of the OpenAPI document: 1.1
+Contact: <a class="reference external" href="mailto:pds-operator&#37;&#52;&#48;jpl&#46;nasa&#46;gov">pds-operator<span>&#64;</span>jpl<span>&#46;</span>nasa<span>&#46;</span>gov</a>
+Generated by: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="pds.api_client.apis.tags.products_api.ProductsApi">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pds.api_client.apis.tags.products_api.</span></span><span class="sig-name descname"><span class="pre">ProductsApi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="pds.api_client.html#pds.api_client.api_client.ApiClient" title="pds.api_client.api_client.ApiClient"><span class="pre">ApiClient</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/apis/tags/products_api.html#ProductsApi"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.apis.tags.products_api.ProductsApi" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="pds.api_client.paths.products.html#pds.api_client.paths.products.get.ProductList" title="pds.api_client.paths.products.get.ProductList"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProductList</span></code></a>, <a class="reference internal" href="pds.api_client.paths.products_identifier.html#pds.api_client.paths.products_identifier.get.SelectByLidvid" title="pds.api_client.paths.products_identifier.get.SelectByLidvid"><code class="xref py py-class docutils literal notranslate"><span class="pre">SelectByLidvid</span></code></a>, <a class="reference internal" href="pds.api_client.paths.products_identifier_all.html#pds.api_client.paths.products_identifier_all.get.SelectByLidvidAll" title="pds.api_client.paths.products_identifier_all.get.SelectByLidvidAll"><code class="xref py py-class docutils literal notranslate"><span class="pre">SelectByLidvidAll</span></code></a>, <a class="reference internal" href="pds.api_client.paths.products_identifier_latest.html#pds.api_client.paths.products_identifier_latest.get.SelectByLidvidLatest" title="pds.api_client.paths.products_identifier_latest.get.SelectByLidvidLatest"><code class="xref py py-class docutils literal notranslate"><span class="pre">SelectByLidvidLatest</span></code></a></p>
+<p>NOTE: This class is auto generated by OpenAPI Generator
+Ref: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a></p>
+<p>Do not edit the class manually.</p>
+</dd></dl>
+
+</section>
+<section id="module-pds.api_client.apis.tags.references_api">
+<span id="pds-api-client-apis-tags-references-api-module"></span><h2>pds.api_client.apis.tags.references_api module<a class="headerlink" href="#module-pds.api_client.apis.tags.references_api" title="Permalink to this heading"></a></h2>
+<p>Registry API</p>
+<p>Registry API enabling advanced search on PDS data and metadata. The API provides end-points to search for bundles, collections and any PDS products with advanced search queries. It also enables to browse the archive hierarchically downward (e.g. collection/s products) or upward (e.g. bundles containing a product). The detailed syntax for querying the end-point is given in the reference documentation.   # noqa: E501</p>
+<p>The version of the OpenAPI document: 1.1
+Contact: <a class="reference external" href="mailto:pds-operator&#37;&#52;&#48;jpl&#46;nasa&#46;gov">pds-operator<span>&#64;</span>jpl<span>&#46;</span>nasa<span>&#46;</span>gov</a>
+Generated by: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="pds.api_client.apis.tags.references_api.ReferencesApi">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pds.api_client.apis.tags.references_api.</span></span><span class="sig-name descname"><span class="pre">ReferencesApi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="pds.api_client.html#pds.api_client.api_client.ApiClient" title="pds.api_client.api_client.ApiClient"><span class="pre">ApiClient</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/apis/tags/references_api.html#ReferencesApi"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.apis.tags.references_api.ReferencesApi" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="pds.api_client.paths.classes_class_identifier_member_of.html#pds.api_client.paths.classes_class_identifier_member_of.get.ClassMemberOf" title="pds.api_client.paths.classes_class_identifier_member_of.get.ClassMemberOf"><code class="xref py py-class docutils literal notranslate"><span class="pre">ClassMemberOf</span></code></a>, <a class="reference internal" href="pds.api_client.paths.classes_class_identifier_member_of_member_of.html#pds.api_client.paths.classes_class_identifier_member_of_member_of.get.ClassMemberOfOf" title="pds.api_client.paths.classes_class_identifier_member_of_member_of.get.ClassMemberOfOf"><code class="xref py py-class docutils literal notranslate"><span class="pre">ClassMemberOfOf</span></code></a>, <a class="reference internal" href="pds.api_client.paths.classes_class_identifier_member_of_member_of_versions.html#pds.api_client.paths.classes_class_identifier_member_of_member_of_versions.get.ClassMemberOfOfVers" title="pds.api_client.paths.classes_class_identifier_member_of_member_of_versions.get.ClassMemberOfOfVers"><code class="xref py py-class docutils literal notranslate"><span class="pre">ClassMemberOfOfVers</span></code></a>, <a class="reference internal" href="pds.api_client.paths.classes_class_identifier_member_of_versions.html#pds.api_client.paths.classes_class_identifier_member_of_versions.get.ClassMemberOfVers" title="pds.api_client.paths.classes_class_identifier_member_of_versions.get.ClassMemberOfVers"><code class="xref py py-class docutils literal notranslate"><span class="pre">ClassMemberOfVers</span></code></a>, <a class="reference internal" href="pds.api_client.paths.classes_class_identifier_members.html#pds.api_client.paths.classes_class_identifier_members.get.ClassMembers" title="pds.api_client.paths.classes_class_identifier_members.get.ClassMembers"><code class="xref py py-class docutils literal notranslate"><span class="pre">ClassMembers</span></code></a>, <a class="reference internal" href="pds.api_client.paths.classes_class_identifier_members_members.html#pds.api_client.paths.classes_class_identifier_members_members.get.ClassMembersMembers" title="pds.api_client.paths.classes_class_identifier_members_members.get.ClassMembersMembers"><code class="xref py py-class docutils literal notranslate"><span class="pre">ClassMembersMembers</span></code></a>, <a class="reference internal" href="pds.api_client.paths.classes_class_identifier_members_members_versions.html#pds.api_client.paths.classes_class_identifier_members_members_versions.get.ClassMembersMembersVers" title="pds.api_client.paths.classes_class_identifier_members_members_versions.get.ClassMembersMembersVers"><code class="xref py py-class docutils literal notranslate"><span class="pre">ClassMembersMembersVers</span></code></a>, <a class="reference internal" href="pds.api_client.paths.classes_class_identifier_members_versions.html#pds.api_client.paths.classes_class_identifier_members_versions.get.ClassMembersVers" title="pds.api_client.paths.classes_class_identifier_members_versions.get.ClassMembersVers"><code class="xref py py-class docutils literal notranslate"><span class="pre">ClassMembersVers</span></code></a>, <a class="reference internal" href="pds.api_client.paths.products_identifier_member_of.html#pds.api_client.paths.products_identifier_member_of.get.ProductMemberOf" title="pds.api_client.paths.products_identifier_member_of.get.ProductMemberOf"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProductMemberOf</span></code></a>, <a class="reference internal" href="pds.api_client.paths.products_identifier_member_of_member_of.html#pds.api_client.paths.products_identifier_member_of_member_of.get.ProductMemberOfOf" title="pds.api_client.paths.products_identifier_member_of_member_of.get.ProductMemberOfOf"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProductMemberOfOf</span></code></a>, <a class="reference internal" href="pds.api_client.paths.products_identifier_member_of_member_of_versions.html#pds.api_client.paths.products_identifier_member_of_member_of_versions.get.ProductMemberOfOfVers" title="pds.api_client.paths.products_identifier_member_of_member_of_versions.get.ProductMemberOfOfVers"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProductMemberOfOfVers</span></code></a>, <a class="reference internal" href="pds.api_client.paths.products_identifier_member_of_versions.html#pds.api_client.paths.products_identifier_member_of_versions.get.ProductMemberOfVers" title="pds.api_client.paths.products_identifier_member_of_versions.get.ProductMemberOfVers"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProductMemberOfVers</span></code></a>, <a class="reference internal" href="pds.api_client.paths.products_identifier_members.html#pds.api_client.paths.products_identifier_members.get.ProductMembers" title="pds.api_client.paths.products_identifier_members.get.ProductMembers"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProductMembers</span></code></a>, <a class="reference internal" href="pds.api_client.paths.products_identifier_members_members.html#pds.api_client.paths.products_identifier_members_members.get.ProductMembersMembers" title="pds.api_client.paths.products_identifier_members_members.get.ProductMembersMembers"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProductMembersMembers</span></code></a>, <a class="reference internal" href="pds.api_client.paths.products_identifier_members_members_versions.html#pds.api_client.paths.products_identifier_members_members_versions.get.ProductMembersMembersVers" title="pds.api_client.paths.products_identifier_members_members_versions.get.ProductMembersMembersVers"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProductMembersMembersVers</span></code></a>, <a class="reference internal" href="pds.api_client.paths.products_identifier_members_versions.html#pds.api_client.paths.products_identifier_members_versions.get.ProductMembersVers" title="pds.api_client.paths.products_identifier_members_versions.get.ProductMembersVers"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProductMembersVers</span></code></a></p>
+<p>NOTE: This class is auto generated by OpenAPI Generator
+Ref: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a></p>
+<p>Do not edit the class manually.</p>
+</dd></dl>
+
+</section>
+<section id="module-pds.api_client.apis.tags">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pds.api_client.apis.tags" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pds.api_client.apis.tags.TagValues">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pds.api_client.apis.tags.</span></span><span class="sig-name descname"><span class="pre">TagValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pds/api_client/apis/tags.html#TagValues"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pds.api_client.apis.tags.TagValues" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pds.api_client.apis.tags.TagValues.CLASSES">
+<span class="sig-name descname"><span class="pre">CLASSES</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'classes'</span></em><a class="headerlink" href="#pds.api_client.apis.tags.TagValues.CLASSES" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pds.api_client.apis.tags.TagValues.DEPRECATED">
+<span class="sig-name descname"><span class="pre">DEPRECATED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'deprecated'</span></em><a class="headerlink" href="#pds.api_client.apis.tags.TagValues.DEPRECATED" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pds.api_client.apis.tags.TagValues.PRODUCTS">
+<span class="sig-name descname"><span class="pre">PRODUCTS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'products'</span></em><a class="headerlink" href="#pds.api_client.apis.tags.TagValues.PRODUCTS" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pds.api_client.apis.tags.TagValues.REFERENCES">
+<span class="sig-name descname"><span class="pre">REFERENCES</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'references'</span></em><a class="headerlink" href="#pds.api_client.apis.tags.TagValues.REFERENCES" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="pds.api_client.apis.paths.html" class="btn btn-neutral float-left" title="pds.api_client.apis.paths package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pds.api_client.model.html" class="btn btn-neutral float-right" title="pds.api_client.model package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021 California Institute of Technology.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

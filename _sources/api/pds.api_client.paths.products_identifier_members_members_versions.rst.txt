@@ -1,0 +1,21 @@
+pds.api\_client.paths.products\_identifier\_members\_members\_versions package
+==============================================================================
+
+Submodules
+----------
+
+pds.api\_client.paths.products\_identifier\_members\_members\_versions.get module
+---------------------------------------------------------------------------------
+
+.. automodule:: pds.api_client.paths.products_identifier_members_members_versions.get
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: pds.api_client.paths.products_identifier_members_members_versions
+   :members:
+   :undoc-members:
+   :show-inheritance:

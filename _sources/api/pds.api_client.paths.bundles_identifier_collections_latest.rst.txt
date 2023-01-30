@@ -1,0 +1,21 @@
+pds.api\_client.paths.bundles\_identifier\_collections\_latest package
+======================================================================
+
+Submodules
+----------
+
+pds.api\_client.paths.bundles\_identifier\_collections\_latest.get module
+-------------------------------------------------------------------------
+
+.. automodule:: pds.api_client.paths.bundles_identifier_collections_latest.get
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: pds.api_client.paths.bundles_identifier_collections_latest
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,21 @@
+pds.api\_client.paths.collections\_identifier\_products\_all package
+====================================================================
+
+Submodules
+----------
+
+pds.api\_client.paths.collections\_identifier\_products\_all.get module
+-----------------------------------------------------------------------
+
+.. automodule:: pds.api_client.paths.collections_identifier_products_all.get
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: pds.api_client.paths.collections_identifier_products_all
+   :members:
+   :undoc-members:
+   :show-inheritance:

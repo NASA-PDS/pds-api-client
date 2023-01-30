@@ -1,0 +1,21 @@
+pds.api\_client.paths.classes\_class\_identifier\_member\_of\_member\_of package
+================================================================================
+
+Submodules
+----------
+
+pds.api\_client.paths.classes\_class\_identifier\_member\_of\_member\_of.get module
+-----------------------------------------------------------------------------------
+
+.. automodule:: pds.api_client.paths.classes_class_identifier_member_of_member_of.get
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: pds.api_client.paths.classes_class_identifier_member_of_member_of
+   :members:
+   :undoc-members:
+   :show-inheritance:

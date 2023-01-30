@@ -1,0 +1,45 @@
+pds.api\_client.apis.tags package
+=================================
+
+Submodules
+----------
+
+pds.api\_client.apis.tags.classes\_api module
+---------------------------------------------
+
+.. automodule:: pds.api_client.apis.tags.classes_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.tags.deprecated\_api module
+------------------------------------------------
+
+.. automodule:: pds.api_client.apis.tags.deprecated_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.tags.products\_api module
+----------------------------------------------
+
+.. automodule:: pds.api_client.apis.tags.products_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pds.api\_client.apis.tags.references\_api module
+------------------------------------------------
+
+.. automodule:: pds.api_client.apis.tags.references_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: pds.api_client.apis.tags
+   :members:
+   :undoc-members:
+   :show-inheritance:

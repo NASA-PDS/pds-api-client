@@ -1,0 +1,21 @@
+pds.api\_client.paths.bundles\_identifier\_all package
+======================================================
+
+Submodules
+----------
+
+pds.api\_client.paths.bundles\_identifier\_all.get module
+---------------------------------------------------------
+
+.. automodule:: pds.api_client.paths.bundles_identifier_all.get
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: pds.api_client.paths.bundles_identifier_all
+   :members:
+   :undoc-members:
+   :show-inheritance:
