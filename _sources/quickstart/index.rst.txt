@@ -92,7 +92,7 @@ For Collections for example:
 Reference Documentation
 -----------------------
 
-See `client_api <..api/pds.api_client.api.html>`_
+See `client_api <../api/pds.api_client.api.html>`_
 
 .. References:
 .. _`documented bug`: https://github.com/NASA-PDS/pds-api-client/issues/7
