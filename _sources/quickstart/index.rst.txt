@@ -7,16 +7,7 @@ This document can get you up to speed with the Python client to the PDS API.
 Prerequisites
 -------------
 
-Python 3 (tested with 3.7).
-
-Issues with SSL certificate verification seen with python 3.9.
-
-If it occurs to you, try:
-
-    pip install --upgrade certifi
-
-However, we have not been able to solve that with conda python 3.9.
-
+Python 3 (tested with 3.9).
 
 
 
@@ -35,8 +26,10 @@ The package releases match with the `Search API specification <https://nasa-pds.
 
    * - pds.api-client
      - pds search api specification
+   * - 1.3.X
+     - 1.1.1
    * - 1.2.X
-     - 1.1
+     - 1.1.Y
    * - 1.1.X
      - 1.0
    * - 0.8.Y
@@ -44,7 +37,7 @@ The package releases match with the `Search API specification <https://nasa-pds.
 
 To install a specific version of this package, run, for example::
 
-    pip install pds.api-client==1.2.0
+    pip install pds.api-client==1.3.0
 
 
 You can also include it as a dependency in another package, for example, in
@@ -75,38 +68,31 @@ Create an API Connection
 Request One End Point
 ---------------------
 
-There are multiple API end points which accessible through modules defined in :doc:`/api/pds.api_client.apis.paths`
+There are multiple API end points which accessible through modules defined in :doc:`/api/pds.api_client.api`
 
 For Collections for example:
 
 .. code-block:: python
 
-    from pds.api_client.apis.paths.collections import Collections
+    from pds.api_client.api.by_product_classes_api import ByProductClassesApi
     from pprint import pprint
 
-    collections = Collections(api_client)
+    classes = ByProductClassesApi(api_client)
 
-    try:
-        api_response = collections.get(
-            query_params={
-                'start': 0,
-                'limit': 10,
-                "fields": ['ops:Label_File_Info.ops:file_ref']
-            },
-            accept_content_types=('application/json',)
-        ).body
-        pprint(api_response.summary)
-
-    except ApiException as e:
-        print("Exception when calling CollectionsApi->get_collection: %s\n" % e)
+    api_response = classes.class_list(
+        'collections',
+        start=0,
+        limit=20,
+        fields=['ops:Label_File_Info.ops:file_ref']
+    )
+    pprint(api_response.summary.to_dict())
 
 
 
 Reference Documentation
 -----------------------
 
-See `client_api <../api/pds.api_client.html>`_
-
+See `client_api <..api/pds.api_client.api.html>`_
 
 .. References:
 .. _`documented bug`: https://github.com/NASA-PDS/pds-api-client/issues/7

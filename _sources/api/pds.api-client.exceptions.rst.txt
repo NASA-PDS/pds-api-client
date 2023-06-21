@@ -1,0 +1,7 @@
+pds.api\-client.exceptions module
+=================================
+
+.. automodule:: pds.api-client.exceptions
+   :members:
+   :undoc-members:
+   :show-inheritance:

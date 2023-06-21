@@ -1,0 +1,21 @@
+pds.api\-client.api package
+===========================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   pds.api-client.api.all_products_api
+   pds.api-client.api.by_product_classes_api
+   pds.api-client.api.deprecated_api
+   pds.api-client.api.product_references_api
+
+Module contents
+---------------
+
+.. automodule:: pds.api-client.api
+   :members:
+   :undoc-members:
+   :show-inheritance:

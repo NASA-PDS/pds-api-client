@@ -1,0 +1,54 @@
+api\-client package
+===================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   api-client.api
+   api-client.models
+
+Submodules
+----------
+
+api\-client.api\_client module
+------------------------------
+
+.. automodule:: api-client.api_client
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\-client.configuration module
+--------------------------------
+
+.. automodule:: api-client.configuration
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\-client.exceptions module
+-----------------------------
+
+.. automodule:: api-client.exceptions
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\-client.rest module
+-----------------------
+
+.. automodule:: api-client.rest
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: api-client
+   :members:
+   :undoc-members:
+   :show-inheritance:

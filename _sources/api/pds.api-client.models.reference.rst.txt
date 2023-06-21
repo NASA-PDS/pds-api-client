@@ -1,0 +1,7 @@
+pds.api\-client.models.reference module
+=======================================
+
+.. automodule:: pds.api-client.models.reference
+   :members:
+   :undoc-members:
+   :show-inheritance:

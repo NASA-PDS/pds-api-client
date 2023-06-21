@@ -1,0 +1,7 @@
+pds.api\_client.models.metadata module
+======================================
+
+.. automodule:: pds.api_client.models.metadata
+   :members:
+   :undoc-members:
+   :show-inheritance:

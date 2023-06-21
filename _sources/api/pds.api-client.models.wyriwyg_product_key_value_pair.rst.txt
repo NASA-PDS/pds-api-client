@@ -1,0 +1,7 @@
+pds.api\-client.models.wyriwyg\_product\_key\_value\_pair module
+================================================================
+
+.. automodule:: pds.api-client.models.wyriwyg_product_key_value_pair
+   :members:
+   :undoc-members:
+   :show-inheritance:

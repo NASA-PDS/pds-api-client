@@ -1,0 +1,7 @@
+pds.api\_client.models.pds4\_products module
+============================================
+
+.. automodule:: pds.api_client.models.pds4_products
+   :members:
+   :undoc-members:
+   :show-inheritance:

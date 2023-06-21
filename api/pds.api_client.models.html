@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>pds.api_client.models package &mdash; PDS API Client (Python)  documentation</title>
@@ -11,17 +11,16 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="pds.api_client.paths package" href="pds.api_client.paths.html" />
-    <link rel="prev" title="pds.api_client.model package" href="pds.api_client.model.html" /> 
+    <link rel="next" title="pds.api_client.models.error_message module" href="pds.api_client.models.error_message.html" />
+    <link rel="prev" title="pds.api_client.api.product_references_api module" href="pds.api_client.api.product_references_api.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -29,12 +28,16 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> PDS API Client (Python)
-            <img src="../_static/PDS_Planets.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            PDS API Client (Python)
+              <img src="../_static/PDS_Planets.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -43,27 +46,20 @@
               <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../quickstart/index.html">Quickstart for the PDS API Python Client</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="pds.api_client.html">Package Reference</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="pds.api_client.html#subpackages">Subpackages</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="pds.api_client.apis.html">pds.api_client.apis package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="pds.api_client.model.html">pds.api_client.model package</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">pds.api_client.models package</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#module-pds.api_client.models">Module contents</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Package Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="pds.html">pds package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="pds.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="pds.api_client.html">pds.api_client package</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="pds.api_client.paths.html">pds.api_client.paths package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.html#module-pds">Module contents</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="pds.api_client.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pds.api_client.html#module-pds.api_client.api_client">pds.api_client.api_client module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pds.api_client.html#module-pds.api_client.configuration">pds.api_client.configuration module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pds.api_client.html#module-pds.api_client.exceptions">pds.api_client.exceptions module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pds.api_client.html#module-pds.api_client.rest">pds.api_client.rest module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pds.api_client.html#module-pds.api_client.schemas">pds.api_client.schemas module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pds.api_client.html#module-pds.api_client">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../developer/index.html">Developer Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contact.html">Contact Us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html">Contribute</a></li>
 </ul>
 
         </div>
@@ -79,7 +75,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">pds</a></li>
+          <li class="breadcrumb-item"><a href="pds.html">pds package</a></li>
           <li class="breadcrumb-item"><a href="pds.api_client.html">pds.api_client package</a></li>
       <li class="breadcrumb-item active">pds.api_client.models package</li>
       <li class="wy-breadcrumbs-aside">
@@ -93,8 +91,319 @@
              
   <section id="pds-api-client-models-package">
 <h1>pds.api_client.models package<a class="headerlink" href="#pds-api-client-models-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pds.api_client.models.error_message.html">pds.api_client.models.error_message module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.models.error_message.html#pds.api_client.models.error_message.ErrorMessage"><code class="docutils literal notranslate"><span class="pre">ErrorMessage</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.error_message.html#pds.api_client.models.error_message.ErrorMessage.Config"><code class="docutils literal notranslate"><span class="pre">ErrorMessage.Config</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.error_message.html#pds.api_client.models.error_message.ErrorMessage.Config.allow_population_by_field_name"><code class="docutils literal notranslate"><span class="pre">ErrorMessage.Config.allow_population_by_field_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.error_message.html#pds.api_client.models.error_message.ErrorMessage.Config.validate_assignment"><code class="docutils literal notranslate"><span class="pre">ErrorMessage.Config.validate_assignment</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.error_message.html#pds.api_client.models.error_message.ErrorMessage.from_dict"><code class="docutils literal notranslate"><span class="pre">ErrorMessage.from_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.error_message.html#pds.api_client.models.error_message.ErrorMessage.from_json"><code class="docutils literal notranslate"><span class="pre">ErrorMessage.from_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.error_message.html#pds.api_client.models.error_message.ErrorMessage.message"><code class="docutils literal notranslate"><span class="pre">ErrorMessage.message</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.error_message.html#pds.api_client.models.error_message.ErrorMessage.request"><code class="docutils literal notranslate"><span class="pre">ErrorMessage.request</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.error_message.html#pds.api_client.models.error_message.ErrorMessage.to_dict"><code class="docutils literal notranslate"><span class="pre">ErrorMessage.to_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.error_message.html#pds.api_client.models.error_message.ErrorMessage.to_json"><code class="docutils literal notranslate"><span class="pre">ErrorMessage.to_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.error_message.html#pds.api_client.models.error_message.ErrorMessage.to_str"><code class="docutils literal notranslate"><span class="pre">ErrorMessage.to_str()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pds.api_client.models.metadata.html">pds.api_client.models.metadata module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.models.metadata.html#pds.api_client.models.metadata.Metadata"><code class="docutils literal notranslate"><span class="pre">Metadata</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.metadata.html#pds.api_client.models.metadata.Metadata.Config"><code class="docutils literal notranslate"><span class="pre">Metadata.Config</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.metadata.html#pds.api_client.models.metadata.Metadata.Config.allow_population_by_field_name"><code class="docutils literal notranslate"><span class="pre">Metadata.Config.allow_population_by_field_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.metadata.html#pds.api_client.models.metadata.Metadata.Config.validate_assignment"><code class="docutils literal notranslate"><span class="pre">Metadata.Config.validate_assignment</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.metadata.html#pds.api_client.models.metadata.Metadata.archive_status"><code class="docutils literal notranslate"><span class="pre">Metadata.archive_status</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.metadata.html#pds.api_client.models.metadata.Metadata.creation_date_time"><code class="docutils literal notranslate"><span class="pre">Metadata.creation_date_time</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.metadata.html#pds.api_client.models.metadata.Metadata.from_dict"><code class="docutils literal notranslate"><span class="pre">Metadata.from_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.metadata.html#pds.api_client.models.metadata.Metadata.from_json"><code class="docutils literal notranslate"><span class="pre">Metadata.from_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.metadata.html#pds.api_client.models.metadata.Metadata.label_url"><code class="docutils literal notranslate"><span class="pre">Metadata.label_url</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.metadata.html#pds.api_client.models.metadata.Metadata.to_dict"><code class="docutils literal notranslate"><span class="pre">Metadata.to_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.metadata.html#pds.api_client.models.metadata.Metadata.to_json"><code class="docutils literal notranslate"><span class="pre">Metadata.to_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.metadata.html#pds.api_client.models.metadata.Metadata.to_str"><code class="docutils literal notranslate"><span class="pre">Metadata.to_str()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.metadata.html#pds.api_client.models.metadata.Metadata.update_date_time"><code class="docutils literal notranslate"><span class="pre">Metadata.update_date_time</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.metadata.html#pds.api_client.models.metadata.Metadata.version"><code class="docutils literal notranslate"><span class="pre">Metadata.version</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pds.api_client.models.pds4_metadata.html">pds.api_client.models.pds4_metadata module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.models.pds4_metadata.html#pds.api_client.models.pds4_metadata.Pds4Metadata"><code class="docutils literal notranslate"><span class="pre">Pds4Metadata</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata.html#pds.api_client.models.pds4_metadata.Pds4Metadata.Config"><code class="docutils literal notranslate"><span class="pre">Pds4Metadata.Config</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.pds4_metadata.html#pds.api_client.models.pds4_metadata.Pds4Metadata.Config.allow_population_by_field_name"><code class="docutils literal notranslate"><span class="pre">Pds4Metadata.Config.allow_population_by_field_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.pds4_metadata.html#pds.api_client.models.pds4_metadata.Pds4Metadata.Config.validate_assignment"><code class="docutils literal notranslate"><span class="pre">Pds4Metadata.Config.validate_assignment</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata.html#pds.api_client.models.pds4_metadata.Pds4Metadata.from_dict"><code class="docutils literal notranslate"><span class="pre">Pds4Metadata.from_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata.html#pds.api_client.models.pds4_metadata.Pds4Metadata.from_json"><code class="docutils literal notranslate"><span class="pre">Pds4Metadata.from_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata.html#pds.api_client.models.pds4_metadata.Pds4Metadata.node_name"><code class="docutils literal notranslate"><span class="pre">Pds4Metadata.node_name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata.html#pds.api_client.models.pds4_metadata.Pds4Metadata.ops_data_files"><code class="docutils literal notranslate"><span class="pre">Pds4Metadata.ops_data_files</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata.html#pds.api_client.models.pds4_metadata.Pds4Metadata.ops_label_file_info"><code class="docutils literal notranslate"><span class="pre">Pds4Metadata.ops_label_file_info</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata.html#pds.api_client.models.pds4_metadata.Pds4Metadata.ops_tracking_meta"><code class="docutils literal notranslate"><span class="pre">Pds4Metadata.ops_tracking_meta</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata.html#pds.api_client.models.pds4_metadata.Pds4Metadata.to_dict"><code class="docutils literal notranslate"><span class="pre">Pds4Metadata.to_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata.html#pds.api_client.models.pds4_metadata.Pds4Metadata.to_json"><code class="docutils literal notranslate"><span class="pre">Pds4Metadata.to_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata.html#pds.api_client.models.pds4_metadata.Pds4Metadata.to_str"><code class="docutils literal notranslate"><span class="pre">Pds4Metadata.to_str()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_data_file.html">pds.api_client.models.pds4_metadata_ops_data_file module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_data_file.html#pds.api_client.models.pds4_metadata_ops_data_file.Pds4MetadataOpsDataFile"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsDataFile</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_data_file.html#pds.api_client.models.pds4_metadata_ops_data_file.Pds4MetadataOpsDataFile.Config"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsDataFile.Config</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_data_file.html#pds.api_client.models.pds4_metadata_ops_data_file.Pds4MetadataOpsDataFile.Config.allow_population_by_field_name"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsDataFile.Config.allow_population_by_field_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_data_file.html#pds.api_client.models.pds4_metadata_ops_data_file.Pds4MetadataOpsDataFile.Config.validate_assignment"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsDataFile.Config.validate_assignment</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_data_file.html#pds.api_client.models.pds4_metadata_ops_data_file.Pds4MetadataOpsDataFile.from_dict"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsDataFile.from_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_data_file.html#pds.api_client.models.pds4_metadata_ops_data_file.Pds4MetadataOpsDataFile.from_json"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsDataFile.from_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_data_file.html#pds.api_client.models.pds4_metadata_ops_data_file.Pds4MetadataOpsDataFile.opscreation_date"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsDataFile.opscreation_date</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_data_file.html#pds.api_client.models.pds4_metadata_ops_data_file.Pds4MetadataOpsDataFile.opsfile_name"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsDataFile.opsfile_name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_data_file.html#pds.api_client.models.pds4_metadata_ops_data_file.Pds4MetadataOpsDataFile.opsfile_ref"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsDataFile.opsfile_ref</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_data_file.html#pds.api_client.models.pds4_metadata_ops_data_file.Pds4MetadataOpsDataFile.opsfile_size"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsDataFile.opsfile_size</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_data_file.html#pds.api_client.models.pds4_metadata_ops_data_file.Pds4MetadataOpsDataFile.opsmd5_checksum"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsDataFile.opsmd5_checksum</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_data_file.html#pds.api_client.models.pds4_metadata_ops_data_file.Pds4MetadataOpsDataFile.opsmime_type"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsDataFile.opsmime_type</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_data_file.html#pds.api_client.models.pds4_metadata_ops_data_file.Pds4MetadataOpsDataFile.to_dict"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsDataFile.to_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_data_file.html#pds.api_client.models.pds4_metadata_ops_data_file.Pds4MetadataOpsDataFile.to_json"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsDataFile.to_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_data_file.html#pds.api_client.models.pds4_metadata_ops_data_file.Pds4MetadataOpsDataFile.to_str"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsDataFile.to_str()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_label_file_info.html">pds.api_client.models.pds4_metadata_ops_label_file_info module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_label_file_info.html#pds.api_client.models.pds4_metadata_ops_label_file_info.Pds4MetadataOpsLabelFileInfo"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsLabelFileInfo</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_label_file_info.html#pds.api_client.models.pds4_metadata_ops_label_file_info.Pds4MetadataOpsLabelFileInfo.Config"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsLabelFileInfo.Config</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_label_file_info.html#pds.api_client.models.pds4_metadata_ops_label_file_info.Pds4MetadataOpsLabelFileInfo.Config.allow_population_by_field_name"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsLabelFileInfo.Config.allow_population_by_field_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_label_file_info.html#pds.api_client.models.pds4_metadata_ops_label_file_info.Pds4MetadataOpsLabelFileInfo.Config.validate_assignment"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsLabelFileInfo.Config.validate_assignment</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_label_file_info.html#pds.api_client.models.pds4_metadata_ops_label_file_info.Pds4MetadataOpsLabelFileInfo.from_dict"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsLabelFileInfo.from_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_label_file_info.html#pds.api_client.models.pds4_metadata_ops_label_file_info.Pds4MetadataOpsLabelFileInfo.from_json"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsLabelFileInfo.from_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_label_file_info.html#pds.api_client.models.pds4_metadata_ops_label_file_info.Pds4MetadataOpsLabelFileInfo.opscreation_date"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsLabelFileInfo.opscreation_date</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_label_file_info.html#pds.api_client.models.pds4_metadata_ops_label_file_info.Pds4MetadataOpsLabelFileInfo.opsfile_name"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsLabelFileInfo.opsfile_name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_label_file_info.html#pds.api_client.models.pds4_metadata_ops_label_file_info.Pds4MetadataOpsLabelFileInfo.opsfile_ref"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsLabelFileInfo.opsfile_ref</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_label_file_info.html#pds.api_client.models.pds4_metadata_ops_label_file_info.Pds4MetadataOpsLabelFileInfo.opsfile_size"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsLabelFileInfo.opsfile_size</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_label_file_info.html#pds.api_client.models.pds4_metadata_ops_label_file_info.Pds4MetadataOpsLabelFileInfo.opsmd5_checksum"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsLabelFileInfo.opsmd5_checksum</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_label_file_info.html#pds.api_client.models.pds4_metadata_ops_label_file_info.Pds4MetadataOpsLabelFileInfo.to_dict"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsLabelFileInfo.to_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_label_file_info.html#pds.api_client.models.pds4_metadata_ops_label_file_info.Pds4MetadataOpsLabelFileInfo.to_json"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsLabelFileInfo.to_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_label_file_info.html#pds.api_client.models.pds4_metadata_ops_label_file_info.Pds4MetadataOpsLabelFileInfo.to_str"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsLabelFileInfo.to_str()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_tracking_meta.html">pds.api_client.models.pds4_metadata_ops_tracking_meta module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_tracking_meta.html#pds.api_client.models.pds4_metadata_ops_tracking_meta.Pds4MetadataOpsTrackingMeta"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsTrackingMeta</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_tracking_meta.html#pds.api_client.models.pds4_metadata_ops_tracking_meta.Pds4MetadataOpsTrackingMeta.Config"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsTrackingMeta.Config</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_tracking_meta.html#pds.api_client.models.pds4_metadata_ops_tracking_meta.Pds4MetadataOpsTrackingMeta.Config.allow_population_by_field_name"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsTrackingMeta.Config.allow_population_by_field_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_tracking_meta.html#pds.api_client.models.pds4_metadata_ops_tracking_meta.Pds4MetadataOpsTrackingMeta.Config.validate_assignment"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsTrackingMeta.Config.validate_assignment</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_tracking_meta.html#pds.api_client.models.pds4_metadata_ops_tracking_meta.Pds4MetadataOpsTrackingMeta.from_dict"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsTrackingMeta.from_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_tracking_meta.html#pds.api_client.models.pds4_metadata_ops_tracking_meta.Pds4MetadataOpsTrackingMeta.from_json"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsTrackingMeta.from_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_tracking_meta.html#pds.api_client.models.pds4_metadata_ops_tracking_meta.Pds4MetadataOpsTrackingMeta.opsarchive_status"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsTrackingMeta.opsarchive_status</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_tracking_meta.html#pds.api_client.models.pds4_metadata_ops_tracking_meta.Pds4MetadataOpsTrackingMeta.to_dict"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsTrackingMeta.to_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_tracking_meta.html#pds.api_client.models.pds4_metadata_ops_tracking_meta.Pds4MetadataOpsTrackingMeta.to_json"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsTrackingMeta.to_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_metadata_ops_tracking_meta.html#pds.api_client.models.pds4_metadata_ops_tracking_meta.Pds4MetadataOpsTrackingMeta.to_str"><code class="docutils literal notranslate"><span class="pre">Pds4MetadataOpsTrackingMeta.to_str()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pds.api_client.models.pds4_product.html">pds.api_client.models.pds4_product module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.models.pds4_product.html#pds.api_client.models.pds4_product.Pds4Product"><code class="docutils literal notranslate"><span class="pre">Pds4Product</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_product.html#pds.api_client.models.pds4_product.Pds4Product.Config"><code class="docutils literal notranslate"><span class="pre">Pds4Product.Config</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.pds4_product.html#pds.api_client.models.pds4_product.Pds4Product.Config.allow_population_by_field_name"><code class="docutils literal notranslate"><span class="pre">Pds4Product.Config.allow_population_by_field_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.pds4_product.html#pds.api_client.models.pds4_product.Pds4Product.Config.validate_assignment"><code class="docutils literal notranslate"><span class="pre">Pds4Product.Config.validate_assignment</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_product.html#pds.api_client.models.pds4_product.Pds4Product.from_dict"><code class="docutils literal notranslate"><span class="pre">Pds4Product.from_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_product.html#pds.api_client.models.pds4_product.Pds4Product.from_json"><code class="docutils literal notranslate"><span class="pre">Pds4Product.from_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_product.html#pds.api_client.models.pds4_product.Pds4Product.id"><code class="docutils literal notranslate"><span class="pre">Pds4Product.id</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_product.html#pds.api_client.models.pds4_product.Pds4Product.metadata"><code class="docutils literal notranslate"><span class="pre">Pds4Product.metadata</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_product.html#pds.api_client.models.pds4_product.Pds4Product.pds4"><code class="docutils literal notranslate"><span class="pre">Pds4Product.pds4</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_product.html#pds.api_client.models.pds4_product.Pds4Product.to_dict"><code class="docutils literal notranslate"><span class="pre">Pds4Product.to_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_product.html#pds.api_client.models.pds4_product.Pds4Product.to_json"><code class="docutils literal notranslate"><span class="pre">Pds4Product.to_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_product.html#pds.api_client.models.pds4_product.Pds4Product.to_str"><code class="docutils literal notranslate"><span class="pre">Pds4Product.to_str()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pds.api_client.models.pds4_products.html">pds.api_client.models.pds4_products module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.models.pds4_products.html#pds.api_client.models.pds4_products.Pds4Products"><code class="docutils literal notranslate"><span class="pre">Pds4Products</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_products.html#pds.api_client.models.pds4_products.Pds4Products.Config"><code class="docutils literal notranslate"><span class="pre">Pds4Products.Config</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.pds4_products.html#pds.api_client.models.pds4_products.Pds4Products.Config.allow_population_by_field_name"><code class="docutils literal notranslate"><span class="pre">Pds4Products.Config.allow_population_by_field_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.pds4_products.html#pds.api_client.models.pds4_products.Pds4Products.Config.validate_assignment"><code class="docutils literal notranslate"><span class="pre">Pds4Products.Config.validate_assignment</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_products.html#pds.api_client.models.pds4_products.Pds4Products.data"><code class="docutils literal notranslate"><span class="pre">Pds4Products.data</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_products.html#pds.api_client.models.pds4_products.Pds4Products.from_dict"><code class="docutils literal notranslate"><span class="pre">Pds4Products.from_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_products.html#pds.api_client.models.pds4_products.Pds4Products.from_json"><code class="docutils literal notranslate"><span class="pre">Pds4Products.from_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_products.html#pds.api_client.models.pds4_products.Pds4Products.summary"><code class="docutils literal notranslate"><span class="pre">Pds4Products.summary</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_products.html#pds.api_client.models.pds4_products.Pds4Products.to_dict"><code class="docutils literal notranslate"><span class="pre">Pds4Products.to_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_products.html#pds.api_client.models.pds4_products.Pds4Products.to_json"><code class="docutils literal notranslate"><span class="pre">Pds4Products.to_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds4_products.html#pds.api_client.models.pds4_products.Pds4Products.to_str"><code class="docutils literal notranslate"><span class="pre">Pds4Products.to_str()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pds.api_client.models.pds_product.html">pds.api_client.models.pds_product module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.models.pds_product.html#pds.api_client.models.pds_product.PdsProduct"><code class="docutils literal notranslate"><span class="pre">PdsProduct</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds_product.html#pds.api_client.models.pds_product.PdsProduct.Config"><code class="docutils literal notranslate"><span class="pre">PdsProduct.Config</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.pds_product.html#pds.api_client.models.pds_product.PdsProduct.Config.allow_population_by_field_name"><code class="docutils literal notranslate"><span class="pre">PdsProduct.Config.allow_population_by_field_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.pds_product.html#pds.api_client.models.pds_product.PdsProduct.Config.validate_assignment"><code class="docutils literal notranslate"><span class="pre">PdsProduct.Config.validate_assignment</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds_product.html#pds.api_client.models.pds_product.PdsProduct.description"><code class="docutils literal notranslate"><span class="pre">PdsProduct.description</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds_product.html#pds.api_client.models.pds_product.PdsProduct.from_dict"><code class="docutils literal notranslate"><span class="pre">PdsProduct.from_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds_product.html#pds.api_client.models.pds_product.PdsProduct.from_json"><code class="docutils literal notranslate"><span class="pre">PdsProduct.from_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds_product.html#pds.api_client.models.pds_product.PdsProduct.id"><code class="docutils literal notranslate"><span class="pre">PdsProduct.id</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds_product.html#pds.api_client.models.pds_product.PdsProduct.investigations"><code class="docutils literal notranslate"><span class="pre">PdsProduct.investigations</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds_product.html#pds.api_client.models.pds_product.PdsProduct.metadata"><code class="docutils literal notranslate"><span class="pre">PdsProduct.metadata</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds_product.html#pds.api_client.models.pds_product.PdsProduct.observing_system_components"><code class="docutils literal notranslate"><span class="pre">PdsProduct.observing_system_components</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds_product.html#pds.api_client.models.pds_product.PdsProduct.properties"><code class="docutils literal notranslate"><span class="pre">PdsProduct.properties</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds_product.html#pds.api_client.models.pds_product.PdsProduct.start_date_time"><code class="docutils literal notranslate"><span class="pre">PdsProduct.start_date_time</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds_product.html#pds.api_client.models.pds_product.PdsProduct.stop_date_time"><code class="docutils literal notranslate"><span class="pre">PdsProduct.stop_date_time</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds_product.html#pds.api_client.models.pds_product.PdsProduct.targets"><code class="docutils literal notranslate"><span class="pre">PdsProduct.targets</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds_product.html#pds.api_client.models.pds_product.PdsProduct.title"><code class="docutils literal notranslate"><span class="pre">PdsProduct.title</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds_product.html#pds.api_client.models.pds_product.PdsProduct.to_dict"><code class="docutils literal notranslate"><span class="pre">PdsProduct.to_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds_product.html#pds.api_client.models.pds_product.PdsProduct.to_json"><code class="docutils literal notranslate"><span class="pre">PdsProduct.to_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds_product.html#pds.api_client.models.pds_product.PdsProduct.to_str"><code class="docutils literal notranslate"><span class="pre">PdsProduct.to_str()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds_product.html#pds.api_client.models.pds_product.PdsProduct.type"><code class="docutils literal notranslate"><span class="pre">PdsProduct.type</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pds.api_client.models.pds_products.html">pds.api_client.models.pds_products module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.models.pds_products.html#pds.api_client.models.pds_products.PdsProducts"><code class="docutils literal notranslate"><span class="pre">PdsProducts</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds_products.html#pds.api_client.models.pds_products.PdsProducts.Config"><code class="docutils literal notranslate"><span class="pre">PdsProducts.Config</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.pds_products.html#pds.api_client.models.pds_products.PdsProducts.Config.allow_population_by_field_name"><code class="docutils literal notranslate"><span class="pre">PdsProducts.Config.allow_population_by_field_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.pds_products.html#pds.api_client.models.pds_products.PdsProducts.Config.validate_assignment"><code class="docutils literal notranslate"><span class="pre">PdsProducts.Config.validate_assignment</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds_products.html#pds.api_client.models.pds_products.PdsProducts.data"><code class="docutils literal notranslate"><span class="pre">PdsProducts.data</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds_products.html#pds.api_client.models.pds_products.PdsProducts.from_dict"><code class="docutils literal notranslate"><span class="pre">PdsProducts.from_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds_products.html#pds.api_client.models.pds_products.PdsProducts.from_json"><code class="docutils literal notranslate"><span class="pre">PdsProducts.from_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds_products.html#pds.api_client.models.pds_products.PdsProducts.summary"><code class="docutils literal notranslate"><span class="pre">PdsProducts.summary</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds_products.html#pds.api_client.models.pds_products.PdsProducts.to_dict"><code class="docutils literal notranslate"><span class="pre">PdsProducts.to_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds_products.html#pds.api_client.models.pds_products.PdsProducts.to_json"><code class="docutils literal notranslate"><span class="pre">PdsProducts.to_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.pds_products.html#pds.api_client.models.pds_products.PdsProducts.to_str"><code class="docutils literal notranslate"><span class="pre">PdsProducts.to_str()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pds.api_client.models.reference.html">pds.api_client.models.reference module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.models.reference.html#pds.api_client.models.reference.Reference"><code class="docutils literal notranslate"><span class="pre">Reference</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.reference.html#pds.api_client.models.reference.Reference.Config"><code class="docutils literal notranslate"><span class="pre">Reference.Config</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.reference.html#pds.api_client.models.reference.Reference.Config.allow_population_by_field_name"><code class="docutils literal notranslate"><span class="pre">Reference.Config.allow_population_by_field_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.reference.html#pds.api_client.models.reference.Reference.Config.validate_assignment"><code class="docutils literal notranslate"><span class="pre">Reference.Config.validate_assignment</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.reference.html#pds.api_client.models.reference.Reference.description"><code class="docutils literal notranslate"><span class="pre">Reference.description</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.reference.html#pds.api_client.models.reference.Reference.from_dict"><code class="docutils literal notranslate"><span class="pre">Reference.from_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.reference.html#pds.api_client.models.reference.Reference.from_json"><code class="docutils literal notranslate"><span class="pre">Reference.from_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.reference.html#pds.api_client.models.reference.Reference.href"><code class="docutils literal notranslate"><span class="pre">Reference.href</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.reference.html#pds.api_client.models.reference.Reference.id"><code class="docutils literal notranslate"><span class="pre">Reference.id</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.reference.html#pds.api_client.models.reference.Reference.title"><code class="docutils literal notranslate"><span class="pre">Reference.title</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.reference.html#pds.api_client.models.reference.Reference.to_dict"><code class="docutils literal notranslate"><span class="pre">Reference.to_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.reference.html#pds.api_client.models.reference.Reference.to_json"><code class="docutils literal notranslate"><span class="pre">Reference.to_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.reference.html#pds.api_client.models.reference.Reference.to_str"><code class="docutils literal notranslate"><span class="pre">Reference.to_str()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.reference.html#pds.api_client.models.reference.Reference.type"><code class="docutils literal notranslate"><span class="pre">Reference.type</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pds.api_client.models.summary.html">pds.api_client.models.summary module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.models.summary.html#pds.api_client.models.summary.Summary"><code class="docutils literal notranslate"><span class="pre">Summary</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.summary.html#pds.api_client.models.summary.Summary.Config"><code class="docutils literal notranslate"><span class="pre">Summary.Config</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.summary.html#pds.api_client.models.summary.Summary.Config.allow_population_by_field_name"><code class="docutils literal notranslate"><span class="pre">Summary.Config.allow_population_by_field_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.summary.html#pds.api_client.models.summary.Summary.Config.validate_assignment"><code class="docutils literal notranslate"><span class="pre">Summary.Config.validate_assignment</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.summary.html#pds.api_client.models.summary.Summary.from_dict"><code class="docutils literal notranslate"><span class="pre">Summary.from_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.summary.html#pds.api_client.models.summary.Summary.from_json"><code class="docutils literal notranslate"><span class="pre">Summary.from_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.summary.html#pds.api_client.models.summary.Summary.hits"><code class="docutils literal notranslate"><span class="pre">Summary.hits</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.summary.html#pds.api_client.models.summary.Summary.limit"><code class="docutils literal notranslate"><span class="pre">Summary.limit</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.summary.html#pds.api_client.models.summary.Summary.properties"><code class="docutils literal notranslate"><span class="pre">Summary.properties</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.summary.html#pds.api_client.models.summary.Summary.q"><code class="docutils literal notranslate"><span class="pre">Summary.q</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.summary.html#pds.api_client.models.summary.Summary.sort"><code class="docutils literal notranslate"><span class="pre">Summary.sort</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.summary.html#pds.api_client.models.summary.Summary.start"><code class="docutils literal notranslate"><span class="pre">Summary.start</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.summary.html#pds.api_client.models.summary.Summary.to_dict"><code class="docutils literal notranslate"><span class="pre">Summary.to_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.summary.html#pds.api_client.models.summary.Summary.to_json"><code class="docutils literal notranslate"><span class="pre">Summary.to_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.summary.html#pds.api_client.models.summary.Summary.to_str"><code class="docutils literal notranslate"><span class="pre">Summary.to_str()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.summary.html#pds.api_client.models.summary.Summary.took"><code class="docutils literal notranslate"><span class="pre">Summary.took</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pds.api_client.models.wyriwyg_product.html">pds.api_client.models.wyriwyg_product module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.models.wyriwyg_product.html#pds.api_client.models.wyriwyg_product.WyriwygProduct"><code class="docutils literal notranslate"><span class="pre">WyriwygProduct</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.wyriwyg_product.html#pds.api_client.models.wyriwyg_product.WyriwygProduct.Config"><code class="docutils literal notranslate"><span class="pre">WyriwygProduct.Config</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.wyriwyg_product.html#pds.api_client.models.wyriwyg_product.WyriwygProduct.Config.allow_population_by_field_name"><code class="docutils literal notranslate"><span class="pre">WyriwygProduct.Config.allow_population_by_field_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.wyriwyg_product.html#pds.api_client.models.wyriwyg_product.WyriwygProduct.Config.validate_assignment"><code class="docutils literal notranslate"><span class="pre">WyriwygProduct.Config.validate_assignment</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.wyriwyg_product.html#pds.api_client.models.wyriwyg_product.WyriwygProduct.from_dict"><code class="docutils literal notranslate"><span class="pre">WyriwygProduct.from_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.wyriwyg_product.html#pds.api_client.models.wyriwyg_product.WyriwygProduct.from_json"><code class="docutils literal notranslate"><span class="pre">WyriwygProduct.from_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.wyriwyg_product.html#pds.api_client.models.wyriwyg_product.WyriwygProduct.key_value_pairs"><code class="docutils literal notranslate"><span class="pre">WyriwygProduct.key_value_pairs</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.wyriwyg_product.html#pds.api_client.models.wyriwyg_product.WyriwygProduct.to_dict"><code class="docutils literal notranslate"><span class="pre">WyriwygProduct.to_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.wyriwyg_product.html#pds.api_client.models.wyriwyg_product.WyriwygProduct.to_json"><code class="docutils literal notranslate"><span class="pre">WyriwygProduct.to_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.wyriwyg_product.html#pds.api_client.models.wyriwyg_product.WyriwygProduct.to_str"><code class="docutils literal notranslate"><span class="pre">WyriwygProduct.to_str()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pds.api_client.models.wyriwyg_product_key_value_pair.html">pds.api_client.models.wyriwyg_product_key_value_pair module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.models.wyriwyg_product_key_value_pair.html#pds.api_client.models.wyriwyg_product_key_value_pair.WyriwygProductKeyValuePair"><code class="docutils literal notranslate"><span class="pre">WyriwygProductKeyValuePair</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.wyriwyg_product_key_value_pair.html#pds.api_client.models.wyriwyg_product_key_value_pair.WyriwygProductKeyValuePair.Config"><code class="docutils literal notranslate"><span class="pre">WyriwygProductKeyValuePair.Config</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.wyriwyg_product_key_value_pair.html#pds.api_client.models.wyriwyg_product_key_value_pair.WyriwygProductKeyValuePair.Config.allow_population_by_field_name"><code class="docutils literal notranslate"><span class="pre">WyriwygProductKeyValuePair.Config.allow_population_by_field_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.wyriwyg_product_key_value_pair.html#pds.api_client.models.wyriwyg_product_key_value_pair.WyriwygProductKeyValuePair.Config.validate_assignment"><code class="docutils literal notranslate"><span class="pre">WyriwygProductKeyValuePair.Config.validate_assignment</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.wyriwyg_product_key_value_pair.html#pds.api_client.models.wyriwyg_product_key_value_pair.WyriwygProductKeyValuePair.from_dict"><code class="docutils literal notranslate"><span class="pre">WyriwygProductKeyValuePair.from_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.wyriwyg_product_key_value_pair.html#pds.api_client.models.wyriwyg_product_key_value_pair.WyriwygProductKeyValuePair.from_json"><code class="docutils literal notranslate"><span class="pre">WyriwygProductKeyValuePair.from_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.wyriwyg_product_key_value_pair.html#pds.api_client.models.wyriwyg_product_key_value_pair.WyriwygProductKeyValuePair.key"><code class="docutils literal notranslate"><span class="pre">WyriwygProductKeyValuePair.key</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.wyriwyg_product_key_value_pair.html#pds.api_client.models.wyriwyg_product_key_value_pair.WyriwygProductKeyValuePair.to_dict"><code class="docutils literal notranslate"><span class="pre">WyriwygProductKeyValuePair.to_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.wyriwyg_product_key_value_pair.html#pds.api_client.models.wyriwyg_product_key_value_pair.WyriwygProductKeyValuePair.to_json"><code class="docutils literal notranslate"><span class="pre">WyriwygProductKeyValuePair.to_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.wyriwyg_product_key_value_pair.html#pds.api_client.models.wyriwyg_product_key_value_pair.WyriwygProductKeyValuePair.to_str"><code class="docutils literal notranslate"><span class="pre">WyriwygProductKeyValuePair.to_str()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.wyriwyg_product_key_value_pair.html#pds.api_client.models.wyriwyg_product_key_value_pair.WyriwygProductKeyValuePair.value"><code class="docutils literal notranslate"><span class="pre">WyriwygProductKeyValuePair.value</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pds.api_client.models.wyriwyg_products.html">pds.api_client.models.wyriwyg_products module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pds.api_client.models.wyriwyg_products.html#pds.api_client.models.wyriwyg_products.WyriwygProducts"><code class="docutils literal notranslate"><span class="pre">WyriwygProducts</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.wyriwyg_products.html#pds.api_client.models.wyriwyg_products.WyriwygProducts.Config"><code class="docutils literal notranslate"><span class="pre">WyriwygProducts.Config</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.wyriwyg_products.html#pds.api_client.models.wyriwyg_products.WyriwygProducts.Config.allow_population_by_field_name"><code class="docutils literal notranslate"><span class="pre">WyriwygProducts.Config.allow_population_by_field_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pds.api_client.models.wyriwyg_products.html#pds.api_client.models.wyriwyg_products.WyriwygProducts.Config.validate_assignment"><code class="docutils literal notranslate"><span class="pre">WyriwygProducts.Config.validate_assignment</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.wyriwyg_products.html#pds.api_client.models.wyriwyg_products.WyriwygProducts.data"><code class="docutils literal notranslate"><span class="pre">WyriwygProducts.data</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.wyriwyg_products.html#pds.api_client.models.wyriwyg_products.WyriwygProducts.from_dict"><code class="docutils literal notranslate"><span class="pre">WyriwygProducts.from_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.wyriwyg_products.html#pds.api_client.models.wyriwyg_products.WyriwygProducts.from_json"><code class="docutils literal notranslate"><span class="pre">WyriwygProducts.from_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.wyriwyg_products.html#pds.api_client.models.wyriwyg_products.WyriwygProducts.summary"><code class="docutils literal notranslate"><span class="pre">WyriwygProducts.summary</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.wyriwyg_products.html#pds.api_client.models.wyriwyg_products.WyriwygProducts.to_dict"><code class="docutils literal notranslate"><span class="pre">WyriwygProducts.to_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.wyriwyg_products.html#pds.api_client.models.wyriwyg_products.WyriwygProducts.to_json"><code class="docutils literal notranslate"><span class="pre">WyriwygProducts.to_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pds.api_client.models.wyriwyg_products.html#pds.api_client.models.wyriwyg_products.WyriwygProducts.to_str"><code class="docutils literal notranslate"><span class="pre">WyriwygProducts.to_str()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
 <section id="module-pds.api_client.models">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pds.api_client.models" title="Permalink to this heading"></a></h2>
+<p>PDS Registry Search API</p>
+<p>Registry API enabling advanced search on PDS data and metadata. The API provides end-points to search for bundles, collections and any PDS products with advanced search queries. It also enables to browse the archive hierarchically downward (e.g. collection/s products) or upward (e.g. bundles containing a product).   # noqa: E501</p>
+<p>The version of the OpenAPI document: 1.1.1
+Contact: <a class="reference external" href="mailto:pds-operator&#37;&#52;&#48;jpl&#46;nasa&#46;gov">pds-operator<span>&#64;</span>jpl<span>&#46;</span>nasa<span>&#46;</span>gov</a>
+Generated by OpenAPI Generator (<a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a>)</p>
+<p>Do not edit the class manually.</p>
 </section>
 </section>
 
@@ -102,8 +411,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="pds.api_client.model.html" class="btn btn-neutral float-left" title="pds.api_client.model package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="pds.api_client.paths.html" class="btn btn-neutral float-right" title="pds.api_client.paths package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="pds.api_client.api.product_references_api.html" class="btn btn-neutral float-left" title="pds.api_client.api.product_references_api module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pds.api_client.models.error_message.html" class="btn btn-neutral float-right" title="pds.api_client.models.error_message module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

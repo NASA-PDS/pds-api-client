@@ -1,0 +1,7 @@
+pds.api\_client.models.error\_message module
+============================================
+
+.. automodule:: pds.api_client.models.error_message
+   :members:
+   :undoc-members:
+   :show-inheritance:

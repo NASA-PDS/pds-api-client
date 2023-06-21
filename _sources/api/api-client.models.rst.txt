@@ -1,0 +1,133 @@
+api\-client.models package
+==========================
+
+Submodules
+----------
+
+api\-client.models.error\_message module
+----------------------------------------
+
+.. automodule:: api-client.models.error_message
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\-client.models.metadata module
+----------------------------------
+
+.. automodule:: api-client.models.metadata
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\-client.models.pds4\_metadata module
+----------------------------------------
+
+.. automodule:: api-client.models.pds4_metadata
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\-client.models.pds4\_metadata\_ops\_data\_file module
+---------------------------------------------------------
+
+.. automodule:: api-client.models.pds4_metadata_ops_data_file
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\-client.models.pds4\_metadata\_ops\_label\_file\_info module
+----------------------------------------------------------------
+
+.. automodule:: api-client.models.pds4_metadata_ops_label_file_info
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\-client.models.pds4\_metadata\_ops\_tracking\_meta module
+-------------------------------------------------------------
+
+.. automodule:: api-client.models.pds4_metadata_ops_tracking_meta
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\-client.models.pds4\_product module
+---------------------------------------
+
+.. automodule:: api-client.models.pds4_product
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\-client.models.pds4\_products module
+----------------------------------------
+
+.. automodule:: api-client.models.pds4_products
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\-client.models.pds\_product module
+--------------------------------------
+
+.. automodule:: api-client.models.pds_product
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\-client.models.pds\_products module
+---------------------------------------
+
+.. automodule:: api-client.models.pds_products
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\-client.models.reference module
+-----------------------------------
+
+.. automodule:: api-client.models.reference
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\-client.models.summary module
+---------------------------------
+
+.. automodule:: api-client.models.summary
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\-client.models.wyriwyg\_product module
+------------------------------------------
+
+.. automodule:: api-client.models.wyriwyg_product
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\-client.models.wyriwyg\_product\_key\_value\_pair module
+------------------------------------------------------------
+
+.. automodule:: api-client.models.wyriwyg_product_key_value_pair
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\-client.models.wyriwyg\_products module
+-------------------------------------------
+
+.. automodule:: api-client.models.wyriwyg_products
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: api-client.models
+   :members:
+   :undoc-members:
+   :show-inheritance:

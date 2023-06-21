@@ -1,0 +1,7 @@
+pds.api\-client.api\_client module
+==================================
+
+.. automodule:: pds.api-client.api_client
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+pds.api\-client.api.deprecated\_api module
+==========================================
+
+.. automodule:: pds.api-client.api.deprecated_api
+   :members:
+   :undoc-members:
+   :show-inheritance:

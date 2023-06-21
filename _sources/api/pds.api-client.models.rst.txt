@@ -1,0 +1,32 @@
+pds.api\-client.models package
+==============================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   pds.api-client.models.error_message
+   pds.api-client.models.metadata
+   pds.api-client.models.pds4_metadata
+   pds.api-client.models.pds4_metadata_ops_data_file
+   pds.api-client.models.pds4_metadata_ops_label_file_info
+   pds.api-client.models.pds4_metadata_ops_tracking_meta
+   pds.api-client.models.pds4_product
+   pds.api-client.models.pds4_products
+   pds.api-client.models.pds_product
+   pds.api-client.models.pds_products
+   pds.api-client.models.reference
+   pds.api-client.models.summary
+   pds.api-client.models.wyriwyg_product
+   pds.api-client.models.wyriwyg_product_key_value_pair
+   pds.api-client.models.wyriwyg_products
+
+Module contents
+---------------
+
+.. automodule:: pds.api-client.models
+   :members:
+   :undoc-members:
+   :show-inheritance:

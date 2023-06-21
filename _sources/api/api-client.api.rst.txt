@@ -1,0 +1,45 @@
+api\-client.api package
+=======================
+
+Submodules
+----------
+
+api\-client.api.all\_products\_api module
+-----------------------------------------
+
+.. automodule:: api-client.api.all_products_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\-client.api.by\_product\_classes\_api module
+------------------------------------------------
+
+.. automodule:: api-client.api.by_product_classes_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\-client.api.deprecated\_api module
+--------------------------------------
+
+.. automodule:: api-client.api.deprecated_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+api\-client.api.product\_references\_api module
+-----------------------------------------------
+
+.. automodule:: api-client.api.product_references_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: api-client.api
+   :members:
+   :undoc-members:
+   :show-inheritance:

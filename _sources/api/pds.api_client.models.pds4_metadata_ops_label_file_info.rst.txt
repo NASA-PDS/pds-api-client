@@ -1,0 +1,7 @@
+pds.api\_client.models.pds4\_metadata\_ops\_label\_file\_info module
+====================================================================
+
+.. automodule:: pds.api_client.models.pds4_metadata_ops_label_file_info
+   :members:
+   :undoc-members:
+   :show-inheritance:

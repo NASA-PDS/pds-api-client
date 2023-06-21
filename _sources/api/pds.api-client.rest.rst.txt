@@ -1,0 +1,7 @@
+pds.api\-client.rest module
+===========================
+
+.. automodule:: pds.api-client.rest
+   :members:
+   :undoc-members:
+   :show-inheritance:

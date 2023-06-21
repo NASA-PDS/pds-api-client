@@ -1,0 +1,7 @@
+pds.api\_client.models.wyriwyg\_product module
+==============================================
+
+.. automodule:: pds.api_client.models.wyriwyg_product
+   :members:
+   :undoc-members:
+   :show-inheritance:

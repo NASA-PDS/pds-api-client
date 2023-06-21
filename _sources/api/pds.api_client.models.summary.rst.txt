@@ -1,0 +1,7 @@
+pds.api\_client.models.summary module
+=====================================
+
+.. automodule:: pds.api_client.models.summary
+   :members:
+   :undoc-members:
+   :show-inheritance:

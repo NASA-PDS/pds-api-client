@@ -1,0 +1,30 @@
+pds.api\-client package
+=======================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   pds.api-client.api
+   pds.api-client.models
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   pds.api-client.api_client
+   pds.api-client.configuration
+   pds.api-client.exceptions
+   pds.api-client.rest
+
+Module contents
+---------------
+
+.. automodule:: pds.api-client
+   :members:
+   :undoc-members:
+   :show-inheritance:
