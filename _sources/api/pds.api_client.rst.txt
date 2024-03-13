@@ -17,6 +17,7 @@ Submodules
    :maxdepth: 4
 
    pds.api_client.api_client
+   pds.api_client.api_response
    pds.api_client.configuration
    pds.api_client.exceptions
    pds.api_client.rest

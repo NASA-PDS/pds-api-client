@@ -17,6 +17,7 @@ Submodules
    pds.api_client.models.pds4_products
    pds.api_client.models.pds_product
    pds.api_client.models.pds_products
+   pds.api_client.models.properties_list_inner
    pds.api_client.models.reference
    pds.api_client.models.summary
    pds.api_client.models.wyriwyg_product

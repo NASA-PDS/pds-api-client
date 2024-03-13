@@ -1,0 +1,7 @@
+pds.api\_client.models.properties\_list\_inner module
+=====================================================
+
+.. automodule:: pds.api_client.models.properties_list_inner
+   :members:
+   :undoc-members:
+   :show-inheritance:

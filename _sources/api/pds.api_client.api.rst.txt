@@ -10,6 +10,7 @@ Submodules
    pds.api_client.api.all_products_api
    pds.api_client.api.by_product_classes_api
    pds.api_client.api.deprecated_api
+   pds.api_client.api.healthcheck_api
    pds.api_client.api.product_references_api
 
 Module contents
