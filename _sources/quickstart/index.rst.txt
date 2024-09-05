@@ -33,6 +33,8 @@ The package releases match with the `Search API specification <https://nasa-pds.
 
    * - pds.api-client
      - pds search api specification
+   * - 1.6.X
+     - 1.5
    * - 1.5.X
      - 1.4
    * - 1.4.X
@@ -91,7 +93,7 @@ For Collections for example:
     classes = ByProductClassesApi(api_client)
 
     api_response = classes.class_list(
-        'collections',
+        'collection',
         start=0,
         limit=20,
         fields=['ops:Label_File_Info.ops:file_ref']
