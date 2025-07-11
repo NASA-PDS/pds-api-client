@@ -33,6 +33,8 @@ The package releases match with the `Search API specification <https://nasa-pds.
 
    * - pds.api-client
      - pds search api specification
+   * - 1.7.X
+     - 1.6
    * - 1.6.X
      - 1.5
    * - 1.5.X

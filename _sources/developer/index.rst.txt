@@ -13,7 +13,7 @@ Requisites
 ----------
 
 • code generator https://github.com/OpenAPITools/openapi-generator
-• python 3.9
+• tested with python 3.13
   
 
 Procedure
@@ -42,7 +42,9 @@ The reference OpenAPI specifications for PDS can be found on `PDS API`_.
 Then, install OpenAPI Generator 6.5.0 (e.g. on macos with brew, see https://github.com/OpenAPITools/openapi-generator#1---installation), and run::
 
     pip install pyyaml
+    rm -fr pds test
     python src/pds/api_client/preprocess_openapi.py /Users/loubrieu/PycharmProjects/pds-api/specs/PDS_APIs-search-1.1.1-swagger.yaml --version 1.3.0
+    rm pds/__init__.py
 
 Manual step, add lines in the setup.py file:
 
@@ -74,8 +76,9 @@ PyPI Publication
 
 Try::
 
-    pip install wheel
-    python setup.py sdist bdist_wheel
+    rm -f dist/*
+    pip install build
+    python -m build .
     pip install twine
     twine upload --repository testpypi dist/*
 
